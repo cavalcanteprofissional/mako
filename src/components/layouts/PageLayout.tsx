@@ -16,12 +16,9 @@ export default function PageLayout({
   return (
     <div className={`min-h-screen flex flex-col ${className}`}>
       <Header />
-      
-      {/* Page Content */}
       <main className="flex-1">
         {children}
       </main>
-
       <Footer />
     </div>
   )

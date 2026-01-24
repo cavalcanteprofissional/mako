@@ -3,11 +3,11 @@
 import Image from 'next/image'
 import { Card, Button } from '@/components/ui'
 
-interface HeaderOneProps {
+interface CompanyStatsSectionProps {
   className?: string
 }
 
-export default function HeaderOne({ className = '' }: HeaderOneProps) {
+export default function CompanyStatsSection({ className = '' }: CompanyStatsSectionProps) {
   return (
     <section className={`py-16 bg-gray-50 ${className}`}>
       <div className="container-custom">

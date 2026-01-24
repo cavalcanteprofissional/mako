@@ -3,11 +3,11 @@
 import { Card, Button } from '@/components/ui'
 import { Shield, TrendingUp, Award, CheckCircle } from 'lucide-react'
 
-interface HeaderTwoProps {
+interface CompanyValuesSectionProps {
   className?: string
 }
 
-export default function HeaderTwo({ className = '' }: HeaderTwoProps) {
+export default function CompanyValuesSection({ className = '' }: CompanyValuesSectionProps) {
   return (
     <section className={`py-16 bg-primary-50 ${className}`}>
       <div className="container-custom">
