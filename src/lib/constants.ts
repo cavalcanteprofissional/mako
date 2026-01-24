@@ -109,23 +109,3 @@ export const seo = {
   },
 }
 
-export const animations = {
-  durations: {
-    fast: '0.3s',
-    normal: '0.5s',
-    slow: '0.8s',
-  },
-  easings: {
-    easeOut: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
-    easeIn: 'cubic-bezier(0.55, 0.055, 0.675, 0.19)',
-    easeInOut: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-  },
-}
-
-export const breakpoints = {
-  sm: '640px',
-  md: '768px',
-  lg: '1024px',
-  xl: '1280px',
-  '2xl': '1536px',
-}

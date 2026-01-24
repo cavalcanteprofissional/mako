@@ -3,8 +3,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card } from '@/components/ui'
-import { mockClients } from '@/lib/mockData'
+import { mockClients, mockTestimonials } from '@/lib/mockData'
 import { Quote, Star } from 'lucide-react'
+import type { Testimonial } from '@/types'
 
 export default function ClientesSection() {
   const featuredClients = mockClients.filter(client => client.featured)
@@ -134,32 +135,7 @@ export default function ClientesSection() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Carlos Silva',
-                role: 'Gerente de Operações',
-                company: 'Indústria Alimentícia XYZ',
-                content: 'A Mako transformou completamente nossa linha de produção. A automação instalada aumentou nossa produtividade em 40% e reduziu os índices de defeito.',
-                rating: 5,
-                avatar: '/images/testimonials/carlos.jpg',
-              },
-              {
-                name: 'Maria Santos',
-                role: 'Diretora Industrial',
-                company: 'Metalúrgica ABC',
-                content: 'Equipe extremamente competente e dedicada. O projeto foi entregue no prazo e superou todas as nossas expectativas.',
-                rating: 5,
-                avatar: '/images/testimonials/maria.jpg',
-              },
-              {
-                name: 'Roberto Costa',
-                role: 'Engenheiro Chefe',
-                company: 'Química Brasil',
-                content: 'Os serviços de manutenção preventiva garantiram a estabilidade de nossas operações. Excelente suporte técnico.',
-                rating: 4,
-                avatar: '/images/testimonials/roberto.jpg',
-              },
-            ].map((testimonial, index) => (
+            {mockTestimonials.map((testimonial, index) => (
               <Card key={index} hover={true}>
                 <div className="space-y-4">
                   {/* Quote Icon */}
@@ -184,17 +160,17 @@ export default function ClientesSection() {
                     ))}
                   </div>
 
-                  {/* Author */}
-                  <div className="flex items-center space-x-3 pt-4 border-t border-gray-100">
-                    <div className="relative w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
-                      <Image
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        fill
-                        className="object-cover"
-                        sizes="48px"
-                      />
-                    </div>
+                   {/* Author */}
+                   <div className="flex items-center space-x-3 pt-4 border-t border-gray-100">
+                     <div className="relative w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+                       <Image
+                         src={testimonial.image}
+                         alt={testimonial.name}
+                         fill
+                         className="object-cover"
+                         sizes="48px"
+                       />
+                     </div>
                     <div>
                       <div className="font-semibold text-gray-900">
                         {testimonial.name}
