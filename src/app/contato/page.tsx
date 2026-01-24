@@ -21,13 +21,13 @@ export default function ContatoPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20">
+      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Entre em <span className="text-yellow-400">Contato</span>
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-2xl mx-auto">
               Estamos prontos para transformar sua indústria com soluções de automação inteligentes e eficientes.
             </p>
             
@@ -46,7 +46,7 @@ export default function ContatoPage() {
               </a>
               <a
                 href={`tel:${companyInfo.phoneFormatted}`}
-                className="flex items-center justify-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors duration-200"
+                className="flex items-center justify-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-colors duration-200"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 {companyInfo.phone}
@@ -66,7 +66,7 @@ export default function ContatoPage() {
               
               <div className="space-y-4">
                 <Card padding="md" className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Endereço</h3>
                     <p className="text-gray-600 text-sm">{companyInfo.address.fullAddress}</p>
@@ -74,11 +74,11 @@ export default function ContatoPage() {
                 </Card>
 
                 <Card padding="md" className="flex items-start space-x-3">
-                  <Phone className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Telefone</h3>
                     <p className="text-gray-600 text-sm">
-                      <a href={`tel:${companyInfo.phoneFormatted}`} className="hover:text-blue-600 transition-colors">
+                      <a href={`tel:${companyInfo.phoneFormatted}`} className="hover:text-primary-600 transition-colors">
                         {companyInfo.phone}
                       </a>
                     </p>
@@ -86,16 +86,16 @@ export default function ContatoPage() {
                 </Card>
 
                 <Card padding="md" className="flex items-start space-x-3">
-                  <Mail className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900">E-mail</h3>
                     <p className="text-gray-600 text-sm">
-                      <a href={`mailto:${companyInfo.email}`} className="hover:text-blue-600 transition-colors">
+                      <a href={`mailto:${companyInfo.email}`} className="hover:text-primary-600 transition-colors">
                         {companyInfo.email}
                       </a>
                     </p>
                     <p className="text-gray-600 text-sm">
-                      <a href={`mailto:${companyInfo.emailTechnical}`} className="hover:text-blue-600 transition-colors">
+                      <a href={`mailto:${companyInfo.emailTechnical}`} className="hover:text-primary-600 transition-colors">
                         {companyInfo.emailTechnical} (Suporte Técnico)
                       </a>
                     </p>
@@ -103,7 +103,7 @@ export default function ContatoPage() {
                 </Card>
 
                 <Card padding="md" className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <Clock className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Horário de Atendimento</h3>
                     <p className="text-gray-600 text-sm">{companyInfo.workingHours.full}</p>
@@ -152,14 +152,14 @@ export default function ContatoPage() {
             {/* Map Placeholder */}
             <div className="relative h-96 bg-gray-200 flex items-center justify-center">
               <div className="text-center">
-                <MapPin className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                <MapPin className="w-16 h-16 text-primary-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mako Soluções Industriais</h3>
                 <p className="text-gray-600 mb-4">{companyInfo.address.fullAddress}</p>
                 <a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyInfo.address.fullAddress)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200"
+                  className="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200"
                 >
                   <Navigation className="w-4 h-4 mr-2" />
                   Abrir no Google Maps

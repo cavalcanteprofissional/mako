@@ -59,7 +59,7 @@ export default function ClientesSection() {
                     href={client.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center space-x-1"
+                    className="text-primary-600 hover:text-primary-700 text-sm font-medium flex items-center space-x-1"
                   >
                     <span>Visitar site</span>
                   </Link>
@@ -104,7 +104,7 @@ export default function ClientesSection() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-8 border-t border-gray-200">
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-1">100+</div>
+              <div className="text-3xl font-bold text-primary-600 mb-1">100+</div>
               <div className="text-sm text-gray-600">Clientes Ativos</div>
             </div>
             <div className="text-center">
@@ -139,7 +139,7 @@ export default function ClientesSection() {
               <Card key={index} hover={true}>
                 <div className="space-y-4">
                   {/* Quote Icon */}
-                  <Quote className="w-8 h-8 text-blue-200 mb-4" />
+                  <Quote className="w-8 h-8 text-primary-200 mb-4" />
 
                   {/* Content */}
                   <p className="text-gray-700 leading-relaxed italic">

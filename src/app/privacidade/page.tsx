@@ -16,7 +16,7 @@ export default function PrivacidadePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-16">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -25,7 +25,7 @@ export default function PrivacidadePage() {
             <h1 className="text-4xl font-bold mb-6">
               Política de <span className="text-yellow-400">Privacidade</span>
             </h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-primary-100">
               Seus dados estão seguros conosco
             </p>
           </div>
@@ -48,8 +48,8 @@ export default function PrivacidadePage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-8">Nossos Princípios</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card padding="lg" className="text-center">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Lock className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Lock className="w-6 h-6 text-primary-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Segurança</h3>
                 <p className="text-gray-600 text-sm">
@@ -58,8 +58,8 @@ export default function PrivacidadePage() {
               </Card>
 
               <Card padding="lg" className="text-center">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Eye className="w-6 h-6 text-primary-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Transparência</h3>
                 <p className="text-gray-600 text-sm">
@@ -68,8 +68,8 @@ export default function PrivacidadePage() {
               </Card>
 
               <Card padding="lg" className="text-center">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <User className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <User className="w-6 h-6 text-primary-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Controle</h3>
                 <p className="text-gray-600 text-sm">
@@ -85,7 +85,7 @@ export default function PrivacidadePage() {
             <div className="space-y-6">
               <Card padding="lg">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center">
-                  <Database className="w-5 h-5 mr-2 text-blue-600" />
+                  <Database className="w-5 h-5 mr-2 text-primary-600" />
                   Informações Pessoais
                 </h3>
                 <ul className="space-y-2 text-gray-600">
@@ -98,7 +98,7 @@ export default function PrivacidadePage() {
 
               <Card padding="lg">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center">
-                  <Database className="w-5 h-5 mr-2 text-blue-600" />
+                  <Database className="w-5 h-5 mr-2 text-primary-600" />
                   Informações Técnicas
                 </h3>
                 <ul className="space-y-2 text-gray-600">
@@ -115,8 +115,8 @@ export default function PrivacidadePage() {
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Como Usamos Seus Dados</h2>
             <div className="space-y-4">
-              <div className="flex items-start p-4 bg-blue-50 rounded-lg">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-1">
+              <div className="flex items-start p-4 bg-primary-50 rounded-lg">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-1">
                   <span className="text-white font-bold text-sm">1</span>
                 </div>
                 <div>
@@ -127,8 +127,8 @@ export default function PrivacidadePage() {
                 </div>
               </div>
 
-              <div className="flex items-start p-4 bg-blue-50 rounded-lg">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-1">
+              <div className="flex items-start p-4 bg-primary-50 rounded-lg">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-1">
                   <span className="text-white font-bold text-sm">2</span>
                 </div>
                 <div>
@@ -139,8 +139,8 @@ export default function PrivacidadePage() {
                 </div>
               </div>
 
-              <div className="flex items-start p-4 bg-blue-50 rounded-lg">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-1">
+              <div className="flex items-start p-4 bg-primary-50 rounded-lg">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-1">
                   <span className="text-white font-bold text-sm">3</span>
                 </div>
                 <div>
@@ -189,14 +189,14 @@ export default function PrivacidadePage() {
             <div className="space-y-2">
               <a
                 href="mailto:privacidade@mako.ind.br"
-                className="text-blue-600 hover:text-blue-700 font-medium"
+                className="text-primary-600 hover:text-primary-700 font-medium"
               >
                 privacidade@mako.ind.br
               </a>
               <br />
               <a
                 href="tel:558532145678"
-                className="text-blue-600 hover:text-blue-700 font-medium"
+                className="text-primary-600 hover:text-primary-700 font-medium"
               >
                 (85) 3214-5678
               </a>

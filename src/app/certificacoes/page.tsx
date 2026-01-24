@@ -17,7 +17,7 @@ export default function CertificacoesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20">
+      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -26,7 +26,7 @@ export default function CertificacoesPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Nossas <span className="text-yellow-400">Certificações</span>
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
               Reconhecimento e qualificação que garantem a excelência dos nossos serviços
             </p>
             
@@ -36,28 +36,28 @@ export default function CertificacoesPage() {
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
                   ISO 9001
                 </div>
-                <p className="text-blue-100">Qualidade</p>
+                <p className="text-primary-100">Qualidade</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
                   NR-12
                 </div>
-                <p className="text-blue-100">Segurança</p>
+                <p className="text-primary-100">Segurança</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
                   ABNT
                 </div>
-                <p className="text-blue-100">Normas</p>
+                <p className="text-primary-100">Normas</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
                   100%
                 </div>
-                <p className="text-blue-100">Conformidade</p>
+                <p className="text-primary-100">Conformidade</p>
               </div>
             </div>
           </div>
@@ -145,8 +145,8 @@ export default function CertificacoesPage() {
             <div>
               <Card padding="lg">
                 <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Shield className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <Shield className="w-8 h-8 text-primary-600" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">ISO 9001:2015</h3>
@@ -180,8 +180,8 @@ export default function CertificacoesPage() {
             <div>
               <Card padding="lg">
                 <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Shield className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <Shield className="w-8 h-8 text-primary-600" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">NR-12</h3>
@@ -215,8 +215,8 @@ export default function CertificacoesPage() {
             <div>
               <Card padding="lg">
                 <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                    <Shield className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <Shield className="w-8 h-8 text-primary-600" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">ABNT NBR 5410</h3>
@@ -263,8 +263,8 @@ export default function CertificacoesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card padding="lg" className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Star className="w-8 h-8 text-blue-600" />
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Star className="w-8 h-8 text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Qualidade Garantida</h3>
               <p className="text-gray-600">
@@ -274,8 +274,8 @@ export default function CertificacoesPage() {
             </Card>
 
             <Card padding="lg" className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Shield className="w-8 h-8 text-blue-600" />
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Shield className="w-8 h-8 text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Conformidade Legal</h3>
               <p className="text-gray-600">
@@ -285,8 +285,8 @@ export default function CertificacoesPage() {
             </Card>
 
             <Card padding="lg" className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-8 h-8 text-blue-600" />
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="w-8 h-8 text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Vantagem Competitiva</h3>
               <p className="text-gray-600">
@@ -304,13 +304,13 @@ export default function CertificacoesPage() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Precisa de <span className="text-yellow-400">Serviços Certificados</span>?
           </h2>
-          <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             Entre em contato e descubra como nossas certificações beneficiam seus projetos
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/contato" 
-              className="inline-flex items-center px-6 py-3 bg-white text-blue-600 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200"
+              className="inline-flex items-center px-6 py-3 bg-white text-primary-600 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200"
             >
               Solicitar Orçamento
             </a>
@@ -318,7 +318,7 @@ export default function CertificacoesPage() {
               href="https://wa.me/5585987654321?text=Olá! Gostaria de saber mais sobre as certificações da Mako." 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors duration-200"
+              className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-colors duration-200"
             >
               Falar com Especialista
             </a>

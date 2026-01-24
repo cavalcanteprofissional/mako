@@ -33,7 +33,7 @@ export default function HistorySection({ history }: HistorySectionProps) {
             <div key={milestone.year} className="relative">
               {/* Timeline Line */}
               {index < history.length - 1 && (
-                <div className="absolute left-8 top-20 w-0.5 h-full bg-blue-200" />
+                <div className="absolute left-8 top-20 w-0.5 h-full bg-primary-200" />
               )}
 
               <div 
@@ -45,7 +45,7 @@ export default function HistorySection({ history }: HistorySectionProps) {
                   className="relative hover:shadow-medium transition-all duration-300 ml-16"
                 >
                   {/* Year Badge */}
-                  <div className="absolute -left-16 top-8 bg-blue-600 text-white px-4 py-2 rounded-full font-bold text-lg">
+                  <div className="absolute -left-16 top-8 bg-primary-600 text-white px-4 py-2 rounded-full font-bold text-lg">
                     {milestone.year}
                   </div>
 
@@ -62,7 +62,7 @@ export default function HistorySection({ history }: HistorySectionProps) {
                     </div>
 
                     {/* Toggle Button */}
-                    <button className="ml-4 p-2 text-gray-400 hover:text-blue-600 transition-colors">
+                    <button className="ml-4 p-2 text-gray-400 hover:text-primary-600 transition-colors">
                       {expandedYear === milestone.year ? (
                         <ChevronUp className="w-5 h-5" />
                       ) : (
@@ -99,7 +99,7 @@ export default function HistorySection({ history }: HistorySectionProps) {
           </p>
           <a
             href="/contato"
-            className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200"
+            className="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200"
           >
             Entre em Contato
           </a>

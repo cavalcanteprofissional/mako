@@ -16,7 +16,7 @@ export default function DiferenciaisSection() {
       title: 'Alta Performance',
       description: 'Soluções que aumentam a produtividade e reduzem custos operacionais',
       features: ['Otimização de processos', 'Redução de desperdícios', 'Maior eficiência'],
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-primary-500 to-primary-400',
     },
     {
       icon: Shield,
@@ -44,7 +44,7 @@ export default function DiferenciaisSection() {
       title: 'Experiência Comprovada',
       description: 'Mais de 500 projetos realizados em diversos segmentos',
       features: ['+8 anos de mercado', 'Clientes satisfeitos', 'Cases de sucesso'],
-      color: 'from-indigo-500 to-blue-500',
+      color: 'from-indigo-500 to-primary-500',
     },
     {
       icon: Users,
@@ -93,7 +93,7 @@ export default function DiferenciaisSection() {
                   </div>
                   
                   {/* Title & Description */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors duration-200">
                     {item.title}
                   </h3>
                   <p className="text-gray-600 mb-4 leading-relaxed">
@@ -107,7 +107,7 @@ export default function DiferenciaisSection() {
                         key={featureIndex}
                         className="flex items-center text-sm text-gray-600"
                       >
-                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -120,19 +120,19 @@ export default function DiferenciaisSection() {
 
         {/* Call to Action */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 md:p-12 text-white">
+          <div className="bg-gradient-to-r from-primary-600 to-primary-400 rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Pronto para transformar sua indústria?
             </h3>
-            <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
               Fale com nossos especialistas e descubra como podemos levar 
               sua operação ao próximo nível de eficiência
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200">
+              <button className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200">
                 Falar com Especialista
               </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200">
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all duration-200">
                 Ver Portfólio
               </button>
             </div>

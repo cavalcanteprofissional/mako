@@ -25,12 +25,12 @@ function Button({
   target,
   rel,
 }: ButtonProps) {
-  const baseClasses = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+  const baseClasses = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500'
   
   const variantClasses = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700 shadow-soft hover:shadow-medium focus:ring-blue-500',
-    secondary: 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 shadow-soft hover:shadow-medium focus:ring-blue-500',
-    outline: 'bg-transparent text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white focus:ring-blue-500',
+    primary: 'bg-primary-600 text-white hover:bg-primary-700 shadow-soft hover:shadow-medium focus:ring-primary-500',
+    secondary: 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 shadow-soft hover:shadow-medium focus:ring-primary-500',
+    outline: 'bg-transparent text-primary-600 border border-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500',
   }
   
   const sizeClasses = {
@@ -39,7 +39,7 @@ function Button({
     lg: 'px-8 py-4 text-lg',
   }
   
-  const disabledClasses = 'opacity-50 cursor-not-allowed hover:bg-blue-600 hover:text-white hover:shadow-soft'
+  const disabledClasses = 'opacity-50 cursor-not-allowed hover:bg-primary-600 hover:text-white hover:shadow-soft'
   
   const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${disabled ? disabledClasses : ''} ${className}`
   
@@ -119,7 +119,7 @@ export function Badge({
   const baseClasses = 'inline-flex items-center font-medium rounded-full'
   
   const variantClasses = {
-    primary: 'bg-blue-100 text-blue-800',
+    primary: 'bg-primary-100 text-primary-800',
     secondary: 'bg-gray-100 text-gray-800',
     success: 'bg-green-100 text-green-800',
     warning: 'bg-yellow-100 text-yellow-800',
@@ -160,7 +160,7 @@ export function Section({
   const backgroundClasses = {
     white: 'bg-white',
     gray: 'bg-gray-50',
-    gradient: 'bg-gradient-to-br from-blue-50 via-white to-cyan-50',
+    gradient: 'bg-gradient-to-br from-primary-50 via-white to-primary-100',
   }
   
   const paddingClasses = {

@@ -145,7 +145,7 @@ export default function HeroSection() {
                 <Button
                   variant="primary"
                   size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white shadow-xl"
+                  className="bg-primary-600 hover:bg-primary-700 text-white shadow-xl"
                   onClick={() => handleWhatsAppClick()}
                 >
                   <span className="flex items-center">
@@ -171,7 +171,7 @@ export default function HeroSection() {
                   <span>Atendimento 24/7</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-2" />
+                  <div className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
                   <span>+500 Projetos Concluídos</span>
                 </div>
                 <div className="flex items-center">
@@ -228,7 +228,7 @@ export default function HeroSection() {
       >
         <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full hover:bg-white/30 transition-all duration-200">
           <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-            <Play className="w-5 h-5 text-blue-600 ml-1" />
+            <Play className="w-5 h-5 text-primary-600 ml-1" />
           </div>
           <span className="text-white text-sm font-medium hidden sm:block">
             Vídeo Institucional

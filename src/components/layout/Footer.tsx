@@ -39,7 +39,7 @@ export default function Footer() {
       name: 'LinkedIn',
       href: companyInfo.social.linkedin,
       icon: Linkedin,
-      color: 'hover:text-blue-700',
+      color: 'hover:text-primary-700',
     },
     {
       name: 'Instagram',
@@ -51,7 +51,7 @@ export default function Footer() {
       name: 'Facebook',
       href: companyInfo.social.facebook,
       icon: Facebook,
-      color: 'hover:text-blue-600',
+      color: 'hover:text-primary-600',
     },
   ]
 
@@ -88,19 +88,19 @@ export default function Footer() {
               {/* Contact Info */}
               <div className="space-y-3">
                 <div className="flex items-start space-x-3 text-gray-300">
-                  <MapPin className="w-5 h-5 mt-0.5 text-blue-400 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 mt-0.5 text-primary-400 flex-shrink-0" />
                   <span className="text-sm leading-relaxed">
                     {companyInfo.address.fullAddress}
                   </span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
-                  <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-primary-400 flex-shrink-0" />
                   <span className="text-sm">
                     {companyInfo.phone}
                   </span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
-                  <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
                   <span className="text-sm">
                     {companyInfo.email}
                   </span>
@@ -139,7 +139,7 @@ export default function Footer() {
                     <li key={link.name}>
                       <Link
                         href={link.href}
-                        className="flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm group"
+                        className="flex items-center text-gray-300 hover:text-primary-400 transition-colors duration-200 text-sm group"
                       >
                         <ChevronRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                         {link.name}
@@ -166,13 +166,13 @@ export default function Footer() {
             <div className="flex items-center space-x-6 text-sm">
               <Link
                 href="/privacidade"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
               >
                 Política de Privacidade
               </Link>
               <Link
                 href="/termos"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
               >
                 Termos de Uso
               </Link>
@@ -182,7 +182,7 @@ export default function Footer() {
                   href="https://mako.ind.br"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
+                  className="text-primary-400 hover:text-primary-300 transition-colors duration-200"
                 >
                   Mako Soluções Industriais
                 </Link>

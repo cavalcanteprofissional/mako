@@ -21,13 +21,13 @@ export default function EmpresaPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20">
+      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Sobre a <span className="text-yellow-400">Mako</span>
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
               Transformamos desafios industriais em oportunidades através da automação e tecnologia de ponta
             </p>
             
@@ -37,28 +37,28 @@ export default function EmpresaPage() {
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
                   {companyInfo.founded}
                 </div>
-                <p className="text-blue-100">Anos de Experiência</p>
+                <p className="text-primary-100">Anos de Experiência</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
                   500+
                 </div>
-                <p className="text-blue-100">Projetos Concluídos</p>
+                <p className="text-primary-100">Projetos Concluídos</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
                   50+
                 </div>
-                <p className="text-blue-100">Clientes Satisfeitos</p>
+                <p className="text-primary-100">Clientes Satisfeitos</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
                   24/7
                 </div>
-                <p className="text-blue-100">Suporte Técnico</p>
+                <p className="text-primary-100">Suporte Técnico</p>
               </div>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function EmpresaPage() {
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Nossos Valores</h3>
               
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
@@ -99,7 +99,7 @@ export default function EmpresaPage() {
               </div>
 
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4 3 1 6 1 9c0 2.7 3.4 6.83 8.55 11.54L12 22.99l2.45-2.45C19.6 15.83 23 11.7 23 9c0-3-2-6-6.5-6zM7.5 9c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5S8.33 10.5 7.5 10.5 6 9.83 6 9zm9 0c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5z"/>
                   </svg>
@@ -111,7 +111,7 @@ export default function EmpresaPage() {
               </div>
 
               <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
@@ -138,7 +138,7 @@ export default function EmpresaPage() {
             {/* Company Info Cards */}
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-medium max-w-sm">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
                   <Image
                     src="/images/logo.svg"
                     alt="Mako"
@@ -186,13 +186,13 @@ export default function EmpresaPage() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Vamos <span className="text-yellow-400">Transformar</span> Sua Indústria Juntos?
           </h2>
-          <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             Entre em contato conosco e descubra como nossa experiência e tecnologia podem beneficiar seus processos industriais.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/contato" 
-              className="inline-flex items-center px-6 py-3 bg-white text-blue-600 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200"
+              className="inline-flex items-center px-6 py-3 bg-white text-primary-600 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200"
             >
               Solicitar Proposta
             </a>
@@ -200,7 +200,7 @@ export default function EmpresaPage() {
               href="https://wa.me/5585987654321?text=Olá! Gostaria de saber mais sobre a empresa Mako." 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors duration-200"
+              className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-colors duration-200"
             >
               Falar com Especialista
             </a>

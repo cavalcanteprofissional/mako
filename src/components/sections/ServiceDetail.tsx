@@ -33,14 +33,14 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
                   {service.name}
                 </h2>
                 {service.price && (
-                  <p className="text-xl text-blue-600 font-semibold">
+                  <p className="text-xl text-primary-600 font-semibold">
                     A partir de {service.price}
                   </p>
                 )}
               </div>
               
-              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center">
+                <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconPath(service.icon)} />
                 </svg>
               </div>

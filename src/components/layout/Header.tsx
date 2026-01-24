@@ -92,7 +92,7 @@ export default function Header() {
                 />
               </div>
               <div className="hidden sm:block">
-                <h1 className="text-xl lg:text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h1 className="text-xl lg:text-2xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
                   Mako
                 </h1>
                 <p className="text-xs lg:text-sm text-gray-600 hidden lg:block">
@@ -107,7 +107,7 @@ export default function Header() {
                 <div key={item.name} className="relative">
                   <Link
                     href={item.href}
-                    className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center"
+                    className="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 flex items-center"
                     onClick={(e) => handleDropdownClick(e, item.name)}
                   >
                     {item.name}
@@ -136,7 +136,7 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMobileMenu}
-              className="lg:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
+              className="lg:hidden p-2 text-gray-700 hover:text-primary-600 transition-colors"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -156,7 +156,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                className="block py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}

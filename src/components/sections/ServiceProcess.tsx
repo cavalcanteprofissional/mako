@@ -28,19 +28,19 @@ export default function ServiceProcess({ process, title, description }: ServiceP
             <div key={step.id} className="relative">
               {/* Process Line */}
               {index < process.length - 1 && (
-                <div className="absolute left-8 top-24 w-0.5 h-full bg-blue-200 hidden md:block" />
+                <div className="absolute left-8 top-24 w-0.5 h-full bg-primary-200 hidden md:block" />
               )}
 
               <div className="flex flex-col md:flex-row items-start gap-8 mb-12 md:mb-16">
                 {/* Step Number */}
                 <div className="flex items-center justify-center">
                   <div className="relative">
-                    <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                       {index + 1}
                     </div>
                     {/* Step Icon */}
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-white rounded-full shadow-soft flex items-center justify-center">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconPath(step.icon)} />
                       </svg>
                     </div>
@@ -83,7 +83,7 @@ export default function ServiceProcess({ process, title, description }: ServiceP
 
           {/* Process Summary */}
           <div className="mt-16 text-center">
-            <div className="bg-blue-50 rounded-lg p-8">
+            <div className="bg-primary-50 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Garantia de <span className="text-gradient">Qualidade</span> em Cada Etapa
               </h3>
@@ -93,7 +93,7 @@ export default function ServiceProcess({ process, title, description }: ServiceP
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-3">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
@@ -105,7 +105,7 @@ export default function ServiceProcess({ process, title, description }: ServiceP
                 </div>
 
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-3">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
@@ -117,7 +117,7 @@ export default function ServiceProcess({ process, title, description }: ServiceP
                 </div>
 
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-3">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
                     </svg>
@@ -130,7 +130,7 @@ export default function ServiceProcess({ process, title, description }: ServiceP
               </div>
 
               {/* Final CTA */}
-              <div className="mt-8 pt-8 border-t border-blue-200">
+              <div className="mt-8 pt-8 border-t border-primary-200">
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">
                   Pronto para iniciar seu projeto?
                 </h4>

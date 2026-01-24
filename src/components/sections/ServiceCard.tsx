@@ -14,8 +14,8 @@ export default function ServiceCard({ service }: ServiceCardProps) {
     <Card padding="lg" hover className="h-full group">
       {/* Service Header */}
       <div className="flex items-start justify-between mb-6">
-        <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-          <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center">
+          <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconPath(service.icon)} />
           </svg>
         </div>
@@ -28,7 +28,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       </div>
 
       {/* Service Content */}
-      <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+      <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
         {service.name}
       </h3>
       
@@ -56,7 +56,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
         <Button 
           variant="outline" 
           size="sm"
-          className="group-hover:bg-blue-600 group-hover:text-white transition-all duration-200"
+          className="group-hover:bg-primary-600 group-hover:text-white transition-all duration-200"
         >
           Ver Detalhes
           <ArrowRight className="w-4 h-4 ml-1" />

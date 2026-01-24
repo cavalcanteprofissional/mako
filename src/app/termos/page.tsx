@@ -16,7 +16,7 @@ export default function TermosPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-16">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -25,7 +25,7 @@ export default function TermosPage() {
             <h1 className="text-4xl font-bold mb-6">
               Termos de <span className="text-yellow-400">Serviço</span>
             </h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-primary-100">
               Condições gerais para utilização de nossos serviços
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function TermosPage() {
             <div className="space-y-6">
               <Card padding="lg">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center">
-                  <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3 text-white text-sm font-bold">1</span>
+                  <span className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center mr-3 text-white text-sm font-bold">1</span>
                   Objeto dos Serviços
                 </h3>
                 <p className="text-gray-600">
@@ -61,7 +61,7 @@ export default function TermosPage() {
 
               <Card padding="lg">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center">
-                  <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3 text-white text-sm font-bold">2</span>
+                  <span className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center mr-3 text-white text-sm font-bold">2</span>
                   Aceitação dos Termos
                 </h3>
                 <p className="text-gray-600">
@@ -72,7 +72,7 @@ export default function TermosPage() {
 
               <Card padding="lg">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center">
-                  <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3 text-white text-sm font-bold">3</span>
+                  <span className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center mr-3 text-white text-sm font-bold">3</span>
                   Propostas e Orçamentos
                 </h3>
                 <p className="text-gray-600">
@@ -83,7 +83,7 @@ export default function TermosPage() {
 
               <Card padding="lg">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center">
-                  <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3 text-white text-sm font-bold">4</span>
+                  <span className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center mr-3 text-white text-sm font-bold">4</span>
                   Formas de Pagamento
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -118,7 +118,7 @@ export default function TermosPage() {
               </Card>
 
               <Card padding="lg">
-                <h3 className="font-semibold text-gray-900 mb-4 flex items-center text-blue-600">
+                <h3 className="font-semibold text-gray-900 mb-4 flex items-center text-primary-600">
                   <AlertCircle className="w-5 h-5 mr-2" />
                   Obrigações do Cliente
                 </h3>
@@ -139,7 +139,7 @@ export default function TermosPage() {
             <div className="space-y-4">
               <Card padding="lg">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center">
-                  <Scale className="w-5 h-5 mr-2 text-blue-600" />
+                  <Scale className="w-5 h-5 mr-2 text-primary-600" />
                   Garantia dos Serviços
                 </h3>
                 <ul className="space-y-2 text-gray-600">
@@ -152,7 +152,7 @@ export default function TermosPage() {
 
               <Card padding="lg">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center">
-                  <Clock className="w-5 h-5 mr-2 text-blue-600" />
+                  <Clock className="w-5 h-5 mr-2 text-primary-600" />
                   Suporte Técnico
                 </h3>
                 <ul className="space-y-2 text-gray-600">
@@ -192,14 +192,14 @@ export default function TermosPage() {
             <div className="space-y-2">
               <a
                 href="mailto:contratos@mako.ind.br"
-                className="text-blue-600 hover:text-blue-700 font-medium"
+                className="text-primary-600 hover:text-primary-700 font-medium"
               >
                 contratos@mako.ind.br
               </a>
               <br />
               <a
                 href="tel:558532145678"
-                className="text-blue-600 hover:text-blue-700 font-medium"
+                className="text-primary-600 hover:text-primary-700 font-medium"
               >
                 (85) 3214-5678
               </a>
