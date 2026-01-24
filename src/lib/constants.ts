@@ -45,7 +45,6 @@ export const navigation = {
   main: [
     { name: 'Home', href: '/' },
     { name: 'Empresa', href: '/empresa' },
-    { name: 'Produtos', href: '/produtos' },
     { name: 'Serviços', href: '/servicos' },
     { name: 'Contato', href: '/contato' },
   ],

@@ -1,39 +1,4 @@
-export interface Product {
-  id: string
-  slug: string
-  name: string
-  category: ProductCategory
-  description: string
-  fullDescription: string
-  image: string
-  images: string[]
-  price?: number
-  specifications: ProductSpecification[]
-  features: string[]
-  applications: string[]
-  datasheet?: string
-  manual?: string
-  inStock: boolean
-  featured: boolean
-  tags: string[]
-  createdAt: Date
-  updatedAt: Date
-}
 
-export interface ProductSpecification {
-  name: string
-  value: string
-  unit?: string
-}
-
-export type ProductCategory = 
-  | 'clps'
-  | 'sensores'
-  | 'atuadores'
-  | 'painels'
-  | 'software'
-  | 'interfaces'
-  | 'comunicacao'
 
 export interface Service {
   id: string

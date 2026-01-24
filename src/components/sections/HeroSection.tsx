@@ -24,8 +24,8 @@ export default function HeroSection() {
         href: '/contato',
       },
       secondaryCta: {
-        text: 'Conheça nossos produtos',
-        href: '/produtos',
+        text: 'Fale com Especialista',
+        href: '/contato',
       },
     },
     {

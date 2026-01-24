@@ -1,6 +1,5 @@
 import HeroSection from '@/components/sections/HeroSection'
 import DiferenciaisSection from '@/components/sections/DiferenciaisSection'
-import ProdutosDestaqueSection from '@/components/sections/ProdutosDestaqueSection'
 import ClientesSection from '@/components/sections/ClientesSection'
 import { Section } from '@/components/ui'
 
@@ -9,7 +8,6 @@ export default function Home() {
     <>
       <HeroSection />
       <DiferenciaisSection />
-      <ProdutosDestaqueSection />
       <ClientesSection />
       
       {/* CTA Final */}
