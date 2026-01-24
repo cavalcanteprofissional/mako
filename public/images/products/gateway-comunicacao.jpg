@@ -1,0 +1,52 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0f4f8"/>
+  
+  <!-- Comunicação Placeholder -->
+  <rect x="50" y="50" width="300" height="200" fill="#333"/>
+  
+  <!-- Network devices -->
+  <rect x="80" y="80" width="80" height="60" rx="5" fill="#0056A8"/>
+  <rect x="160" y="100" width="80" height="60" rx="5" fill="#FF6B00"/>
+  <rect x="240" y="80" width="80" height="60" rx="5" fill="#0056A8"/>
+  
+  <!-- LEDs nos dispositivos -->
+  <circle cx="100" cy="110" r="3" fill="#00ff00"/>
+  <circle cx="120" cy="110" r="3" fill="#00ff00"/>
+  <circle cx="140" cy="110" r="3" fill="#ffff00"/>
+  
+  <circle cx="180" cy="130" r="3" fill="#00ff00"/>
+  <circle cx="200" cy="130" r="3" fill="#00ff00"/>
+  <circle cx="220" cy="130" r="3" fill="#ff0000"/>
+  
+  <circle cx="260" cy="110" r="3" fill="#00ff00"/>
+  <circle cx="280" cy="110" r="3" fill="#00ff00"/>
+  <circle cx="300" cy="110" r="3" fill="#00ff00"/>
+  
+  <!-- Linhas de conexão -->
+  <path d="M160 130 L 160 160 L 200 160 L 200 160" stroke="#00ff00" stroke-width="2"/>
+  <path d="M240 110 L 240 160 L 200 160" stroke="#00ff00" stroke-width="2"/>
+  <path d="M120 140 L 120 160 L 200 160" stroke="#ffff00" stroke-width="2"/>
+  
+  <!-- Central hub -->
+  <circle cx="200" cy="160" r="15" fill="#666"/>
+  <circle cx="200" cy="160" r="8" fill="#00ff00"/>
+  
+  <!-- Antenas -->
+  <line x1="90" y1="80" x2="90" y2="60" stroke="#333" stroke-width="3"/>
+  <line x1="270" y1="80" x2="270" y2="60" stroke="#333" stroke-width="3"/>
+  
+  <!-- Ondas de WiFi -->
+  <path d="M80 55 Q 90 45, 100 55" stroke="#0056A8" stroke-width="2" fill="none"/>
+  <path d="M85 50 Q 90 40, 95 50" stroke="#0056A8" stroke-width="2" fill="none"/>
+  
+  <path d="M260 55 Q 270 45, 280 55" stroke="#0056A8" stroke-width="2" fill="none"/>
+  <path d="M265 50 Q 270 40, 275 50" stroke="#0056A8" stroke-width="2" fill="none"/>
+  
+  <!-- Status indicators -->
+  <rect x="160" y="190" width="80" height="30" fill="#222"/>
+  <text x="200" y="210" font-family="monospace" font-size="10" fill="#00ff00" text-anchor="middle">CONNECTED</text>
+  
+  <!-- Texto -->
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Gateway Industrial</text>
+</svg>
