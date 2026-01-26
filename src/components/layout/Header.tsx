@@ -46,26 +46,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="bg-gray-900 text-white py-2 text-sm">
-        <div className="container-custom">
-          <div className="flex flex-wrap justify-between items-center">
-            <div className="flex items-center space-x-4 text-gray-300">
-              <span className="flex items-center hover:text-white transition-colors">
-                <Phone className="w-4 h-4 mr-1" />
-                {companyInfo.phone}
-              </span>
-              <span className="flex items-center hover:text-white transition-colors">
-                <Mail className="w-4 h-4 mr-1" />
-                {companyInfo.email}
-              </span>
-            </div>
-            <div className="text-gray-400">
-              {companyInfo.workingHours.weekdays}
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       {/* Main Header */}
       <header 

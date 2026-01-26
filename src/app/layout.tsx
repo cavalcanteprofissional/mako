@@ -3,6 +3,7 @@ import { Roboto, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { seo } from "@/lib/constants";
 import Header from "@/components/layout/Header";
+
 import Footer from "@/components/layout/Footer";
 
 const roboto = Roboto({

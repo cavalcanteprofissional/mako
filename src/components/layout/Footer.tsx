@@ -56,7 +56,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-black-900 text-white">
       {/* Main Footer Content */}
       <div className="section-padding">
         <div className="container-custom">
@@ -154,7 +154,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
+       <div className="border-t border-black-800">
         <div className="container-custom py-4">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}

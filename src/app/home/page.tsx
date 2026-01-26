@@ -7,11 +7,6 @@ import CompanyValuesSection from '@/components/sections/CompanyValuesSection'
 export default function Home() {
   return (
     <>
-      <CompanyStatsSection />
-      <HeroSection />
-      <CompanyValuesSection />
-      <DiferenciaisSection />
-      <ClientesSection />
     </>
   )
 }
