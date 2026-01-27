@@ -176,17 +176,14 @@ export default function Footer() {
               >
                 Termos de Uso
               </Link>
-              <div className="flex items-center space-x-2 text-gray-400">
-                <span>Desenvolvido por</span>
-                <Link
-                  href="https://mako.ind.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-400 hover:text-primary-300 transition-colors duration-200"
-                >
-                  Mako Soluções Industriais
-                </Link>
-              </div>
+              <Link
+                href="https://github.com/cavalcanteprofissional"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
+              >
+                Conheça o desenvolvedor
+              </Link>
             </div>
           </div>
         </div>
