@@ -22,7 +22,7 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member) => (
+          {teamMembers.sort((a, b) => a.order - b.order).map((member) => (
             <Card key={member.id} padding="lg" className="text-center group">
               <div className="relative w-32 h-32 mx-auto mb-6">
                 <Image

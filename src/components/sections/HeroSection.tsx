@@ -2,11 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
-import { ArrowRight, Play, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Play, ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react'
 import { companyInfo } from '@/lib/constants'
-import { Button } from '@/components/ui'
-import { formatWhatsApp } from '@/lib/utils'
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -18,7 +15,7 @@ export default function HeroSection() {
       title: 'Soluções em Automação Industrial',
       subtitle: 'Tecnologia, eficiência e confiabilidade para sua indústria',
       description: 'Transforme sua produção com sistemas de automação de última geração',
-      image: '/images/hero/slide-1.jpg',
+      image: '/images/hero/hero-1.jpeg',
       primaryCta: {
         text: 'Solicitar Orçamento',
         href: '/contato',
@@ -33,7 +30,7 @@ export default function HeroSection() {
       title: 'Manutenção Industrial Especializada',
       subtitle: 'Máxima disponibilidade para seus equipamentos',
       description: 'Equipe técnica qualificada e pronto atendimento 24/7',
-      image: '/images/hero/slide-2.jpg',
+      image: '/images/hero/hero-2.png',
       primaryCta: {
         text: 'Serviços de Manutenção',
         href: '/servicos',
@@ -48,7 +45,7 @@ export default function HeroSection() {
       title: 'Projetos Sob Medida',
       subtitle: 'Soluções personalizadas para seu negócio',
       description: 'Do diagnóstico à implementação, acompanhamos cada etapa',
-      image: '/images/hero/slide-3.jpg',
+      image: '/images/hero/hero-3.png',
       primaryCta: {
         text: 'Ver Portfólio',
         href: '/empresa',
@@ -56,6 +53,51 @@ export default function HeroSection() {
       secondaryCta: {
         text: 'Fale com Especialista',
         href: '#contato',
+      },
+    },
+    {
+      id: 4,
+      title: 'Automação e Controle',
+      subtitle: 'Sistemas inteligentes para sua produção',
+      description: 'Aumente a produtividade com tecnologia de ponta',
+      image: '/images/hero/hero-4.jpg',
+      primaryCta: {
+        text: 'Conheça Nossos Serviços',
+        href: '/servicos',
+      },
+      secondaryCta: {
+        text: 'Fale com Especialista',
+        href: '/contato',
+      },
+    },
+    {
+      id: 5,
+      title: 'Instalações Elétricas Industriais',
+      subtitle: 'Segurança e conformidade com normas técnicas',
+      description: 'Projetos e executações dentro dos padrões ABNT',
+      image: '/images/hero/hero-5.jpg',
+      primaryCta: {
+        text: 'Solicitar Orçamento',
+        href: '/contato',
+      },
+      secondaryCta: {
+        text: 'Ver Serviços',
+        href: '/servicos',
+      },
+    },
+    {
+      id: 6,
+      title: 'Montagens Industriais',
+      subtitle: 'Experiência e qualidade comprovada',
+      description: 'Mais de 20 anos de mercado com excelência em montagem',
+      image: '/images/hero/hero-6.jpg',
+      primaryCta: {
+        text: 'Nossa História',
+        href: '/empresa',
+      },
+      secondaryCta: {
+        text: 'Fale Conosco',
+        href: '/contato',
       },
     },
   ]
@@ -142,26 +184,13 @@ export default function HeroSection() {
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  className="bg-primary-600 hover:bg-primary-700 text-white shadow-xl"
+                <button
                   onClick={() => handleWhatsAppClick()}
+                  className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 shadow-xl"
                 >
-                  <span className="flex items-center">
-                    {currentSlideData.primaryCta.text}
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </span>
-                </Button>
-                <Link href={currentSlideData.secondaryCta.href}>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-white text-white hover:bg-white hover:text-gray-900"
-                  >
-                    {currentSlideData.secondaryCta.text}
-                  </Button>
-                </Link>
+                  <MessageCircle className="w-5 h-5" />
+                  <span>Solicite seu orçamento</span>
+                </button>
               </div>
 
               {/* Trust Indicators */}
