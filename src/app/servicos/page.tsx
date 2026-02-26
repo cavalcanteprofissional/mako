@@ -7,10 +7,10 @@ import { Section } from '@/components/ui'
 
 export const metadata: Metadata = {
   title: 'Serviços - Mako Soluções Industriais',
-  description: 'Conheça nossos serviços de automação industrial: projetos, manutenção, consultoria e suporte técnico especializado para sua indústria.',
+  description: 'Conheça nossos serviços de engenharia industrial: Front-End Packages, Projetos Industriais, Obras, Manutenções, Suprimentos e Coordenação de Obras. Referência PMBoK/CPM.',
   openGraph: {
     title: 'Serviços - Mako Soluções Industriais',
-    description: 'Soluções completas em automação industrial para aumentar eficiência e produtividade de sua empresa.',
+    description: 'Soluções completas em engenharia industrial: projetos, obras, manutenções e coordenação. Atuação nacional e internacional com certificação ISO 9001.',
     url: '/servicos',
   },
 }
@@ -29,37 +29,37 @@ export default function ServicosPage() {
               Nossos <span className="text-yellow-400">Serviços</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
-              Transformamos sua indústria com soluções de automação inteligentes e eficientes
+              Transformamos sua indústria com soluções completas de engenharia industrial, desde o planejamento até a execução
             </p>
             
             {/* Service Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
-                  15+
+                  +23
                 </div>
-                <p className="text-primary-100">Anos de Experiência</p>
+                <p className="text-primary-100">Anos de Mercado</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
-                  500+
+                  +200
                 </div>
-                <p className="text-primary-100">Projetos Concluídos</p>
+                <p className="text-primary-100">Projetos Industriais</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
-                  24/7
+                  ISO 9001
                 </div>
-                <p className="text-primary-100">Suporte Técnico</p>
+                <p className="text-primary-100">Certificação</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
-                  100%
+                  PMBoK
                 </div>
-                <p className="text-primary-100">Garantia de Qualidade</p>
+                <p className="text-primary-100">Metodologia</p>
               </div>
             </div>
           </div>
@@ -87,10 +87,10 @@ export default function ServicosPage() {
       <Section background="gradient" padding="lg">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Pronto para <span className="text-yellow-400">Automatizar</span> Sua Indústria?
+            Pronto para <span className="text-yellow-400">Transformar</span> Sua Indústria?
           </h2>
           <p className="text-lg md:text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Entre em contato conosco e descubra como nossas soluções podem transformar seus processos industriais
+            Entre em contato conosco e descubra como nossas soluções de engenharia industrial podem beneficiar seus projetos
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -100,7 +100,7 @@ export default function ServicosPage() {
               Solicitar Orçamento
             </a>
             <a 
-              href="https://wa.me/5585987654321?text=Olá! Gostaria de mais informações sobre os serviços da Mako." 
+              href="https://wa.me/558534932877?text=Olá! Gostaria de mais informações sobre os serviços da Mako." 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-colors duration-200"

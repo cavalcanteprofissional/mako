@@ -7,10 +7,10 @@ import { Section, Card } from '@/components/ui'
 
 export const metadata: Metadata = {
   title: 'Contato - Mako Soluções Industriais',
-  description: 'Entre em contato com a Mako Soluções Industriais para solicitar orçamentos, suporte técnico ou informações sobre nossos serviços de automação industrial.',
+  description: 'Entre em contato com a Mako Soluções Industriais para solicitar orçamentos ou informações sobre nossos serviços de engenharia industrial.',
   openGraph: {
     title: 'Contato - Mako Soluções Industriais',
-    description: 'Entre em contato conosco e descubra como podemos ajudar sua indústria.',
+    description: 'Entre em contato conosco e descubra como podemos ajudar em seus projetos industriais.',
     url: '/contato',
   },
 }
@@ -28,7 +28,7 @@ export default function ContatoPage() {
               Entre em <span className="text-yellow-400">Contato</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-2xl mx-auto">
-              Estamos prontos para transformar sua indústria com soluções de automação inteligentes e eficientes.
+              Estamos prontos para transformar sua indústria com soluções completas de engenharia industrial.
             </p>
             
             {/* Quick Contact Buttons */}

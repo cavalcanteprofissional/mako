@@ -22,10 +22,10 @@ export default function Footer() {
     {
       title: 'Serviços',
       links: [
-        { name: 'Automação Industrial', href: '/servicos#automacao' },
-        { name: 'Manutenção', href: '/servicos#manutencao' },
-        { name: 'Projetos', href: '/servicos#projetos' },
-        { name: 'Treinamento', href: '/servicos#treinamento' },
+        { name: 'Front-End Packages (FEP)', href: '/servicos#fep' },
+        { name: 'Projetos Industriais', href: '/servicos#projetos-industriais' },
+        { name: 'Obras e Instalações', href: '/servicos#obras-instalacoes' },
+        { name: 'Manutenções', href: '/servicos#manutencoes' },
       ],
     },
     {

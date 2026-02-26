@@ -195,10 +195,10 @@ export default function PrivacidadePage() {
               </a>
               <br />
               <a
-                href="tel:558532145678"
+                href="tel:558534932877"
                 className="text-primary-600 hover:text-primary-700 font-medium"
               >
-                (85) 3214-5678
+                +55 85 3493.2877
               </a>
             </div>
           </div>

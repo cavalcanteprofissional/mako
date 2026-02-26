@@ -158,8 +158,8 @@ export default function TermosPage() {
                 <ul className="space-y-2 text-gray-600">
                   <li><strong>24/7 para emergências</strong> (atendimento em 2 horas)</li>
                   <li><strong>Horário comercial</strong>: Seg-Sex 8h-18h, Sábado 8h-12h</li>
-                  <li>Telefones: (85) 3214-5678 / (85) 98765-4321</li>
-                  <li>E-mail: tecnico@mako.ind.br</li>
+                  <li>Telefones: +55 85 3493.2877</li>
+                  <li>E-mail: contato@mako.ind.br</li>
                 </ul>
               </Card>
             </div>
@@ -198,10 +198,10 @@ export default function TermosPage() {
               </a>
               <br />
               <a
-                href="tel:558532145678"
+                href="tel:558534932877"
                 className="text-primary-600 hover:text-primary-700 font-medium"
               >
-                (85) 3214-5678
+                +55 85 3493.2877
               </a>
             </div>
           </div>

@@ -12,13 +12,28 @@ export default function HeroSection() {
   const slides = [
     {
       id: 1,
-      title: 'Soluções em Automação Industrial',
-      subtitle: 'Tecnologia, eficiência e confiabilidade para sua indústria',
-      description: 'Transforme sua produção com sistemas de automação de última geração',
+      title: 'Engenharia Industrial de Excelência',
+      subtitle: 'Qualidade, custo e prazo em projetos de Desenvolvimento, Engenharia & Construção',
+      description: 'Soluções completas em projetos industriais com metodologia PMBoK/CPM e certificação ISO 9001',
       image: '/images/hero/hero-1.jpeg',
       primaryCta: {
         text: 'Solicitar Orçamento',
         href: '/contato',
+      },
+      secondaryCta: {
+        text: 'Nossos Serviços',
+        href: '/servicos',
+      },
+    },
+    {
+      id: 2,
+      title: 'Obras e Instalações Industriais',
+      subtitle: 'Execução com excelência e segurança',
+      description: 'Projetos civis, elétricos, mecânicos e de segurança com conformidade NR10, NR12, NR13, NR18',
+      image: '/images/hero/hero-2.png',
+      primaryCta: {
+        text: 'Serviços',
+        href: '/servicos',
       },
       secondaryCta: {
         text: 'Fale com Especialista',
@@ -26,25 +41,10 @@ export default function HeroSection() {
       },
     },
     {
-      id: 2,
-      title: 'Manutenção Industrial Especializada',
-      subtitle: 'Máxima disponibilidade para seus equipamentos',
-      description: 'Equipe técnica qualificada e pronto atendimento 24/7',
-      image: '/images/hero/hero-2.png',
-      primaryCta: {
-        text: 'Serviços de Manutenção',
-        href: '/servicos',
-      },
-      secondaryCta: {
-        text: 'Contato Emergencial',
-        href: '#contato',
-      },
-    },
-    {
       id: 3,
-      title: 'Projetos Sob Medida',
-      subtitle: 'Soluções personalizadas para seu negócio',
-      description: 'Do diagnóstico à implementação, acompanhamos cada etapa',
+      title: 'Projetos Industriais em BIM',
+      subtitle: 'Tecnologia e inovação para sua indústria',
+      description: 'Modelagem BIM para projetos eficientes, sustentáveis e alinhados às melhores práticas de gestão',
       image: '/images/hero/hero-3.png',
       primaryCta: {
         text: 'Ver Portfólio',

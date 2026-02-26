@@ -9,10 +9,10 @@ import { Section, Card } from '@/components/ui'
 
 export const metadata: Metadata = {
   title: 'Empresa - Mako Soluções Industriais',
-  description: 'Conheça a história, equipe e certificações da Mako Soluções Industriais. Especialistas em automação industrial com mais de 8 anos de experiência.',
+  description: 'Conheça a história, equipe e certificações da Mako Soluções Industriais. Especialistas em engenharia industrial com mais de 23 anos de experiência e certificação ISO 9001.',
   openGraph: {
     title: 'Empresa - Mako Soluções Industriais',
-    description: 'Descubra nossa trajetória de sucesso e a equipe por trás das melhores soluções em automação industrial.',
+    description: 'Descubra nossa trajetória de sucesso, metodologia PMBoK/CPM e a equipe por trás das melhores soluções em engenharia industrial.',
     url: '/empresa',
   },
 }
@@ -35,30 +35,30 @@ export default function EmpresaPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
-                  {companyInfo.founded}
+                  +23
                 </div>
-                <p className="text-primary-100">Anos de Experiência</p>
+                <p className="text-primary-100">Anos de Mercado</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
-                  500+
+                  +200
                 </div>
-                <p className="text-primary-100">Projetos Concluídos</p>
+                <p className="text-primary-100">Projetos Industriais</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
-                  50+
+                  R$ 2bi+
                 </div>
-                <p className="text-primary-100">Clientes Satisfeitos</p>
+                <p className="text-primary-100">Valor Gerenciado</p>
               </div>
               
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
-                  24/7
+                  +50
                 </div>
-                <p className="text-primary-100">Suporte Técnico</p>
+                <p className="text-primary-100">Profissionais</p>
               </div>
             </div>
           </div>
@@ -70,16 +70,16 @@ export default function EmpresaPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Líderes em <span className="text-gradient">Automação Industrial</span>
+              Líderes em <span className="text-gradient">Engenharia Industrial</span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              A Mako Soluções Industriais nasceu da paixão por transformar processos industriais através da tecnologia. 
-              Com sede em Fortaleza-CE, atendemos clientes em todo o território nacional, oferecendo soluções 
-              personalizadas que aumentam a eficiência, segurança e produtividade.
+              A Mako Soluções Industriais nasceu com o propósito de fornecer soluções completas em Engenharia Industrial, 
+              atuando com foco na parceria fornecedor/cliente, priorizando qualidade, custo e prazo em projetos de Desenvolvimento, 
+              Engenharia & Construção.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              Nossa equipe multidisciplinar combina conhecimento técnico profundo com visão estratégica para 
-              desenvolver projetos que vão além da simples automação, criando ecossistemas industriais inteligentes e conectados.
+              Com sede em Fortaleza-CE, atuação nacional e internacional, somos uma extensão do departamento de engenharia 
+              do cliente, com ênfase em alto desempenho técnico, ambiental, humano e financeiro.
             </p>
             
             {/* Company Values */}
@@ -93,32 +93,80 @@ export default function EmpresaPage() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Excelência</h4>
-                  <p className="text-gray-600 text-sm">Buscamos sempre a melhor qualidade em tudo o que fazemos</p>
+                  <h4 className="font-semibold text-gray-900">Foco no cliente e em seus negócios</h4>
+                  <p className="text-gray-600 text-sm">Priorizamos as necessidades e objetivos do cliente</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
                 <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4 3 1 6 1 9c0 2.7 3.4 6.83 8.55 11.54L12 22.99l2.45-2.45C19.6 15.83 23 11.7 23 9c0-3-2-6-6.5-6zM7.5 9c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5S8.33 10.5 7.5 10.5 6 9.83 6 9zm9 0c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5z"/>
+                    <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-1.06 13.54L7.4 12l1.41-1.41 2.12 2.12 4.24-4.24 1.41 1.41-5.64 5.66z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Liderança</h4>
+                  <p className="text-gray-600 text-sm">Guiamos com exemplo e visão estratégica</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Trabalho em equipe de alto desempenho</h4>
+                  <p className="text-gray-600 text-sm">Colaboração para alcançar resultados excepcionais</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13.666.133L2.4 6.213v11.427l11.266 6.08 11.334-6.08V6.36L13.666.133zm5.518 10.133l-5.5 2.987v3.734l5.5 2.987 5.5-2.987v-3.587l-5.5-3.134zm-5.518 5.287L5.359 12.253v-2.12l8.307-4.507 8.334 4.507v2.12l-8.334 4.507z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Pro-atividade</h4>
+                  <p className="text-gray-600 text-sm">Antecipamos soluções e desafios</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/>
                   </svg>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Inovação</h4>
-                  <p className="text-gray-600 text-sm">Estamos sempre em busca de novas tecnologias e soluções</p>
+                  <p className="text-gray-600 text-sm">Buscamos sempre novas tecnologias e soluções</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
                 <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Compromisso</h4>
-                  <p className="text-gray-600 text-sm">Assumimos total responsabilidade pelos resultados</p>
+                  <h4 className="font-semibold text-gray-900">Velocidade</h4>
+                  <p className="text-gray-600 text-sm">Agilidade na entrega de resultados</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Ética</h4>
+                  <p className="text-gray-600 text-sm">Atuamos com integridade e profissionalismo</p>
                 </div>
               </div>
             </div>
