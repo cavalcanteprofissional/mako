@@ -6,10 +6,10 @@ export const companyInfo = {
   founded: '2001',
   phone: '+55 85 3493.2877',
   phoneFormatted: '558534932877',
-  whatsapp: '+55 85 3493.2877',
-  whatsappFormatted: '558534932877',
-  email: 'contato@mako.ind.br',
-  emailTechnical: 'contato@mako.ind.br',
+  whatsapp: '+55 85 9 9159-4599',
+  whatsappFormatted: '558591594599',
+  email: 'comercial@mako.ind.br',
+  emailTechnical: 'comercial@mako.ind.br',
   address: {
     street: 'Av. Bernardo Manuel, 10271, 1º Andar – Salas A e B',
     district: 'Fortaleza',
@@ -30,7 +30,7 @@ export const companyInfo = {
   },
   social: {
     linkedin: 'https://www.linkedin.com/company/makosolucoesindustriais',
-    instagram: 'https://www.instagram.com/mako_solucoes_industriais',
+    instagram: 'https://www.instagram.com/makosolucoesind',
     facebook: 'https://www.facebook.com/makosolucoesindustriais',
   },
   certifications: [

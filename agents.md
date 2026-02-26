@@ -14,10 +14,11 @@
 | **Sede** | Fortaleza – CE, Brasil |
 | **Endereço** | Av. Bernardo Manuel, Nº 10271, 1º Andar – Salas A e B, Fortaleza – CE, CEP: 60.761-281 |
 | **Telefone** | +55 85 3493.2877 |
-| **E-mail** | contato@mako.ind.br |
+| **WhatsApp Comercial** | +55 85 9 9159-4599 |
+| **E-mail** | comercial@mako.ind.br |
 | **Website** | https://mako.ind.br |
 | **LinkedIn** | https://www.linkedin.com/company/makosolucoesindustriais |
-| **Instagram** | https://www.instagram.com/mako_solucoes_industriais |
+| **Instagram** | @makosolucoesind |
 | **Atuação** | Nacional e Internacional |
 | **Certificação** | ISO 9001 (Elaboração de Projetos Industriais) — obtida em 2022 |
 
