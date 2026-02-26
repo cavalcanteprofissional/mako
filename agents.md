@@ -54,6 +54,19 @@ Ser a melhor empresa de soluções em Engenharia Industrial do mercado, consolid
 
 ---
 
+## 🕐 Linha do Tempo
+
+| Ano | Marco | Descrição |
+|---|---|---|
+| **2001** | Fundação | Em Fortaleza, Ceará, em um cenário onde o setor industrial local carecia de empresas especializadas e parcerias estratégicas. |
+| **2012** | Consolidação e Credibilidade | Mais de 200 projetos industriais, com valores somados superiores a R$ 1,5 bilhão de reais. |
+| **2016** | Premiações e Destaques | Reconhecimentos concedidos por líder do setor energético industrial, como Melhor Fornecedor de Serviços, evidenciando qualidade, governança e alto desempenho operacional. |
+| **2022** | Certificação ISO 9001 | Marco técnico crucial. Entre as melhores do Brasil em gestão de qualidade e processos padronizados. |
+| **2023** | Consultoria de Engenharia Integrada — Soluções em BIM | Com BIM, a Mako integra informação, estratégia e engenharia para garantir projetos mais eficientes, sustentáveis e alinhados às melhores práticas de gestão. |
+| **Atual** | Atualmente | Atua como uma extensão do departamento de engenharia do cliente, com ênfase em alto desempenho técnico, ambiental, humano e financeiro. |
+
+---
+
 ## 🛠️ Serviços e Competências
 
 ### 1. Front-End Packages (FEP)
