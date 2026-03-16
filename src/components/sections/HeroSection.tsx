@@ -22,7 +22,7 @@ export default function HeroSection() {
       },
       secondaryCta: {
         text: 'Nossos Serviços',
-        href: '/servicos',
+        href: '/o-que-fazemos',
       },
     },
     {
@@ -33,7 +33,7 @@ export default function HeroSection() {
       image: '/images/hero/hero-2.png',
       primaryCta: {
         text: 'Serviços',
-        href: '/servicos',
+        href: '/o-que-fazemos',
       },
       secondaryCta: {
         text: 'Fale com Especialista',
@@ -48,7 +48,7 @@ export default function HeroSection() {
       image: '/images/hero/hero-3.png',
       primaryCta: {
         text: 'Ver Portfólio',
-        href: '/empresa',
+        href: '/clientes',
       },
       secondaryCta: {
         text: 'Fale com Especialista',
@@ -63,7 +63,7 @@ export default function HeroSection() {
       image: '/images/hero/hero-4.jpg',
       primaryCta: {
         text: 'Conheça Nossos Serviços',
-        href: '/servicos',
+        href: '/o-que-fazemos',
       },
       secondaryCta: {
         text: 'Fale com Especialista',
@@ -82,7 +82,7 @@ export default function HeroSection() {
       },
       secondaryCta: {
         text: 'Ver Serviços',
-        href: '/servicos',
+        href: '/o-que-fazemos',
       },
     },
     {
@@ -93,7 +93,7 @@ export default function HeroSection() {
       image: '/images/hero/hero-6.jpg',
       primaryCta: {
         text: 'Nossa História',
-        href: '/empresa',
+        href: '/clientes',
       },
       secondaryCta: {
         text: 'Fale Conosco',
@@ -154,11 +154,11 @@ export default function HeroSection() {
                 src={slide.image}
                 alt={slide.title}
                 fill
-                className="object-cover"
+                className="object-cover brightness-50"
                 priority={index === 0}
                 quality={90}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
             </div>
           </div>
         ))}

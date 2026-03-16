@@ -1,7 +1,7 @@
 # agents.md — Mako Soluções Industriais
 
 > **Arquivo de referência para agentes de IA**
-> Versão: 1.0 | Fonte: [mako.ind.br](https://mako.ind.br) | Atualizado em: 2025-02
+> Versão: 2.0 | Fonte: [mako.ind.br](https://mako.ind.br) | Atualizado em: 2026-03
 
 ---
 
@@ -62,9 +62,9 @@ Ser a melhor empresa de soluções em Engenharia Industrial do mercado, consolid
 | **2001** | Fundação | Em Fortaleza, Ceará, em um cenário onde o setor industrial local carecia de empresas especializadas e parcerias estratégicas. |
 | **2012** | Consolidação e Credibilidade | Mais de 200 projetos industriais, com valores somados superiores a R$ 1,5 bilhão de reais. |
 | **2016** | Premiações e Destaques | Reconhecimentos concedidos por líder do setor energético industrial, como Melhor Fornecedor de Serviços, evidenciando qualidade, governança e alto desempenho operacional. |
-| **2022** | Certificação ISO 9001 | Marco técnico crucial. Entre as melhores do Brasil em gestão de qualidade e processos padronizados. |
-| **2023** | Consultoria de Engenharia Integrada — Soluções em BIM | Com BIM, a Mako integra informação, estratégia e engenharia para garantir projetos mais eficientes, sustentáveis e alinhados às melhores práticas de gestão. |
-| **Atual** | Atualmente | Atua como uma extensão do departamento de engenharia do cliente, com ênfase em alto desempenho técnico, ambiental, humano e financeiro. |
+| **2022** | Certificação ISO 9001 | Marco técnico crucial. Entre as melhores do Brasil no que tange à gestão de qualidade e processos padronizados. |
+| **2023** | Consultoria de Engenharia Integrada — Soluções em BIM | Com BIM, integramos informação, estratégia e engenharia para garantir projetos mais eficientes, sustentáveis e alinhados às melhores práticas de gestão. |
+| **Ano Atual** | Atualmente | Consolida sua atuação no desenvolvimento de soluções de engenharia que integram excelência técnica, responsabilidade ambiental, valorização humana e eficiência financeira. |
 
 ---
 
@@ -187,20 +187,10 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 ---
 
-## 👥 Perfil de Clientes
-
-- Majoritariamente empresas entre as **10 maiores do mundo** em seus respectivos setores
-- Relações de longa data e parceria contínua
-- Atuação nos estados do Ceará e demais estados brasileiros, além de projetos internacionais
-
----
-
 ## 👔 Liderança e Equipe Executiva
 
 ### Henrique Daniel de Cavalcante Carvalho
 **Cargo:** Sócio-Presidente | Fundador
-
-**Formação:** Engenheiro Civil
 
 **Bio:** Engenheiro Civil, empresário e escritor, é fundador e Sócio-Presidente da empresa. Possui sólida atuação nas áreas de gerenciamento, qualidade total e projetos industriais, acumulando mais de 30 anos de experiência. Sua liderança é marcada por visão estratégica, base técnica consistente e forte orientação para resultados. Ao longo de sua trajetória, desenvolveu equipes de alta performance, consolidando uma cultura organizacional pautada pela competência técnica, ética e valorização de pessoas.
 
@@ -211,8 +201,6 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 ### Carlos Henrique de Cavalcante Carvalho
 **Cargo:** Sócio-Presidente | Especialista em Marketing e Negócios Internacionais
 
-**Formação:** Graduado em Marketing | Especialista em Negócios Internacionais
-
 **Bio:** Empresário, graduado em Marketing e especialista em Negócios Internacionais. Atua nacional e internacionalmente no desenvolvimento de estratégias que fortalecem marcas, ampliam presença institucional e geram oportunidades de negócios de alto valor. Sua atuação integra posicionamento estratégico, branding, relacionamento institucional e desenvolvimento de mercados, contribuindo para que a empresa se destaque de forma consistente e competitiva nos ambientes em que opera.
 
 > *"Conecta pessoas, marcas e mercados com estratégia e criatividade."*
@@ -220,24 +208,73 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 ---
 
 ### Talles Eduardo Almeida de Assis
-**Cargo:** Sócio | Diretor
+**Cargo:** Sócio | Diretor | Engenheiro Civil e de Segurança do Trabalho | MBA Gerenciamento de Projetos
 
-**Formação:** Engenheiro Civil | Engenheiro de Segurança do Trabalho | MBA em Gerenciamento de Projetos
-
-**Bio:** Possui ampla experiência em gestão, concepção e desenvolvimento de projetos industriais. Sua trajetória é marcada por rigor técnico, planejamento estruturado e forte compromisso com segurança, qualidade e conformidade regulatória. Atua de forma estratégica na garantia da confiabilidade, eficiência operacional e excelência das soluções entregues pela empresa.
+**Bio:** Engenheiro Civil e de Segurança do Trabalho, com MBA em Gerenciamento de Projetos. Possui ampla experiência em gestão, concepção e desenvolvimento de projetos industriais. Sua trajetória é marcada por rigor técnico, planejamento estruturado e forte compromisso com segurança, qualidade e conformidade regulatória. Atua de forma estratégica na garantia da confiabilidade, eficiência operacional e excelência das soluções entregues pela empresa.
 
 > *"Sua atuação é orientada pela técnica, responsabilidade e compromisso com resultados sustentáveis."*
 
 ---
 
 ### Andreia Ribeiro Araújo
-**Cargo:** Gerente Financeira
-
-**Formação:** Administradora | MBA em Gestão de Empresas
+**Cargo:** Gerente Financeira | Administradora | MBA em Gestão de Empresas
 
 **Bio:** Profissional com atuação estratégica nas áreas administrativa e financeira, sendo responsável pela gestão, controle e eficiência das atividades corporativas. Possui sólida formação e experiência em Administração de Empresas, com visão sistêmica e capacidade de integrar processos para maximizar desempenho e sustentabilidade organizacional.
 
 > *"Sua liderança é pautada por organização, responsabilidade e visão estratégica, assegurando equilíbrio financeiro e suporte estruturado ao crescimento da empresa."*
+
+---
+
+## 📄 Estrutura de Páginas do Site
+
+### 1. Home (`/`)
+**Componentes:**
+- HeroSection (carrossel com imagens e textos institucionais)
+- CompanyStatsSection (números da empresa)
+- CompanyValuesSection (valores da empresa)
+- AnimatedClientsSection (clientes em destaque)
+
+---
+
+### 2. Quem Somos (`/quem-somos`)
+**Componentes:**
+- TeamSection (equipe executiva)
+- HistorySection (linha do tempo)
+- CertificationsSection (certificações)
+
+---
+
+### 3. O Que Fazemos (`/o-que-fazemos`)
+**Componentes:**
+- Hero interno da página
+- ServiceDetail (serviço em destaque)
+- ServiceProcess (processo de trabalho)
+- ServicesList (lista de todos os serviços)
+
+*Esta página exibe todos os 7 serviços principais da Mako.*
+
+---
+
+### 4. Como Fazemos (`/como-fazemos`)
+**Componentes:**
+- Hero interno da página
+- CertificationsSection (certificações)
+
+---
+
+### 5. Clientes (`/clientes`)
+**Componentes:**
+- Hero interno da página
+- AnimatedClientsSection (carrossel de logos de clientes)
+
+---
+
+### 6. Contato (`/contato`)
+**Componentes:**
+- Hero interno da página
+- ContactForm (formulário de contato)
+- Informações de contato (telefone, WhatsApp, e-mail, endereço)
+- Mapa de localização
 
 ---
 
@@ -260,4 +297,4 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 ---
 
-*Este arquivo foi gerado automaticamente com base nas informações públicas disponíveis em https://mako.ind.br em fevereiro de 2025.*
+*Este arquivo foi atualizado em março de 2026.*

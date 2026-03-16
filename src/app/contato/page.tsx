@@ -25,9 +25,9 @@ export default function ContatoPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Entre em <span className="text-yellow-400">Contato</span>
+              Contato
             </h1>
-            <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
               Estamos prontos para transformar sua indústria com soluções completas de engenharia industrial.
             </p>
             

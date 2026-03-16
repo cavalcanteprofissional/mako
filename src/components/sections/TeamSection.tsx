@@ -16,15 +16,15 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Nossa <span className="text-gradient">Equipe</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Profissionais especializados e dedicados a entregar as melhores soluções em automação industrial
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto text-justify">
+            Engenheiros, técnicos, operários, profissionais das mais diferentes especialidades, todos disponíveis para suprir as necessidades de nossos clientes.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {teamMembers.sort((a, b) => a.order - b.order).map((member) => (
             <Card key={member.id} padding="lg" className="text-center group">
-              <div className="relative w-32 h-32 mx-auto mb-6">
+              <div className="relative w-40 h-40 mx-auto mb-6">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -41,7 +41,7 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
                 {member.role}
               </p>
               
-              <p className="text-gray-600 text-sm mb-6">
+              <p className="text-gray-600 text-sm mb-6 text-justify">
                 {member.bio}
               </p>
               

@@ -1,8 +1,6 @@
 'use client'
 
-import { useState } from 'react'
 import { Card } from '@/components/ui'
-import { ChevronDown, ChevronUp } from 'lucide-react'
 import type { CompanyHistory } from '@/types'
 
 interface HistorySectionProps {
@@ -10,12 +8,6 @@ interface HistorySectionProps {
 }
 
 export default function HistorySection({ history }: HistorySectionProps) {
-  const [expandedYear, setExpandedYear] = useState<string | null>(null)
-
-  const toggleYear = (year: string) => {
-    setExpandedYear(expandedYear === year ? null : year)
-  }
-
   return (
     <section className="py-20 bg-gray-50">
       <div className="container-custom">
@@ -24,7 +16,7 @@ export default function HistorySection({ history }: HistorySectionProps) {
             Nossa <span className="text-gradient">História</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Uma jornada de crescimento e inovação em automação industrial
+            Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação.  A Mako® não só compreende essa definição, como adotou como missão em tudo que fazemos.
           </p>
         </div>
 
@@ -36,55 +28,23 @@ export default function HistorySection({ history }: HistorySectionProps) {
                 <div className="absolute left-8 top-20 w-0.5 h-full bg-primary-200" />
               )}
 
-              <div 
-                className="cursor-pointer"
-                onClick={() => toggleYear(milestone.year)}
-              >
-                <Card 
-                  padding="lg" 
-                  className="relative hover:shadow-medium transition-all duration-300 ml-16"
-                >
-                  {/* Year Badge */}
-                  <div className="absolute -left-16 top-8 bg-primary-600 text-white px-4 py-2 rounded-full font-bold text-lg">
-                    {milestone.year}
-                  </div>
+              <Card padding="lg" className="relative hover:shadow-medium transition-all duration-300 ml-16">
+                {/* Year Badge */}
+                <div className="absolute -left-16 top-8 bg-primary-600 text-white px-4 py-2 rounded-full font-bold text-lg">
+                  {milestone.year}
+                </div>
 
-                  {/* Content */}
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                        {milestone.title}
-                      </h3>
-                      
-                      <p className="text-gray-600 leading-relaxed">
-                        {milestone.description}
-                      </p>
-                    </div>
-
-                    {/* Toggle Button */}
-                    <button className="ml-4 p-2 text-gray-400 hover:text-primary-600 transition-colors">
-                      {expandedYear === milestone.year ? (
-                        <ChevronUp className="w-5 h-5" />
-                      ) : (
-                        <ChevronDown className="w-5 h-5" />
-                      )}
-                    </button>
-                  </div>
-
-                  {/* Expandable Content */}
-                  {expandedYear === milestone.year && milestone.image && (
-                    <div className="mt-6 pt-6 border-t border-gray-200">
-                      <div className="relative h-48 rounded-lg overflow-hidden">
-                        <img
-                          src={milestone.image}
-                          alt={milestone.title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
-                  )}
-                </Card>
-              </div>
+                {/* Content */}
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {milestone.title}
+                  </h3>
+                  
+                  <p className="text-gray-600 leading-relaxed">
+                    {milestone.description}
+                  </p>
+                </div>
+              </Card>
             </div>
           ))}
         </div>

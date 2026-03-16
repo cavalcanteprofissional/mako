@@ -13,19 +13,19 @@ export default function Footer() {
     {
       title: 'Institucional',
       links: [
-        { name: 'Sobre Nós', href: '/empresa' },
-        { name: 'Nossa História', href: '/empresa#historia' },
-        { name: 'Equipe', href: '/empresa#equipe' },
-        { name: 'Certificações', href: '/empresa#certificacoes' },
+        { name: 'Sobre Nós', href: '/quem-somos' },
+        { name: 'Nossa História', href: '/quem-somos' },
+        { name: 'Equipe', href: '/quem-somos' },
+        { name: 'Certificações', href: '/como-fazemos' },
       ],
     },
     {
       title: 'Serviços',
       links: [
-        { name: 'Front-End Packages (FEP)', href: '/servicos#fep' },
-        { name: 'Projetos Industriais', href: '/servicos#projetos-industriais' },
-        { name: 'Obras e Instalações', href: '/servicos#obras-instalacoes' },
-        { name: 'Manutenções', href: '/servicos#manutencoes' },
+        { name: 'Front-End Packages (FEP)', href: '/o-que-fazemos#fep' },
+        { name: 'Projetos Industriais', href: '/o-que-fazemos#projetos-industriais' },
+        { name: 'Obras e Instalações', href: '/o-que-fazemos#obras-instalacoes' },
+        { name: 'Manutenções', href: '/o-que-fazemos#manutencoes' },
       ],
     },
     {

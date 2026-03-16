@@ -3,7 +3,6 @@ import { mockServices } from '@/lib/mockData'
 import ServicesList from '@/components/sections/ServicesList'
 import ServiceDetail from '@/components/sections/ServiceDetail'
 import ServiceProcess from '@/components/sections/ServiceProcess'
-import { Section } from '@/components/ui'
 
 export const metadata: Metadata = {
   title: 'Serviços - Mako Soluções Industriais',
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Serviços - Mako Soluções Industriais',
     description: 'Soluções completas em engenharia industrial: projetos, obras, manutenções e coordenação. Atuação nacional e internacional com certificação ISO 9001.',
-    url: '/servicos',
+    url: '/o-que-fazemos',
   },
 }
 
@@ -26,12 +25,12 @@ export default function ServicosPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Nossos <span className="text-yellow-400">Serviços</span>
+              O Que Fazemos
             </h1>
-            <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
-              Transformamos sua indústria com soluções completas de engenharia industrial, desde o planejamento até a execução
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+              Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação.  A Mako® não só compreende essa definição, como adotou como missão em tudo que fazemos.
             </p>
-            
+
             {/* Service Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
               <div className="text-center">
@@ -82,34 +81,6 @@ export default function ServicosPage() {
 
       {/* All Services List */}
       <ServicesList services={mockServices} />
-
-      {/* CTA Section */}
-      <Section background="gradient" padding="lg">
-        <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Pronto para <span className="text-yellow-400">Transformar</span> Sua Indústria?
-          </h2>
-          <p className="text-lg md:text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Entre em contato conosco e descubra como nossas soluções de engenharia industrial podem beneficiar seus projetos
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/contato" 
-              className="inline-flex items-center px-6 py-3 bg-white text-primary-600 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200"
-            >
-              Solicitar Orçamento
-            </a>
-            <a 
-              href="https://wa.me/558534932877?text=Olá! Gostaria de mais informações sobre os serviços da Mako." 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-colors duration-200"
-            >
-              Falar com Especialista
-            </a>
-          </div>
-        </div>
-      </Section>
     </>
   )
 }

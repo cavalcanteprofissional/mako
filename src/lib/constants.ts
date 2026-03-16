@@ -41,8 +41,10 @@ export const companyInfo = {
 export const navigation = {
   main: [
     { name: 'Home', href: '/' },
-    { name: 'Empresa', href: '/empresa' },
-    { name: 'Serviços', href: '/servicos' },
+    { name: 'Quem Somos', href: '/quem-somos' },
+    { name: 'O Que Fazemos', href: '/o-que-fazemos' },
+    { name: 'Como Fazemos', href: '/como-fazemos' },
+    { name: 'Clientes', href: '/clientes' },
     { name: 'Contato', href: '/contato' },
   ],
   footer: [
