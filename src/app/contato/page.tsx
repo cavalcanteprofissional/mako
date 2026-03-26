@@ -6,10 +6,10 @@ import ContactForm from '@/components/forms/ContactForm'
 import { Section, Card } from '@/components/ui'
 
 export const metadata: Metadata = {
-  title: 'Contato - Mako Soluções Industriais',
-  description: 'Entre em contato com a Mako Soluções Industriais para solicitar orçamentos ou informações sobre nossos serviços de engenharia industrial.',
+  title: 'Contato - Mako® Soluções Industriais',
+  description: 'Entre em contato com a Mako® Soluções Industriais para solicitar orçamentos ou informações sobre nossos serviços de engenharia industrial.',
   openGraph: {
-    title: 'Contato - Mako Soluções Industriais',
+    title: 'Contato - Mako® Soluções Industriais',
     description: 'Entre em contato conosco e descubra como podemos ajudar em seus projetos industriais.',
     url: '/contato',
   },
@@ -21,10 +21,10 @@ export default function ContatoPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
+      <section className="bg-gradient-to-br from-primary-500 via-primary-700 to-primary-900 text-white py-20">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Contato
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
@@ -34,7 +34,7 @@ export default function ContatoPage() {
             {/* Quick Contact Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={`https://wa.me/${companyInfo.whatsappFormatted}?text=${encodeURIComponent('Olá! Gostaria de mais informações sobre os serviços da Mako.')}`}
+                href={`https://wa.me/${companyInfo.whatsappFormatted}?text=${encodeURIComponent('Olá! Gostaria de mais informações sobre os serviços da Mako®.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors duration-200"
@@ -153,7 +153,7 @@ export default function ContatoPage() {
             <div className="relative h-96 bg-gray-200 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-primary-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Mako Soluções Industriais</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Mako® Soluções Industriais</h3>
                 <p className="text-gray-600 mb-4">{companyInfo.address.fullAddress}</p>
                 <a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyInfo.address.fullAddress)}`}

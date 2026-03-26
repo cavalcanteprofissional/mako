@@ -3,10 +3,10 @@ import { Section, Card } from '@/components/ui'
 import { Shield, Eye, Database, User, Lock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade - Mako Soluções Industriais',
+  title: 'Política de Privacidade - Mako® Soluções Industriais',
   description: 'Conheça nossa política de privacidade e proteção de dados. Compromisso total com a segurança das suas informações.',
   openGraph: {
-    title: 'Política de Privacidade - Mako Soluções Industriais',
+    title: 'Política de Privacidade - Mako® Soluções Industriais',
     description: 'Compromisso com a proteção e privacidade dos dados de nossos clientes e parceiros.',
     url: '/privacidade',
   },
@@ -37,7 +37,7 @@ export default function PrivacidadePage() {
           {/* Introduction */}
           <div className="mb-12">
             <p className="text-gray-600 leading-relaxed">
-              Na Mako Soluções Industriais, levamos a privacidade e a proteção dos seus dados muito a sério. 
+              Na Mako® Soluções Industriais, levamos a privacidade e a proteção dos seus dados muito a sério. 
               Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos as informações 
               pessoais de nossos clientes, parceiros e visitantes de nosso site.
             </p>

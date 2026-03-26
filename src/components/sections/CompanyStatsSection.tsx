@@ -66,7 +66,7 @@ export default function CompanyStatsSection({ className = '' }: CompanyStatsSect
         {/* Trust Indicators */}
         <div className="bg-primary-50 rounded-lg p-8">
           <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
-            Por que Empresas <span className="text-primary-600">Confiam</span> na Mako?
+            Por que Empresas <span className="text-primary-600">Confiam</span> na Mako®?
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -4,10 +4,10 @@ import { Award, Calendar, CheckCircle, Star, Shield } from 'lucide-react'
 import { mockCertifications } from '@/lib/mockData'
 
 export const metadata: Metadata = {
-  title: 'Certificações - Mako Soluções Industriais',
-  description: 'Conheça todas as certificações da Mako. ISO 9001, NR-12, ABNT NBR 5410 e mais. Qualidade e segurança comprovadas.',
+  title: 'Certificações - Mako® Soluções Industriais',
+  description: 'Conheça todas as certificações da Mako®. ISO 9001, NR-12, ABNT NBR 5410 e mais. Qualidade e segurança comprovadas.',
   openGraph: {
-    title: 'Certificações - Mako Soluções Industriais',
+    title: 'Certificações - Mako® Soluções Industriais',
     description: 'Nossas certificações garantem a qualidade e segurança de nossos serviços.',
     url: '/certificacoes',
   },
@@ -315,7 +315,7 @@ export default function CertificacoesPage() {
               Solicitar Orçamento
             </a>
             <a 
-              href="https://wa.me/5585987654321?text=Olá! Gostaria de saber mais sobre as certificações da Mako." 
+              href="https://wa.me/5585987654321?text=Olá! Gostaria de saber mais sobre as certificações da Mako®." 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-colors duration-200"

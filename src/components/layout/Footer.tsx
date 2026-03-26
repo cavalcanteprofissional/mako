@@ -13,10 +13,11 @@ export default function Footer() {
     {
       title: 'Institucional',
       links: [
-        { name: 'Sobre Nós', href: '/quem-somos' },
-        { name: 'Nossa História', href: '/quem-somos' },
-        { name: 'Equipe', href: '/quem-somos' },
-        { name: 'Certificações', href: '/como-fazemos' },
+        { name: 'Quem Somos', href: '/quem-somos' },
+        { name: 'O Que Fazemos', href: '/o-que-fazemos' },
+        { name: 'Como Fazemos', href: '/como-fazemos' },
+        { name: 'Clientes', href: '/clientes' },
+        { name: 'Contato', href: '/contato' },
       ],
     },
     {
@@ -67,23 +68,20 @@ export default function Footer() {
                 <div className="relative w-10 h-10">
                   <Image
                     src="/images/logo-white.svg"
-                    alt="Mako Logo"
+                    alt="Mako® Logo"
                     fill
                     className="object-contain"
                   />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">
-                    {companyInfo.name}
+                    Mako®
                   </h3>
                   <p className="text-sm text-gray-400">
                     Soluções Industriais
                   </p>
                 </div>
               </div>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                {companyInfo.description}
-              </p>
               
               {/* Contact Info */}
               <div className="space-y-3">
@@ -164,18 +162,6 @@ export default function Footer() {
 
             {/* Bottom Links */}
             <div className="flex items-center space-x-6 text-sm">
-              <Link
-                href="/privacidade"
-                className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
-              >
-                Política de Privacidade
-              </Link>
-              <Link
-                href="/termos"
-                className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
-              >
-                Termos de Uso
-              </Link>
               <Link
                 href="https://github.com/cavalcanteprofissional"
                 target="_blank"

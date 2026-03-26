@@ -15,12 +15,12 @@ const clients: Client[] = Array.from({ length: 39 }, (_, i) => ({
 }))
 
 export default function AnimatedClientsSection() {
-  const clientsForScroll = [...clients, ...clients]
+  const clientsForScroll = [...clients, ...clients, ...clients]
 
   return (
-    <section className="py-16 bg-white overflow-hidden">
-      <div className="container-custom">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+    <section className="py-16 bg-white overflow-hidden w-full">
+      <div className="w-full">
+        <div className="text-center max-w-3xl mx-auto mb-12 px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Empresas que <span className="text-gradient">Inspiram</span>
           </h2>
@@ -29,12 +29,12 @@ export default function AnimatedClientsSection() {
           </p>
         </div>
 
-        <div className="relative">
+        <div className="relative w-full">
           <div className="relative overflow-hidden mb-8">
             <div
               className="flex space-x-12 animate-scroll-slow"
               style={{
-                animation: 'scroll-left 29s linear infinite',
+                animation: 'scroll-left 25s linear infinite',
               }}
             >
               {clientsForScroll.map((client, index) => (
@@ -42,7 +42,7 @@ export default function AnimatedClientsSection() {
                   key={`${client.id}-row1-${index}`}
                   className="flex-shrink-0 relative w-24 h-24 group"
                 >
-                  <div className="w-full h-full rounded-xl shadow-soft flex items-center justify-center p-3 group-hover:shadow-medium transition-all duration-300 group-hover:scale-105">
+                  <div className="w-full h-full flex items-center justify-center p-3 group-hover:scale-105 transition-all duration-300">
                     <Image
                       src={client.image}
                       alt={client.name}
@@ -65,7 +65,7 @@ export default function AnimatedClientsSection() {
             <div
               className="flex space-x-12 animate-scroll-slow"
               style={{
-                animation: 'scroll-right 37s linear infinite',
+                animation: 'scroll-right 30s linear infinite',
               }}
             >
               {clientsForScroll.slice().reverse().map((client, index) => (
@@ -73,7 +73,7 @@ export default function AnimatedClientsSection() {
                   key={`${client.id}-row2-${index}`}
                   className="flex-shrink-0 relative w-24 h-24 group"
                 >
-                  <div className="w-full h-full rounded-xl shadow-soft flex items-center justify-center p-3 group-hover:shadow-medium transition-all duration-300 group-hover:scale-105">
+                  <div className="w-full h-full flex items-center justify-center p-3 group-hover:scale-105 transition-all duration-300">
                     <Image
                       src={client.image}
                       alt={client.name}
@@ -101,13 +101,13 @@ export default function AnimatedClientsSection() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-33.333%);
           }
         }
 
         @keyframes scroll-right {
           0% {
-            transform: translateX(-50%);
+            transform: translateX(-33.333%);
           }
           100% {
             transform: translateX(0);

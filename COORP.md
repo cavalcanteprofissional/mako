@@ -1,4 +1,4 @@
-# agents.md — Mako Soluções Industriais
+# COORP.md — Mako® Soluções Industriais
 
 > **Arquivo de referência para agentes de IA**
 > Versão: 2.0 | Fonte: [mako.ind.br](https://mako.ind.br) | Atualizado em: 2026-03
@@ -9,7 +9,7 @@
 
 | Campo | Valor |
 |---|---|
-| **Nome Completo** | Mako Soluções Industriais |
+| **Nome Completo** | Mako® Soluções Industriais |
 | **Fundação** | 2001 |
 | **Sede** | Fortaleza – CE, Brasil |
 | **Endereço** | Av. Bernardo Manuel, Nº 10271, 1º Andar – Salas A e B, Fortaleza – CE, CEP: 60.761-281 |
@@ -148,7 +148,7 @@ Referência: **PMBoK (Project Management Body of Knowledge — PMI)** e **CPM (C
 - Gerenciamento dos Riscos
 - Gerenciamento das Aquisições
 
-A Mako atua em todas as fases do ciclo de vida de um projeto: concepção → planejamento → execução → controle → encerramento.
+A Mako® atua em todas as fases do ciclo de vida de um projeto: concepção → planejamento → execução → controle → encerramento.
 
 ### Planejamento Estratégico de Investimentos
 Ferramentas aplicadas:
@@ -161,7 +161,7 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 - Descentralização da cadeia de comando
 - Maior autonomia para tomada de decisões
-- Plano de Desenvolvimento de Pessoas — MAKO (treinamento, capacitação, parcerias com instituições de ensino técnico e superior)
+- Plano de Desenvolvimento de Pessoas — Mako®® (treinamento, capacitação, parcerias com instituições de ensino técnico e superior)
 
 ---
 
@@ -173,6 +173,72 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 - Compromisso com segurança como item mandatório
 - Soluções personalizadas para cada cliente
 - Ambiente que inspira paixão e potencial máximo dos profissionais
+
+---
+
+## 🔐 Política de Segurança
+
+A Mako®®, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde e segurança de seus empregados, clientes, fornecedores e comunidade, assim como para o Meio Ambiente.
+
+### Programa Mako®® de SMS
+
+Através do Programa Mako®® de SMS, com suas **5 premissas e 22 princípios**, além de suas respectivas ferramentas, a Mako®® promoverá:
+
+- Condições saudáveis de trabalho
+- Treinamento em práticas seguras
+- Informações para controle de riscos
+- Proteção ao Meio Ambiente
+
+### Responsabilidades
+
+Todos os funcionários, da alta direção à operação, são responsáveis pela:
+
+- Segurança de seus colegas e subordinados
+- Proteção ao meio ambiente nas atividades sob seu controle
+
+### Compromissos
+
+- Operar com todas as documentações e registros exigidos pela legislação vigente
+- Efetuar as revisões necessárias e disseminar as informações
+- Buscar sempre o alto padrão de excelência em SMS
+- Promover melhoria contínua, desenvolvimento de pessoas e melhores práticas em todos os níveis da organização
+
+---
+
+## 🏆 Política de Qualidade
+
+A Mako®® tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à satisfação total de seus clientes, funcionários, parceiros, fornecedores, meio ambiente e sócios cotistas.
+
+### Compromisso
+
+A Mako®® se compromete em suportar essa política de qualidade através de:
+- Ações de treinamento aos funcionários e parceiros
+- Melhoria contínua de seus padrões
+
+### Sistema de Qualidade
+
+Os princípios e procedimentos do Sistema de Qualidade Mako®® serão as bases dos controles necessários para atingir um padrão mundial de qualidade nos produtos e serviços.
+
+### Responsabilidades
+
+Todos os funcionários da Mako®® são responsáveis por cumprir os requisitos aplicáveis, as premissas, procedimentos e melhores práticas escritas e não escritas dessa política.
+
+---
+
+## 💼 Trabalhe Conosco
+
+### Candidature-se
+
+Faça sua candidatura através do site:
+- **[Vagas Mako®®](https://makosolucoes.vagas.solides.com.br)**
+
+### Envie seu Currículo
+
+Para candidatar-se por e-mail, envie seu currículo com:
+- Título da vaga no assunto
+- Pretensão salarial no corpo do e-mail
+
+**E-mail:** selecao@mako.ind.br
 
 ---
 
@@ -251,7 +317,7 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 - ServiceProcess (processo de trabalho)
 - ServicesList (lista de todos os serviços)
 
-*Esta página exibe todos os 7 serviços principais da Mako.*
+*Esta página exibe todos os 7 serviços principais da Mako®.*
 
 ---
 
@@ -278,6 +344,33 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 ---
 
+## 🎨 Padrões de Design
+
+### Marca
+Em todas as menções à marca, utilizar **Mako®** (com símbolo de registro). Isso inclui:
+- Textos institucionais
+- Títulos e subtítulos
+- Descrições
+- Metadados (SEO)
+- Componentes de UI
+
+Exceções: URLs de domínio, e-mails e联系方式 técnicas (ex: @mako.ind.br).
+
+### Paleta de Cores
+O projeto deve utilizar o gradiente de **#46ae4d** para **#113c21** como padrão principal em todo o projeto:
+
+- **Cor primária (início do gradiente):** `#46ae4d` (verde mais claro)
+- **Cor secundária (fim do gradiente):** `#113c21` (verde escuro)
+
+Este gradiente deve ser aplicado em:
+- Elementos visuais principais
+- Backgrounds de seções
+- Elementos decorativos
+- Destaques e call-to-actions
+- Qualquer outro elemento visual do projeto
+
+---
+
 ## 📋 Instruções para Agentes de IA
 
 ### Tom e Postura
@@ -294,6 +387,24 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 ### Palavras-Chave Relevantes
 `engenharia industrial` · `projetos industriais` · `BIM` · `ISO 9001` · `PMBoK` · `CAPEX` · `obras industriais` · `manutenção industrial` · `suprimentos` · `licença ambiental` · `Fortaleza` · `Ceará` · `front-end package` · `fiscalização de obras` · `segurança do trabalho`
+
+---
+
+## 🏆 Certificações e Compliance
+
+### Certificação de Gestão
+
+| Certificação | Descrição | Emissor | Ano de Obtenção | Validade |
+|-------------|-----------|----------|-----------------|----------|
+| **ISO 9001:2015** | Sistema de Gestão da Qualidade para Elaboração de Projetos Industriais | ABNT | 2022 | 25/11/2025 |
+
+### Links Oficiais
+
+| Recurso | Link |
+|---------|------|
+| Certificado ISO 9001 | https://mako.ind.br/wp-content/uploads/2024/12/9-CERTIFICADO-ISO9001.pdf |
+| Política de Segurança | https://mako.ind.br/politica-de-seguranca/ |
+| Política de Qualidade | https://mako.ind.br/nossa-politica-de-qualidade/ |
 
 ---
 

@@ -1,6 +1,6 @@
 export const companyInfo = {
-  name: 'Mako Soluções Industriais',
-  fullName: 'Mako Soluções Industriais',
+  name: 'Mako® Soluções Industriais',
+  fullName: 'Mako® Soluções Industriais',
   description: 'Soluções completas em Engenharia Industrial',
   cnpj: '04.643.991/0001-81',
   founded: '2001',
@@ -48,8 +48,8 @@ export const navigation = {
     { name: 'Contato', href: '/contato' },
   ],
   footer: [
-    { name: 'Política de Privacidade', href: '/privacidade' },
-    { name: 'Política de Segurança', href: '/seguranca' },
+    { name: 'Política de Qualidade', href: '/politica-de-qualidade' },
+    { name: 'Política de Segurança', href: '/politica-de-seguranca' },
     { name: 'Trabalhe Conosco', href: '/carreiras' },
     { name: 'Certificações', href: '/certificacoes' },
   ],
@@ -94,17 +94,17 @@ export const contactFormFields = {
 
 export const seo = {
   default: {
-    title: 'Mako Soluções Industriais',
+    title: 'Mako® Soluções Industriais',
     description: 'Fornecer soluções completas em Engenharia Industrial, atuando com foco na parceria fornecedor/cliente, priorizando qualidade, custo e prazo em projetos de Desenvolvimento, Engenharia & Construção.',
     keywords: 'engenharia industrial, projetos industriais, BIM, ISO 9001, PMBoK, CAPEX, obras industriais, manutenção industrial, suprimentos, licença ambiental, Fortaleza, Ceará, front-end package, fiscalização de obras, segurança do trabalho',
-    author: 'Mako Soluções Industriais',
+    author: 'Mako® Soluções Industriais',
     image: '/images/og-image.jpg',
     url: 'https://mako.ind.br',
   },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    siteName: 'Mako Soluções Industriais',
+    siteName: 'Mako® Soluções Industriais',
   },
 }
 

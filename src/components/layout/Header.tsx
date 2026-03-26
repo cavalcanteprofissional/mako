@@ -61,12 +61,12 @@ export default function Header() {
             <Link 
               href="/" 
               className="flex items-center space-x-3 group"
-              aria-label="Mako Soluções Industriais"
+              aria-label="Mako® Soluções Industriais"
             >
               <div className="relative w-12 h-12 lg:w-14 lg:h-14">
                 <Image
                   src="/images/logo.svg"
-                  alt="Mako Logo"
+                  alt="Mako® Logo"
                   fill
                   className="object-contain transition-transform duration-300 group-hover:scale-110"
                   priority
@@ -74,7 +74,7 @@ export default function Header() {
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-xl lg:text-2xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
-                  Mako
+                  Mako®
                 </h1>
                 <p className="text-xs lg:text-sm text-gray-600 hidden lg:block">
                   Soluções Industriais

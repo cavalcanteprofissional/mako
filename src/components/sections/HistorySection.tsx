@@ -16,7 +16,7 @@ export default function HistorySection({ history }: HistorySectionProps) {
             Nossa <span className="text-gradient">História</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação.  A Mako® não só compreende essa definição, como adotou como missão em tudo que fazemos.
+            Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação.  A Mako®® não só compreende essa definição, como adotou como missão em tudo que fazemos.
           </p>
         </div>
 

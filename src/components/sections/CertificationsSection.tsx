@@ -1,17 +1,11 @@
 'use client'
 
 import Image from 'next/image'
-import { Card } from '@/components/ui'
-import { Award, Calendar } from 'lucide-react'
-import type { Certification } from '@/types'
+import { CheckCircle } from 'lucide-react'
 
-interface CertificationsSectionProps {
-  certifications: Certification[]
-}
-
-export default function CertificationsSection({ certifications }: CertificationsSectionProps) {
+export default function CertificationsSection() {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -22,47 +16,63 @@ export default function CertificationsSection({ certifications }: Certifications
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {certifications.map((cert) => (
-            <Card key={cert.id} padding="lg" className="text-center group">
-              {/* Certification Image */}
-              <div className="relative w-24 h-24 mx-auto mb-6">
+        {/* Certifications Display */}
+        <div className="max-w-4xl mx-auto">
+          {/* Images Row */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* ISO 9001 Certificate Image */}
+            <a href="/pdf/certifications/certificado.pdf" target="_blank" rel="noopener noreferrer" className="block bg-gray-50 rounded-xl p-8 border-2 border-gray-200 hover:border-primary-400 transition-colors cursor-pointer">
+              <div className="aspect-[4/3] relative flex items-center justify-center">
                 <Image
-                  src={cert.image}
-                  alt={cert.name}
+                  src="/images/certifications/ISO.png"
+                  alt="Certificado ISO 9001:2015"
                   fill
-                  className="object-contain group-hover:scale-110 transition-transform duration-300"
+                  className="object-contain"
                 />
               </div>
+            </a>
 
-              {/* Certification Name */}
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                {cert.name}
-              </h3>
-
-              {/* Description */}
-              <p className="text-gray-600 text-sm mb-4">
-                {cert.description}
-              </p>
-
-              {/* Additional Info */}
-              <div className="space-y-3">
-                {cert.issuer && (
-                  <div className="flex items-center justify-center text-sm text-gray-500">
-                    <Award className="w-4 h-4 mr-2" />
-                    {cert.issuer}
-                  </div>
-                )}
-
-                {cert.validUntil && (
-                  <div className="flex items-center justify-center text-sm text-gray-500">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    Válido até: {cert.validUntil}
-                  </div>
-                )}
+            {/* ABNT Certification Image */}
+            <a href="/pdf/certifications/certificado.pdf" target="_blank" rel="noopener noreferrer" className="block bg-gray-50 rounded-xl p-8 border-2 border-gray-200 hover:border-primary-400 transition-colors cursor-pointer">
+              <div className="aspect-[4/3] relative flex items-center justify-center">
+                <Image
+                  src="/images/certifications/ABNT.png"
+                  alt="Certificação ABNT"
+                  fill
+                  className="object-contain"
+                />
               </div>
-            </Card>
-          ))}
+            </a>
+          </div>
+
+          {/* ISO Description */}
+          <div className="bg-primary-50 rounded-xl p-8">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  ISO 9001:2015 — Sistema de Gestão da Qualidade
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  A Mako® possui a certificação ISO 9001:2015 emitida pela ABNT (Associação Brasileira de Normas Técnicas), que atesta o Sistema de Gestão da Qualidade para Elaboração de Projetos Industriais.
+                </p>
+                <div className="flex flex-wrap gap-4 text-sm text-gray-500">
+                  <span className="flex items-center gap-1">
+                    <CheckCircle className="w-4 h-4 text-primary-600" />
+                    Certificado ABNT NBR ISO 9001:2015
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <CheckCircle className="w-4 h-4 text-primary-600" />
+                    Válido de 25/11/2022 a 25/11/2025
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Trust Indicators */}

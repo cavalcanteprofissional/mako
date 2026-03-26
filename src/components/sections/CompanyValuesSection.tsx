@@ -74,7 +74,7 @@ export default function CompanyValuesSection({ className = '' }: CompanyValuesSe
         {/* Value Proposition */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card padding="lg" className="border-l-4 border-primary-600">
-            <h4 className="text-xl font-bold text-gray-900 mb-4 text-primary-600">Por que escolher a Mako?</h4>
+            <h4 className="text-xl font-bold text-gray-900 mb-4 text-primary-600">Por que escolher a Mako®?</h4>
             <ul className="space-y-3 text-gray-600">
               <li className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0 mt-1" />

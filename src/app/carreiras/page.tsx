@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import { Section, Card } from '@/components/ui'
-import { Users, TrendingUp, Award, Target, MapPin, ArrowRight } from 'lucide-react'
+import { MapPin, ArrowRight, Target } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Trabalhe Conosco - Mako Soluções Industriais',
-  description: 'Junte-se à equipe Mako! Vagas para engenheiros, técnicos e especialistas em automação industrial. Cresça profissionalmente conosco.',
+  title: 'Trabalhe Conosco - Mako® Soluções Industriais',
+  description: 'Junte-se à equipe Mako®! Vagas para engenheiros, técnicos e especialistas em automação industrial. Cresça profissionalmente conosco.',
   openGraph: {
-    title: 'Trabalhe Conosco - Mako Soluções Industriais',
+    title: 'Trabalhe Conosco - Mako® Soluções Industriais',
     description: 'Oportunidades de carreira em automação industrial. Venha fazer parte da nossa equipe.',
     url: '/carreiras',
   },
@@ -16,199 +16,71 @@ export default function CarreirasPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
+      <section className="bg-gradient-to-br from-primary-500 via-primary-700 to-primary-900 text-white py-20">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Users className="w-8 h-8 text-white" />
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Faça Parte da <span className="text-yellow-400">Equipe Mako</span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Trabalhe Conosco
             </h1>
-            <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
-              Junte-se a uma empresa que valoriza talento, inovação e crescimento profissional
+            <p className="text-xl text-white">
+              Venha fazer parte do nosso time.
             </p>
-            
-            {/* Quick Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-2">
-                  50+
-                </div>
-                <p className="text-primary-100">Profissionais</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-2">
-                  8+
-                </div>
-                <p className="text-primary-100">Anos de Mercado</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-2">
-                  15+
-                </div>
-                <p className="text-primary-100">Estados Atendidos</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-2">
-                  100%
-                </div>
-                <p className="text-primary-100">Oportunidades</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Why Work With Us */}
+      {/* How to Apply */}
       <Section padding="lg">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Por que <span className="text-gradient">Trabalhar</span> na Mako?
+              Como <span className="text-gradient">Candidatar-se</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Oferecemos mais do que um emprego: oferecemos uma carreira com desenvolvimento e propósito
+              Escolha a melhor forma para enviar sua candidatura
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card padding="lg" className="text-center">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="w-8 h-8 text-primary-600" />
+                <svg className="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Crescimento</h3>
-              <p className="text-gray-600">
-                Planos de carreira claros com机会idades de desenvolvimento e ascensão profissional
-              </p>
-            </Card>
-
-            <Card padding="lg" className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Award className="w-8 h-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Inovação</h3>
-              <p className="text-gray-600">
-                Trabalhe com tecnologias de ponta em projetos desafiadores e inovadores
-              </p>
-            </Card>
-
-            <Card padding="lg" className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Target className="w-8 h-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Impacto</h3>
-              <p className="text-gray-600">
-                Faça parte da transformação digital da indústria brasileira
-              </p>
-            </Card>
-          </div>
-        </div>
-      </Section>
-
-      {/* Open Positions */}
-      <Section background="gray" padding="lg">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Vagas <span className="text-gradient">Abertas</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Estamos sempre em busca de talentos para integrar nossa equipe
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <Card padding="lg">
-              <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-semibold text-gray-900">Engenheiro de Automação</h3>
-                <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Full-time</span>
-              </div>
-              
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center text-sm text-gray-600">
-                  <MapPin className="w-4 h-4 mr-2" />
-                  Fortaleza, CE (Híbrido)
-                </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <Target className="w-4 h-4 mr-2" />
-                  Sênior/Pleno
-                </div>
-              </div>
-
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Site de Vagas</h3>
               <p className="text-gray-600 mb-6">
-                Projetar e implementar sistemas de automação industrial, programar CLPs, 
-                desenvolver IHMs e otimizar processos produtivos.
+                Faça sua candidatura através do nosso site de vagas
               </p>
-
-              <h4 className="font-semibold text-gray-900 mb-3">Requisitos:</h4>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Formação em Engenharia Elétrica/Eletrônica/Automação</li>
-                <li>• Experiência com CLPs (Siemens, Rockwell, etc.)</li>
-                <li>• Conhecimento em redes industriais</li>
-                <li>• Inglês técnico (diferencial)</li>
-              </ul>
-            </Card>
-
-            <Card padding="lg">
-              <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-semibold text-gray-900">Técnico de Manutenção</h3>
-                <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Full-time</span>
-              </div>
-              
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center text-sm text-gray-600">
-                  <MapPin className="w-4 h-4 mr-2" />
-                  São Paulo, SP (Presencial)
-                </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <Target className="w-4 h-4 mr-2" />
-                  Pleno/Júnior
-                </div>
-              </div>
-
-              <p className="text-gray-600 mb-6">
-                Realizar manutenção preventiva e corretiva em equipamentos industriais, 
-                diagnosticar falhas e garantir máxima disponibilidade operacional.
-              </p>
-
-              <h4 className="font-semibold text-gray-900 mb-3">Requisitos:</h4>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Curso Técnico em Eletrotécnica/Mecânica</li>
-                <li>• Experiência em manutenção industrial</li>
-                <li>• NR-10 e NR-12 atualizadas</li>
-                <li>• Disponibilidade para viagens</li>
-              </ul>
-            </Card>
-          </div>
-
-          {/* CTA for General Applications */}
-          <div className="text-center">
-            <p className="text-gray-600 mb-6">
-              Não encontrou a vaga ideal? Envie seu currículo mesmo assim! 
-              Sempre analisamos perfis talentosos.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="mailto:rh@mako.ind.br"
+                href="https://makosolucoes.vagas.solides.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200"
+              >
+                Candidatar-se
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
+            </Card>
+
+            <Card padding="lg" className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Por E-mail</h3>
+              <p className="text-gray-600 mb-4">
+                Envie seu currículo com título da vaga e pretensão salarial
+              </p>
+              <a 
+                href="mailto:selecao@mako.ind.br"
                 className="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200"
               >
                 Enviar Currículo
                 <ArrowRight className="w-4 h-4 ml-2" />
               </a>
-              <a 
-                href="https://www.linkedin.com/company/mako-solucoes-industriais/jobs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-white text-primary-600 hover:bg-gray-100 border border-primary-600 rounded-lg font-medium transition-colors duration-200"
-              >
-                Ver Todas as Vagas
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
-            </div>
+            </Card>
           </div>
         </div>
       </Section>

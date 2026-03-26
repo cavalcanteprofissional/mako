@@ -64,7 +64,7 @@ export default function DiferenciaisSection() {
             Nossos Diferenciais
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Por que escolher a <span className="text-gradient">Mako</span>
+            Por que escolher a <span className="text-gradient">Mako®</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             Diferenciamo-nos pela combinação de tecnologia avançada, 
