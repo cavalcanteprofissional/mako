@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin, Clock, Navigation } from 'lucide-react'
 import { companyInfo } from '@/lib/constants'
 import ContactForm from '@/components/forms/ContactForm'
 import { Section, Card } from '@/components/ui'
+import MapSection from '@/components/sections/MapSection'
 
 export const metadata: Metadata = {
   title: 'Contato - Mako® Soluções Industriais',
@@ -58,83 +59,64 @@ export default function ContatoPage() {
 
       {/* Contact Information & Form */}
       <Section padding="lg">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Contact Info */}
-          <div className="lg:col-span-1 space-y-6">
-            <div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          {/* Contact Info Sidebar */}
+          <Card padding="lg">
+            <div className="space-y-4">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Informações de Contato</h2>
               
-              <div className="space-y-4">
-                <Card padding="md" className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Endereço</h3>
-                    <p className="text-gray-600 text-sm">{companyInfo.address.fullAddress}</p>
-                  </div>
-                </Card>
+              {/* Endereço */}
+              <div className="flex items-start p-4 bg-gray-50 rounded-lg">
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-primary-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Endereço</h3>
+                  <p className="text-gray-600 text-sm">{companyInfo.address.fullAddress}</p>
+                </div>
+              </div>
 
-                <Card padding="md" className="flex items-start space-x-3">
-                  <Phone className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Telefone</h3>
-                    <p className="text-gray-600 text-sm">
-                      <a href={`tel:${companyInfo.phoneFormatted}`} className="hover:text-primary-600 transition-colors">
-                        {companyInfo.phone}
-                      </a>
-                    </p>
-                  </div>
-                </Card>
+              {/* Telefone */}
+              <div className="flex items-start p-4 bg-gray-50 rounded-lg">
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Phone className="w-6 h-6 text-primary-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Telefone</h3>
+                  <a href={`tel:${companyInfo.phoneFormatted}`} className="text-primary-600 hover:text-primary-700 font-medium text-sm">
+                    {companyInfo.phone}
+                  </a>
+                </div>
+              </div>
 
-                <Card padding="md" className="flex items-start space-x-3">
-                  <Mail className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">E-mail</h3>
-                    <p className="text-gray-600 text-sm">
-                      <a href={`mailto:${companyInfo.email}`} className="hover:text-primary-600 transition-colors">
-                        {companyInfo.email}
-                      </a>
-                    </p>
-                    <p className="text-gray-600 text-sm">
-                      <a href={`mailto:${companyInfo.emailTechnical}`} className="hover:text-primary-600 transition-colors">
-                        {companyInfo.emailTechnical} (Suporte Técnico)
-                      </a>
-                    </p>
-                  </div>
-                </Card>
+              {/* E-mail */}
+              <div className="flex items-start p-4 bg-gray-50 rounded-lg">
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Mail className="w-6 h-6 text-primary-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">E-mail</h3>
+                  <a href={`mailto:${companyInfo.email}`} className="text-primary-600 hover:text-primary-700 font-medium text-sm">
+                    {companyInfo.email}
+                  </a>
+                </div>
+              </div>
 
-                <Card padding="md" className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Horário de Atendimento</h3>
-                    <p className="text-gray-600 text-sm">{companyInfo.workingHours.full}</p>
-                    <p className="text-gray-600 text-sm">Suporte 24/7 para emergências</p>
-                  </div>
-                </Card>
+              {/* Horário */}
+              <div className="flex items-start p-4 bg-gray-50 rounded-lg">
+                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Clock className="w-6 h-6 text-primary-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Horário de Atendimento</h3>
+                  <p className="text-gray-600 text-sm">{companyInfo.workingHours.full}</p>
+                </div>
               </div>
             </div>
-
-            {/* Emergency Contact */}
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="font-semibold text-red-900 mb-2 flex items-center">
-                <Phone className="w-5 h-5 mr-2" />
-                Emergência 24/7
-              </h3>
-              <p className="text-red-700 text-sm mb-3">
-                Para emergências técnicas, entre em contato imediato:
-              </p>
-              <a
-                href={`https://wa.me/${companyInfo.whatsappFormatted}?text=${encodeURIComponent('EMERGÊNCIA! Preciso de suporte técnico imediato.')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 block text-center"
-              >
-                Contato de Emergência
-              </a>
-            </div>
-          </div>
+          </Card>
 
           {/* Contact Form */}
-          <div className="lg:col-span-2">
+          <div>
             <Card padding="lg">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Envie sua Mensagem</h2>
               <ContactForm />
@@ -149,60 +131,23 @@ export default function ContatoPage() {
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Nossa Localização</h2>
           
           <div className="bg-white rounded-lg shadow-medium overflow-hidden">
-            {/* Map Placeholder */}
-            <div className="relative h-96 bg-gray-200 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-primary-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Mako® Soluções Industriais</h3>
-                <p className="text-gray-600 mb-4">{companyInfo.address.fullAddress}</p>
-                <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyInfo.address.fullAddress)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200"
-                >
-                  <Navigation className="w-4 h-4 mr-2" />
-                  Abrir no Google Maps
-                </a>
-              </div>
+            <MapSection 
+              address={companyInfo.address.fullAddress}
+              lat={companyInfo.location.lat}
+              lng={companyInfo.location.lng}
+              companyName="Mako® Soluções Industriais"
+            />
+            <div className="p-4 bg-gray-50 flex justify-center">
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyInfo.address.fullAddress)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200"
+              >
+                <Navigation className="w-4 h-4 mr-2" />
+                Abrir no Google Maps
+              </a>
             </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* FAQ Section */}
-      <Section padding="lg">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Perguntas Frequentes</h2>
-          
-          <div className="space-y-6">
-            <Card padding="lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Qual o tempo médio de atendimento para emergências?</h3>
-              <p className="text-gray-600">
-                Para emergências técnicas, nossa equipe está disponível 24/7 e承诺 responder dentro de 2 horas em áreas metropolitanas e até 4 horas em outras regiões.
-              </p>
-            </Card>
-
-            <Card padding="lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Vocês atendem em todo o Brasil?</h3>
-              <p className="text-gray-600">
-                Sim, atendemos em todo o território nacional. Nossa matriz está em Fortaleza/CE, mas我们有 equipe e parceiros em diversos estados para garantir atendimento rápido.
-              </p>
-            </Card>
-
-            <Card padding="lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Como funciona o processo de orçamento?</h3>
-              <p className="text-gray-600">
-                Após o contato inicial, realizamos uma visita técnica para levantamento detalhado. Em até 5 dias úteis, apresentamos uma proposta completa com escopo, prazos e valores.
-              </p>
-            </Card>
-
-            <Card padding="lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Quais tipos de garantia vocês oferecem?</h3>
-              <p className="text-gray-600">
-                Oferecemos garantia de 12 meses para todos os serviços realizados e garantia estendida conforme fabricante para equipamentos instalados.
-              </p>
-            </Card>
           </div>
         </div>
       </Section>
