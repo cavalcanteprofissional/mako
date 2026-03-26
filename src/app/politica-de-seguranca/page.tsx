@@ -34,7 +34,7 @@ export default function PoliticaSegurancaPage() {
           {/* Introduction */}
           <div className="mb-12">
             <p className="text-gray-600 leading-relaxed">
-              A Mako®®, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo 
+              A Mako®, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo 
               assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde 
               e segurança de seus empregados, clientes, fornecedores e comunidade, assim como para o Meio Ambiente.
             </p>
@@ -42,11 +42,11 @@ export default function PoliticaSegurancaPage() {
 
           {/* SMS Principles */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Programa Mako®® de SMS</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-8">Programa Mako® de SMS</h2>
             <Card padding="lg" className="bg-primary-50 border-l-4 border-primary-500">
               <p className="text-gray-700">
-                Através do Programa Mako®® de SMS, com suas <strong>5 premissas e 22 princípios</strong>, 
-                além de suas respectivas ferramentas, a Mako®® promoverá condições saudáveis de trabalho, 
+                Através do Programa Mako® de SMS, com suas <strong>5 premissas e 22 princípios</strong>, 
+                além de suas respectivas ferramentas, a Mako® promoverá condições saudáveis de trabalho, 
                 esclarecerá e treinará seus empregados em práticas seguras de trabalho, além de promover 
                 informações para controle de riscos no local de trabalho e proteção ao Meio Ambiente.
               </p>

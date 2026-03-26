@@ -18,7 +18,7 @@ export default function ClientesPage() {
               Clientes
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-              A Mako®® atua como uma extensão especializada dos departamentos de engenharia e projetos de seus clientes. Nossa expertise é projetada para empresas que buscam transformar planos industriais complexos em realidade operacional, com eficiência, segurança e conformidade total.
+              A Mako® atua como uma extensão especializada dos departamentos de engenharia e projetos de seus clientes. Nossa expertise é projetada para empresas que buscam transformar planos industriais complexos em realidade operacional, com eficiência, segurança e conformidade total.
             </p>
           </div>
         </div>

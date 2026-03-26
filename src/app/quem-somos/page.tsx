@@ -25,7 +25,7 @@ export default function QuemSomosPage() {
               Quem Somos
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-              A Mako®® foi fundada em 2001, a partir da necessidade identificada no setor industrial local por uma empresa sólida, ética e comprometida, que valorizasse a parceria estratégica entre fornecedores e clientes nas áreas de Projetos, Engenharia e Construção. Desde sua criação, a empresa atua com foco em excelência técnica, governança corporativa e geração sustentável de valor.
+              A Mako® foi fundada em 2001, a partir da necessidade identificada no setor industrial local por uma empresa sólida, ética e comprometida, que valorizasse a parceria estratégica entre fornecedores e clientes nas áreas de Projetos, Engenharia e Construção. Desde sua criação, a empresa atua com foco em excelência técnica, governança corporativa e geração sustentável de valor.
             </p>
           </div>
         </div>

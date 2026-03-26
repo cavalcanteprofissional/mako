@@ -161,7 +161,7 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 - Descentralização da cadeia de comando
 - Maior autonomia para tomada de decisões
-- Plano de Desenvolvimento de Pessoas — Mako®® (treinamento, capacitação, parcerias com instituições de ensino técnico e superior)
+- Plano de Desenvolvimento de Pessoas — Mako® (treinamento, capacitação, parcerias com instituições de ensino técnico e superior)
 
 ---
 
@@ -178,11 +178,11 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 ## 🔐 Política de Segurança
 
-A Mako®®, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde e segurança de seus empregados, clientes, fornecedores e comunidade, assim como para o Meio Ambiente.
+A Mako®, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde e segurança de seus empregados, clientes, fornecedores e comunidade, assim como para o Meio Ambiente.
 
-### Programa Mako®® de SMS
+### Programa Mako® de SMS
 
-Através do Programa Mako®® de SMS, com suas **5 premissas e 22 princípios**, além de suas respectivas ferramentas, a Mako®® promoverá:
+Através do Programa Mako® de SMS, com suas **5 premissas e 22 princípios**, além de suas respectivas ferramentas, a Mako® promoverá:
 
 - Condições saudáveis de trabalho
 - Treinamento em práticas seguras
@@ -207,21 +207,21 @@ Todos os funcionários, da alta direção à operação, são responsáveis pela
 
 ## 🏆 Política de Qualidade
 
-A Mako®® tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à satisfação total de seus clientes, funcionários, parceiros, fornecedores, meio ambiente e sócios cotistas.
+A Mako® tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à satisfação total de seus clientes, funcionários, parceiros, fornecedores, meio ambiente e sócios cotistas.
 
 ### Compromisso
 
-A Mako®® se compromete em suportar essa política de qualidade através de:
+A Mako® se compromete em suportar essa política de qualidade através de:
 - Ações de treinamento aos funcionários e parceiros
 - Melhoria contínua de seus padrões
 
 ### Sistema de Qualidade
 
-Os princípios e procedimentos do Sistema de Qualidade Mako®® serão as bases dos controles necessários para atingir um padrão mundial de qualidade nos produtos e serviços.
+Os princípios e procedimentos do Sistema de Qualidade Mako® serão as bases dos controles necessários para atingir um padrão mundial de qualidade nos produtos e serviços.
 
 ### Responsabilidades
 
-Todos os funcionários da Mako®® são responsáveis por cumprir os requisitos aplicáveis, as premissas, procedimentos e melhores práticas escritas e não escritas dessa política.
+Todos os funcionários da Mako® são responsáveis por cumprir os requisitos aplicáveis, as premissas, procedimentos e melhores práticas escritas e não escritas dessa política.
 
 ---
 
@@ -230,7 +230,7 @@ Todos os funcionários da Mako®® são responsáveis por cumprir os requisitos 
 ### Candidature-se
 
 Faça sua candidatura através do site:
-- **[Vagas Mako®®](https://makosolucoes.vagas.solides.com.br)**
+- **[Vagas Mako®](https://makosolucoes.vagas.solides.com.br)**
 
 ### Envie seu Currículo
 

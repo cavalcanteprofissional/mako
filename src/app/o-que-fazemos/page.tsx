@@ -28,7 +28,7 @@ export default function ServicosPage() {
               O Que Fazemos
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-              Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação.  A Mako®® não só compreende essa definição, como adotou como missão em tudo que fazemos.
+              Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação.  A Mako® não só compreende essa definição, como adotou como missão em tudo que fazemos.
             </p>
 
             {/* Service Stats */}

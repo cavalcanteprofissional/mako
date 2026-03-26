@@ -34,7 +34,7 @@ export default function PoliticaQualidadePage() {
           {/* Introduction */}
           <div className="mb-12">
             <p className="text-gray-600 leading-relaxed">
-              A Mako®® tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à 
+              A Mako® tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à 
               satisfação total de seus clientes, funcionários, parceiros, fornecedores, meio ambiente e sócios cotistas.
             </p>
           </div>
@@ -44,7 +44,7 @@ export default function PoliticaQualidadePage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Nosso Compromisso</h2>
             <Card padding="lg" className="bg-primary-50 border-l-4 border-primary-500">
               <p className="text-gray-700">
-                A Mako®® se compromete em suportar essa política de qualidade através de 
+                A Mako® se compromete em suportar essa política de qualidade através de 
                 <strong> ações de treinamento</strong> aos funcionários e parceiros, e através da 
                 <strong> melhoria contínua</strong> de seus padrões.
               </p>
@@ -53,7 +53,7 @@ export default function PoliticaQualidadePage() {
 
           {/* Quality System */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Sistema de Qualidade Mako®®</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Sistema de Qualidade Mako®</h2>
             <Card padding="lg">
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -61,7 +61,7 @@ export default function PoliticaQualidadePage() {
                 </div>
                 <div>
                   <p className="text-gray-700">
-                    Os princípios e procedimentos do Sistema de Qualidade Mako®® serão as bases dos 
+                    Os princípios e procedimentos do Sistema de Qualidade Mako® serão as bases dos 
                     controles necessários para atingir um <strong>padrão mundial de qualidade</strong> 
                     nos produtos e serviços.
                   </p>
