@@ -3,14 +3,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { companyInfo, navigation } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,22 +20,8 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  useEffect(() => {
-    const handleClickOutside = () => {
-      setActiveDropdown(null)
-    }
-
-    document.addEventListener('click', handleClickOutside)
-    return () => document.removeEventListener('click', handleClickOutside)
-  }, [])
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
-
-  const handleDropdownClick = (e: React.MouseEvent, item: string) => {
-    e.stopPropagation()
-    setActiveDropdown(activeDropdown === item ? null : item)
   }
 
   const handleWhatsAppClick = () => {
@@ -88,8 +73,7 @@ export default function Header() {
                 <div key={item.name} className="relative">
                   <Link
                     href={item.href}
-                    className="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 flex items-center"
-                    onClick={(e) => handleDropdownClick(e, item.name)}
+                    className="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200"
                   >
                     {item.name}
                   </Link>

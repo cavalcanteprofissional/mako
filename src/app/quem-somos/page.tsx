@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { mockTeamMembers, mockCompanyHistory, mockCertifications } from '@/lib/mockData'
+import { mockTeamMembers, mockCompanyHistory } from '@/lib/mockData'
 import TeamSection from '@/components/sections/TeamSection'
 import HistorySection from '@/components/sections/HistorySection'
-import CertificationsSection from '@/components/sections/CertificationsSection'
 
 export const metadata: Metadata = {
   title: 'Quem Somos - Mako® Soluções Industriais',
@@ -36,9 +35,6 @@ export default function QuemSomosPage() {
 
       {/* History Section */}
       <HistorySection history={mockCompanyHistory} />
-
-      {/* Certifications Section */}
-      <CertificationsSection certifications={mockCertifications} />
     </>
   )
 }

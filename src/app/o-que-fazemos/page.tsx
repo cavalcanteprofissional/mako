@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { mockServices } from '@/lib/mockData'
 import ServicesList from '@/components/sections/ServicesList'
 import ServiceDetail from '@/components/sections/ServiceDetail'
-import ServiceProcess from '@/components/sections/ServiceProcess'
 
 export const metadata: Metadata = {
   title: 'Serviços - Mako® Soluções Industriais',
@@ -13,9 +12,6 @@ export const metadata: Metadata = {
     url: '/o-que-fazemos',
   },
 }
-
-// Get first service for detailed view
-const featuredService = mockServices.find(service => service.featured)
 
 export default function ServicosPage() {
   return (
@@ -65,19 +61,8 @@ export default function ServicosPage() {
         </div>
       </section>
 
-      {/* Featured Service Detail */}
-      {featuredService && (
-        <ServiceDetail service={featuredService} />
-      )}
-
-      {/* Service Process */}
-      {featuredService && (
-        <ServiceProcess 
-          process={featuredService.process}
-          title="Como Funciona Nosso Processo"
-          description="Cada projeto segue uma metodologia estruturada para garantir resultados excepcionais e satisfação total do cliente."
-        />
-      )}
+      {/* Featured Services Carousel */}
+      <ServiceDetail services={mockServices} />
 
       {/* All Services List */}
       <ServicesList services={mockServices} />

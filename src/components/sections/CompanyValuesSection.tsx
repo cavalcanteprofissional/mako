@@ -94,7 +94,7 @@ export default function CompanyValuesSection({ className = '' }: CompanyValuesSe
                 <CheckCircle className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0 mt-1" />
                 <div>
                   <h5 className="font-semibold mb-1">Suporte Dedicado</h5>
-                  <p className="text-sm">Equipe técnica disponível 24/7 para garantir máxima operacionalidade</p>
+                  <p className="text-sm">Atendimento prioritário para todas as suas necessidades</p>
                 </div>
               </li>
               <li className="flex items-start">

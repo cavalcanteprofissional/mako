@@ -59,9 +59,9 @@ export default function ContatoPage() {
 
       {/* Contact Information & Form */}
       <Section padding="lg">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Contact Info Sidebar */}
-          <Card padding="lg">
+          <Card padding="lg" className="flex flex-col">
             <div className="space-y-4">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Informações de Contato</h2>
               
@@ -113,41 +113,37 @@ export default function ContatoPage() {
                 </div>
               </div>
             </div>
+
+            {/* Mini Map */}
+            <div className="mt-6">
+              <h3 className="font-semibold text-gray-900 mb-4">Localização</h3>
+              <div className="rounded-lg overflow-hidden h-64">
+                <MapSection 
+                  address={companyInfo.address.fullAddress}
+                  lat={companyInfo.location.lat}
+                  lng={companyInfo.location.lng}
+                  companyName="Mako® Soluções Industriais"
+                />
+              </div>
+              <div className="mt-3 text-center">
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyInfo.address.fullAddress)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-600 hover:text-primary-700 font-medium text-sm"
+                >
+                  Ver no Google Maps
+                </a>
+              </div>
+            </div>
           </Card>
 
           {/* Contact Form */}
-          <div>
-            <Card padding="lg">
+          <div className="flex">
+            <Card padding="lg" className="flex-1">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Envie sua Mensagem</h2>
               <ContactForm />
             </Card>
-          </div>
-        </div>
-      </Section>
-
-      {/* Map Section */}
-      <Section background="gray" padding="lg">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Nossa Localização</h2>
-          
-          <div className="bg-white rounded-lg shadow-medium overflow-hidden">
-            <MapSection 
-              address={companyInfo.address.fullAddress}
-              lat={companyInfo.location.lat}
-              lng={companyInfo.location.lng}
-              companyName="Mako® Soluções Industriais"
-            />
-            <div className="p-4 bg-gray-50 flex justify-center">
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyInfo.address.fullAddress)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200"
-              >
-                <Navigation className="w-4 h-4 mr-2" />
-                Abrir no Google Maps
-              </a>
-            </div>
           </div>
         </div>
       </Section>

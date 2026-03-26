@@ -33,13 +33,6 @@ export default function DiferenciaisSection() {
       color: 'from-purple-500 to-pink-500',
     },
     {
-      icon: Clock,
-      title: 'Atendimento 24/7',
-      description: 'Suporte técnico permanente para máxima disponibilidade',
-      features: ['Equipe de plantão', 'Resposta rápida', 'Manutenção preventiva'],
-      color: 'from-orange-500 to-red-500',
-    },
-    {
       icon: Award,
       title: 'Experiência Comprovada',
       description: 'Mais de 500 projetos realizados em diversos segmentos',

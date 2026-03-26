@@ -103,7 +103,7 @@ export const mockServices: Service[] = [
     name: 'Elaboração de Projetos Industriais',
     description: 'Projetos civis, elétricos, mecânicos e ambientais em modelagem BIM.',
     fullDescription: 'Elaboração de projetos industriais completos incluindo projetos ambientais, engenharia de detalhamento em BIM, projetos civis, elétricos, mecânicos e de instrumentação.',
-    icon: 'hard-hat',
+    icon: 'search',
     image: '/images/services/projetos.jpg',
     benefits: [
       'Projetos em Modelagem BIM',
@@ -256,7 +256,6 @@ export const mockServices: Service[] = [
       'Sistemas de Ar-condicionado e PMOC',
       'Equipes Técnicas Especializadas com KPIs',
       'Suporte de Engenharia Especializada',
-      'Disponibilidade 24/7',
     ],
     process: [
       {

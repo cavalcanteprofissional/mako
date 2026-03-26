@@ -196,10 +196,6 @@ export default function HeroSection() {
               {/* Trust Indicators */}
               <div className="flex flex-wrap items-center gap-6 text-white/80 text-sm">
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
-                  <span>Atendimento 24/7</span>
-                </div>
-                <div className="flex items-center">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-2" />
                   <span>+500 Projetos Concluídos</span>
                 </div>
