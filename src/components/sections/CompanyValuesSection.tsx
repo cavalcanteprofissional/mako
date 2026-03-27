@@ -4,11 +4,11 @@ import { Shield, Lightbulb, Users, Target, CheckCircle, ArrowRight, Heart, Eye, 
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function CompanyValuesSection({ className = '' }: CompanyValuesSectionProps) {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
 
   const translate = (key: string): string => {
     const result = t(key)
-    return typeof result === 'string' ? result : key
+    return typeof result === 'string' && result !== key ? result : key
   }
 
   const values = [
@@ -46,13 +46,13 @@ export default function CompanyValuesSection({ className = '' }: CompanyValuesSe
   ]
 
   return (
-    <section className={`py-12 md:py-20 bg-gradient-to-b from-white to-primary-50 ${className}`}>
+    <section key={locale} className={`py-12 md:py-20 bg-gradient-to-b from-white to-primary-50 ${className}`}>
       <div className="container-custom">
         <div className="text-center mb-10 md:mb-16 px-4">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             {translate('values.title')}
           </h2>
-          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {translate('values.subtitle')}
           </p>
         </div>
