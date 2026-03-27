@@ -1,0 +1,405 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "whatWeDo": "What We Do",
+    "howWeDo": "How We Do",
+    "clients": "Clients",
+    "contact": "Contact",
+    "careers": "Careers",
+    "certifications": "Certifications",
+    "services": "Our Services",
+    "quality": "Quality"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Industrial Engineering Excellence",
+      "subtitle": "Quality, cost and timeline in Development, Engineering & Construction projects",
+      "description": "Complete industrial project solutions with PMBoK/CPM methodology and ISO 9001 certification"
+    },
+    "slide2": {
+      "title": "Industrial Works and Installations",
+      "subtitle": "Execution with excellence and safety",
+      "description": "Civil, electrical, mechanical and safety projects with NR10, NR12, NR13, NR18 compliance"
+    },
+    "slide3": {
+      "title": "Industrial BIM Projects",
+      "subtitle": "Technology and innovation for your industry",
+      "description": "BIM modeling for efficient, sustainable projects aligned with best management practices"
+    },
+    "slide4": {
+      "title": "Automation and Control",
+      "subtitle": "Intelligent systems for your production",
+      "description": "Increase productivity with cutting-edge technology"
+    },
+    "slide5": {
+      "title": "Industrial Electrical Installations",
+      "subtitle": "Safety and compliance with technical standards",
+      "description": "Projects and executions within ABNT standards"
+    },
+    "slide6": {
+      "title": "Industrial Assemblies",
+      "subtitle": "Experience and proven quality",
+      "description": "Over 20 years in the market with assembly excellence"
+    }
+  },
+  "heroOverlay": {
+    "services": "Our Services",
+    "requestQuote": "Request a Quote"
+  },
+  "stats": {
+    "title": "Our History and Achievements",
+    "subtitle": "We have built a history of success, growth and innovation in industrial engineering",
+    "years": "Years in Market",
+    "yearsDesc": "Since 2001 in the industrial market",
+    "projects": "Industrial Projects",
+    "projectsDesc": "Projects executed with excellence",
+    "value": "Managed Value",
+    "valueDesc": "Over R$ 2 billion in projects",
+    "professionals": "Professionals",
+    "professionalsDesc": "Specialized team",
+    "trustTitle": "Why Companies Trust Mako®?",
+    "quality": "Certified Quality",
+    "qualityDesc": "ISO 9001:2015 guaranteeing excellence in processes",
+    "methodology": "Own Methodology",
+    "methodologyDesc": "PMBoK, CPM and BIM for integrated management",
+    "reach": "National Presence",
+    "reachDesc": "Present in 11 Brazilian states"
+  },
+  "values": {
+    "title": "Our Values",
+    "subtitle": "Principles that guide our work",
+    "focusOnClient": "Customer Focus",
+    "focusOnClientDesc": "We put customer needs first, always striving to exceed expectations.",
+    "innovation": "Innovation",
+    "innovationDesc": "We constantly seek new solutions and technologies to offer the best to our customers.",
+    "teamwork": "Teamwork",
+    "teamworkDesc": "We believe in synergy between customers, suppliers and collaborators to generate exceptional results.",
+    "proactivity": "Proactivity",
+    "proactivityDesc": "We anticipate problems and solutions, always maintaining a preventive attitude.",
+    "expertise": "Technical Expertise",
+    "customized": "Customized Solutions",
+    "support": "Dedicated Support",
+    "certification": "ISO 9001 Certification",
+    "mission": "Mission",
+    "missionText": "Provide engineering solutions that integrate technical excellence, environmental responsibility, human valuing, and financial efficiency.",
+    "vision": "Vision",
+    "visionText": "To be a national reference in industrial engineering solutions, exceeding expectations through quality and innovation.",
+    "values": "Values",
+    "valuesText": "Ethics, transparency, commitment to results and sustainability in all our actions.",
+    "whyChoose": "Why choose Mako?"
+  },
+  "cta": {
+    "title": "Let's work together?",
+    "description": "Contact us to discuss your project and discover how Mako® can help your company.",
+    "requestQuote": "Request a Quote",
+    "ourServices": "Our Services"
+  },
+  "clients": {
+    "title": "Our Clients",
+    "heroTitle": "Clients",
+    "heroDescription": "We work with the best companies in the Brazilian and international industrial market.",
+    "subtitle": "Successful partnerships that drive results",
+    "ctaTitle": "Be our next successful client",
+    "ctaDescription": "Join the largest companies in the market that trust Mako® for their industrial projects."
+  },
+  "nationalPresence": {
+    "title": "National Presence",
+    "subtitle": "We operate throughout Brazilian territory with expertise and quality",
+    "statesTitle": "States where Mako® operates:",
+    "headquarters": "Headquarters:"
+  },
+  "about": {
+    "title": "About Us",
+    "heroTitle": "About Us",
+    "heroDescription": "Mako® was founded in 2001, based on the need identified in the local industrial sector for a solid, ethical, and committed company that would value the strategic partnership between suppliers and clients in Projects, Engineering, and Construction. Since its creation, the company has focused on technical excellence, corporate governance, and sustainable value generation.",
+    "history": "Our History",
+    "team": "Our Team",
+    "teamDescription": "Engineers, technicians, workers, professionals from the most different specialties, all available to meet the needs of our clients.",
+    "historyDescription": "A successful project is one that generates value and sustainability, fundamental to organizations seeking leadership in their fields. Mako® not only understands this definition but has adopted it as a mission in everything we do.",
+    "ctaHistoryTitle": "Be part of our history",
+    "ctaHistoryDescription": "Join teams of companies that trust our experience to transform their industrial processes",
+    "ctaHistoryButton": "Contact Us"
+  },
+  "services": {
+    "title": "What We Do",
+    "heroTitle": "What We Do",
+    "heroDescription": "A successful project is one that generates value and sustainability, fundamental to organizations seeking leadership in their fields. Mako® not only understands this definition but has adopted it as a mission in everything we do.",
+    "statsYears": "Years in Market",
+    "statsProjects": "Industrial Projects",
+    "statsCertification": "Certification",
+    "statsMethodology": "Methodology",
+    "details": "Service Details",
+    "benefits": "Key Benefits",
+    "requestQuote": "Request a Quote",
+    "talkToSpecialist": "Talk to a Specialist",
+    "startingFrom": "Starting from",
+    "previousService": "Previous service",
+    "nextService": "Next service",
+    "pause": "Pause",
+    "resume": "Resume",
+    "goToService": "Go to service",
+    "whatsappMessage": "Hello! I would like to know more about the service:",
+    "listDescription": "Complete industrial automation solutions to optimize your processes and increase productivity",
+    "ctaTitle": "Didn't find what you're looking for?",
+    "ctaDescription": "We develop customized solutions for specific needs. Contact us to discuss your project.",
+    "customQuote": "Request Custom Quote",
+    "whatsappConsult": "Consult on WhatsApp",
+    "whatsappCustom": "Hello! I need a customized solution.",
+    "featured": "Featured",
+    "viewDetails": "View Details",
+    "front-end-packages": {
+      "name": "Front-End Packages (FEP)",
+      "description": "Development of premises packages and industrial project conception.",
+      "fullDescription": "Development of premises packages and industrial project conception, including EVA analysis, organizational structuring, product specifications and quality control.",
+      "benefits": [
+        "EVA Analysis and Organizational Structures",
+        "Product Specifications and Quality Control",
+        "Constructability Analysis",
+        "PFDs and EFDs",
+        "HAZOP and P&D"
+      ]
+    },
+    "financiamento-captacao-recursos": {
+      "name": "Financing and Fundraising",
+      "description": "Economic viability projects and financing consulting.",
+      "fullDescription": "Development of economic viability projects and consulting with financial institutions and public entities for fundraising.",
+      "benefits": [
+        "Economic Viability Projects",
+        "Consulting with Financial Institutions",
+        "Studies Development for Financing",
+        "Access to specific credit lines"
+      ]
+    },
+    "projetos-industriais": {
+      "name": "Industrial Projects",
+      "description": "Complete industrial engineering projects.",
+      "fullDescription": "Development of complete industrial engineering projects in civil, electrical, mechanical and process areas, using PMBoK/CPM methodology and BIM technology.",
+      "benefits": [
+        "BIM Modeling Projects",
+        "Environmental Projects (RAS, EVA, EIA, RIMA)",
+        "Environmental Licensing (LP, LI, LO)",
+        "Civil, Electrical and Mechanical Projects",
+        "SPDA, Grounding and NR10, NR12, NR13, NR18"
+      ]
+    },
+    "suprimentos-aquisicoes": {
+      "name": "Supplies and Procurement",
+      "description": "Procurement management for industrial projects.",
+      "fullDescription": "Complete supply and procurement management, from technical specifications development to delivery tracking and quality control.",
+      "benefits": [
+        "Supplier Certification",
+        "Bidding and Technical Bidding Documents",
+        "Proposal Analysis and Equalization",
+        "Procurement Advisory"
+      ]
+    },
+    "obras-instalacoes": {
+      "name": "Works and Installations",
+      "description": "Execution of civil, electrical, mechanical and safety works.",
+      "fullDescription": "Execution of complete industrial works and installations including civil, electrical, mechanical and safety. Equipment adequacy to NR10, NR12 and NR13 standards.",
+      "benefits": [
+        "Civil Works (Foundations, Infrastructure, Superstructure)",
+        "Electrical Installations (Low and Medium Voltage)",
+        "Mechanical Installations (Pipe Rack, Piping)",
+        "Safety (Fire Protection, SPDA, Lifelines)",
+        "Specialized Labor"
+      ]
+    },
+    "manutencoes": {
+      "name": "Maintenance",
+      "description": "Industrial maintenance services.",
+      "fullDescription": "Preventive, corrective and predictive maintenance services for industrial equipment and installations, ensuring operational continuity.",
+      "benefits": [
+        "Preventive, Predictive and Corrective Maintenance",
+        "Air Conditioning Systems and PMOC",
+        "Specialized Technical Teams with KPIs",
+        "Specialized Engineering Support"
+      ]
+    },
+    "coordenacao-fiscalizacao": {
+      "name": "Coordination and Inspection",
+      "description": "Coordination and inspection of works and projects.",
+      "fullDescription": "Complete coordination of works and projects, inspecting execution, quality, deadlines and costs, ensuring compliance with specifications.",
+      "benefits": [
+        "Engineering & Construction Quality Control",
+        "HSSE Supervision (Health, Environment and Safety)",
+        "Physical-Financial Evolution Supervision and Control",
+        "Reports and Indicators Issuance"
+      ]
+    }
+  },
+  "methodology": {
+    "title": "Work Methodology",
+    "heroTitle": "How We Do",
+    "heroDescription": "Mako® applies the most modern management tools and uses the best management practices, sought through Total Quality Philosophy. These practices are applied carefully, respecting the client's maturity level in management, as well as their wishes and needs.",
+    "ctaTitle": "Ready to transform your industry?",
+    "ctaDescription": "Contact us and discover how Mako® can help your company reach new heights.",
+    "description": "Mako® applies the most modern management tools and uses the best management practices, sought through Total Quality Philosophy. These practices are applied carefully, respecting the client's maturity level in management, as well as their wishes and needs.",
+    "tools": {
+      "cpm": {
+        "title": "Capital Project Management",
+        "description": "Integrated capital project management with focus on efficiency and cost control."
+      },
+      "pmbok": {
+        "title": "Project Management Body Knowledge",
+        "description": "PMI methodology for project management with the best international practices."
+      },
+      "cdio": {
+        "title": "Conceive-Design-Implement-Operate",
+        "description": "Complete lifecycle: conception, design, implementation and operation."
+      }
+    },
+    "phases": {
+      "title": "Project Lifecycle",
+      "conception": { "title": "Conception", "description": "Objectives and scope definition" },
+      "planning": { "title": "Planning", "description": "Schedule and resources" },
+      "execution": { "title": "Execution", "description": "Implementation and monitoring" },
+      "control": { "title": "Control", "description": "Tracking and adjustments" },
+      "closure": { "title": "Closure", "description": "Validation and delivery" }
+    },
+    "areas": {
+      "title": "Management Areas",
+      "description": "Based on PMBOK®, Mako® operates in all knowledge areas to ensure excellence in project delivery.",
+      "scope": "Scope",
+      "cost": "Cost",
+      "schedule": "Schedule",
+      "quality": "Quality",
+      "hr": "Human Resources",
+      "communications": "Communications",
+      "integration": "Integration",
+      "risks": "Risks",
+      "procurement": "Procurement"
+    }
+  },
+  "certifications": {
+    "title": "Our Certifications",
+    "subtitle": "Recognition and qualification that guarantee the excellence of our services",
+    "isoTitle": "ISO 9001:2015 — Quality Management System",
+    "isoDescription": "Mako® holds ISO 9001:2015 certification issued by ABNT (Brazilian Association of Technical Standards), which certifies the Quality Management System for Industrial Project Design.",
+    "certifiedBy": "ABNT NBR ISO 9001:2015 Certified",
+    "validUntil": "Valid from 11/25/2022 to 11/25/2025",
+    "whyCertifiedTitle": "Why choose a certified company?",
+    "qualityTitle": "Guaranteed Quality",
+    "qualityDesc": "Processes audited and validated by competent bodies",
+    "excellenceTitle": "Operational Excellence",
+    "excellenceDesc": "Commitment to the highest quality and safety standards",
+    "complianceTitle": "Legal Compliance",
+    "complianceDesc": "Compliance with all current standards and regulations"
+  },
+  "team": {
+    "member1": {
+      "role": "President-Partner | Founder",
+      "bio": "Civil Engineer, entrepreneur, and writer, he is the founder and President-Partner of the company. He has a solid track record in management, total quality, and industrial projects, accumulating over 30 years of experience. His leadership is marked by strategic vision, consistent technical base, and strong results orientation. Throughout his career, he has developed high-performance teams, consolidating an organizational culture based on technical competence, ethics, and valuing people."
+    },
+    "member2": {
+      "role": "President-Partner | Marketing and International Business Specialist",
+      "bio": "Entrepreneur, graduated in Marketing and specialist in International Business. He acts nationally and internationally in developing strategies that strengthen brands, expand institutional presence, and generate high-value business opportunities. His work integrates strategic positioning, branding, institutional relationships, and market development, contributing to the company standing out consistently and competitively in the environments in which it operates."
+    },
+    "member3": {
+      "role": "Partner | Director | Civil and Work Safety Engineer | MBA Project Management",
+      "bio": "Civil and Work Safety Engineer, with an MBA in Project Management. He has extensive experience in management, conception, and development of industrial projects. His trajectory is marked by technical rigor, structured planning, and strong commitment to safety, quality, and regulatory compliance. He acts strategically to ensure reliability, operational excellence, and quality of the solutions delivered by the company."
+    },
+    "member4": {
+      "role": "Financial Manager | Administrator | MBA in Business Management",
+      "bio": "Professional with strategic performance in administrative and financial areas, responsible for the management, control, and efficiency of corporate activities. He has solid training and experience in Business Administration, with a systemic vision and ability to integrate processes to maximize organizational performance and sustainability."
+    }
+  },
+  "history": {
+    "2001": {
+      "title": "Foundation",
+      "description": "In Fortaleza, Ceará, in a scenario where the local industrial sector lacked specialized companies and strategic partnerships."
+    },
+    "2012": {
+      "title": "Consolidation and Credibility",
+      "description": "More than 200 industrial projects, with combined values exceeding R$ 1.5 billion."
+    },
+    "2016": {
+      "title": "Awards and Highlights",
+      "description": "Recognition granted by industrial energy sector leader, as Best Service Provider, evidencing quality, governance, and high operational performance."
+    },
+    "2022": {
+      "title": "ISO 9001 Certification",
+      "description": "Crucial technical milestone. Among the best in Brazil regarding quality management and standardized processes."
+    },
+    "2023": {
+      "title": "Integrated Engineering Consulting — BIM Solutions",
+      "description": "With BIM, we integrate information, strategy, and engineering to ensure more efficient, sustainable projects aligned with best management practices."
+    },
+    "current": {
+      "title": "Currently",
+      "description": "Consolidates its performance in developing engineering solutions that integrate technical excellence, environmental responsibility, human valuing, and financial efficiency."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "heroTitle": "Contact Us",
+    "heroDescription": "We are ready to transform your industry with complete industrial engineering solutions.",
+    "contactInfo": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "E-mail",
+    "workingHours": "Business Hours",
+    "location": "Location",
+    "sendMessage": "Send your Message",
+    "viewOnMaps": "View on Google Maps",
+    "ctaTitle": "Ready to start your project?",
+    "ctaDescription": "Get in touch with us and let's transform your industry together."
+  },
+  "form": {
+    "name": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "nameRequired": "Name must be at least 3 characters",
+    "company": "Company",
+    "companyPlaceholder": "Your company name",
+    "email": "E-mail",
+    "emailPlaceholder": "your@email.com",
+    "emailInvalid": "Invalid e-mail",
+    "phone": "Phone",
+    "phonePlaceholder": "(00) 00000-0000",
+    "phoneInvalid": "Invalid phone",
+    "subject": "Subject",
+    "subjectPlaceholder": "What do you want to talk about?",
+    "subjectRequired": "Subject must be at least 5 characters",
+    "message": "Message",
+    "messagePlaceholder": "Describe your need in detail...",
+    "messageRequired": "Message must be at least 10 characters",
+    "submitEmail": "Send by E-mail",
+    "submitting": "Sending...",
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for contacting us! We will return as soon as possible.",
+    "newMessage": "Send New Message",
+    "error": "An error occurred while sending the form. Please try again."
+  },
+  "workingHours": {
+    "weekdays": "Monday to Friday: 8am to 6pm",
+    "saturday": "Saturday: 8am to 12pm",
+    "sunday": "Sunday: Closed",
+    "full": "Monday to Friday: 8am to 6pm | Saturday: 8am to 12pm"
+  },
+  "footer": {
+    "tagline": "Industrial Solutions",
+    "followUs": "Follow us:",
+    "services": {
+      "fep": "Front-End Packages (FEP)",
+      "projetos": "Industrial Projects",
+      "obras": "Works and Installations",
+      "manutencoes": "Maintenance"
+    },
+    "copyright": "All rights reserved.",
+    "developer": "Meet the developer",
+    "whatsappMessage": "Hello! I would like more information about your services.",
+    "whatsappTooltip": "Contact us"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "seeMore": "See more",
+    "learnMore": "Learn more"
+  },
+  "header": {
+    "requestQuote": "Request a Quote",
+    "whatsappContact": "Contact via WhatsApp"
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Quem Somos",
+    "whatWeDo": "O Que Fazemos",
+    "howWeDo": "Como Fazemos",
+    "clients": "Clientes",
+    "contact": "Contato",
+    "careers": "Carreiras",
+    "certifications": "Certificações",
+    "services": "Nossos Serviços",
+    "quality": "Qualidade"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Engenharia Industrial de Excelência",
+      "subtitle": "Qualidade, custo e prazo em projetos de Desenvolvimento, Engenharia & Construção",
+      "description": "Soluções completas em projetos industriais com metodologia PMBoK/CPM e certificação ISO 9001"
+    },
+    "slide2": {
+      "title": "Obras e Instalações Industriais",
+      "subtitle": "Execução com excelência e segurança",
+      "description": "Projetos civis, elétricos, mecânicos e de segurança com conformidade NR10, NR12, NR13, NR18"
+    },
+    "slide3": {
+      "title": "Projetos Industriais em BIM",
+      "subtitle": "Tecnologia e inovação para sua indústria",
+      "description": "Modelagem BIM para projetos eficientes, sustentáveis e alinhados às melhores práticas de gestão"
+    },
+    "slide4": {
+      "title": "Automação e Controle",
+      "subtitle": "Sistemas inteligentes para sua produção",
+      "description": "Aumente a produtividade com tecnologia de ponta"
+    },
+    "slide5": {
+      "title": "Instalações Elétricas Industriais",
+      "subtitle": "Segurança e conformidade com normas técnicas",
+      "description": "Projetos e execuções dentro dos padrões ABNT"
+    },
+    "slide6": {
+      "title": "Montagens Industriais",
+      "subtitle": "Experiência e qualidade comprovada",
+      "description": "Mais de 20 anos de mercado com excelência em montagem"
+    }
+  },
+  "heroOverlay": {
+    "services": "Nossos Serviços",
+    "requestQuote": "Solicitar Orçamento"
+  },
+  "stats": {
+    "title": "Nossa Trajetória e Conquistas",
+    "subtitle": "Construímos uma história de sucesso, crescimento e inovação em engenharia industrial",
+    "years": "Anos de Mercado",
+    "yearsDesc": "Desde 2001 no mercado industrial",
+    "projects": "Projetos Industriais",
+    "projectsDesc": "Projetos executados com excelência",
+    "value": "Valor Gerenciado",
+    "valueDesc": "Superior a R$ 2 bilhões em projetos",
+    "professionals": "Profissionais",
+    "professionalsDesc": "Equipe especializada",
+    "trustTitle": "Por que Empresas Confiam na Mako®?",
+    "quality": "Qualidade Certificada",
+    "qualityDesc": "ISO 9001:2015 garantindo excelência em processos",
+    "methodology": "Metodologia Própria",
+    "methodologyDesc": "PMBoK, CPM e BIM para gestão integrada",
+    "reach": "Atuação Nacional",
+    "reachDesc": "Presente em 11 estados brasileiros"
+  },
+  "values": {
+    "title": "Nossos Valores",
+    "subtitle": "Princípios que guiam nossa atuação",
+    "focusOnClient": "Foco no Cliente",
+    "focusOnClientDesc": "Colocamos as necessidades dos clientes em primeiro lugar, buscando sempre superar expectativas.",
+    "innovation": "Inovação",
+    "innovationDesc": "Buscamos constantemente novas soluções e tecnologias para oferecer o melhor aos nossos clientes.",
+    "teamwork": "Trabalho em Equipe",
+    "teamworkDesc": "Acreditamos na sinergia entre clientes, fornecedores e colaboradores para gerar resultados excepcionais.",
+    "proactivity": "Proatividade",
+    "proactivityDesc": "Antecipamos problemas e soluções, mantendo sempre uma postura preventiva.",
+    "expertise": "Expertise Técnica",
+    "customized": "Soluções Personalizadas",
+    "support": "Suporte Dedicado",
+    "certification": "Certificação ISO 9001",
+    "mission": "Missão",
+    "missionText": "Proporcionar soluções de engenharia que integrem excelência técnica, responsabilidade ambiental, valorização humana e eficiência financeira.",
+    "vision": "Visão",
+    "visionText": "Ser referência nacional em soluções de engenharia industrial, superando expectativas através da qualidade e inovação.",
+    "values": "Valores",
+    "valuesText": "Ética, transparência, compromisso com resultados e sustentabilidade em todas as nossas ações.",
+    "whyChoose": "Por que escolher a Mako?"
+  },
+  "cta": {
+    "title": "Vamos trabalhar juntos?",
+    "description": "Entre em contato para discutir seu projeto e descobrir como a Mako® pode ajudar sua empresa.",
+    "requestQuote": "Solicitar Orçamento",
+    "ourServices": "Nossos Serviços"
+  },
+  "clients": {
+    "title": "Nossos Clientes",
+    "heroTitle": "Clientes",
+    "heroDescription": "Trabalhamos com as melhores empresas do mercado industrial brasileiro e internacional.",
+    "subtitle": "Parcerias de sucesso que impulsionam resultados",
+    "ctaTitle": "Seja nosso próximo cliente de sucesso",
+    "ctaDescription": "Junte-se às maiores empresas do mercado que confiam na Mako® para seus projetos industriais."
+  },
+  "nationalPresence": {
+    "title": "Presença Nacional",
+    "subtitle": "Atuamos em todo o território brasileiro com expertise e qualidade",
+    "statesTitle": "Estados com atuação da Mako®:",
+    "headquarters": "Sede:"
+  },
+  "about": {
+    "title": "Quem Somos",
+    "heroTitle": "Quem Somos",
+    "heroDescription": "A Mako® foi fundada em 2001, a partir da necessidade identificada no setor industrial local por uma empresa sólida, ética e comprometida, que valorizasse a parceria estratégica entre fornecedores e clientes nas áreas de Projetos, Engenharia e Construção. Desde sua criação, a empresa atua com foco em excelência técnica, governança corporativa e geração sustentável de valor.",
+    "history": "Nossa História",
+    "team": "Nossa Equipe",
+    "teamDescription": "Engenheiros, técnicos, operários, profissionais das mais diferentes especialidades, todos disponíveis para suprir as necessidades de nossos clientes.",
+    "historyDescription": "Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação. A Mako® não só compreende essa definição, como adotou como missão em tudo que fazemos.",
+    "ctaHistoryTitle": "Faça parte da nossa história",
+    "ctaHistoryDescription": "Junte-se a times de empresas que confiam na nossa experiência para transformar seus processos industriais",
+    "ctaHistoryButton": "Entre em Contato"
+  },
+  "services": {
+    "title": "O Que Fazemos",
+    "heroTitle": "O Que Fazemos",
+    "heroDescription": "Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação. A Mako® não só compreende essa definição, como adotou como missão em tudo que fazemos.",
+    "statsYears": "Anos de Mercado",
+    "statsProjects": "Projetos Industriais",
+    "statsCertification": "Certificação",
+    "statsMethodology": "Metodologia",
+    "details": "Detalhes do Serviço",
+    "benefits": "Principais Benefícios",
+    "requestQuote": "Solicitar Orçamento",
+    "talkToSpecialist": "Falar com Especialista",
+    "startingFrom": "A partir de",
+    "previousService": "Serviço anterior",
+    "nextService": "Próximo serviço",
+    "pause": "Pausar",
+    "resume": "Retomar",
+    "goToService": "Ir para serviço",
+    "whatsappMessage": "Olá! Gostaria de saber mais sobre o serviço:",
+    "listDescription": "Soluções completas em automação industrial para otimizar seus processos e aumentar a produtividade",
+    "ctaTitle": "Não encontrou o que procura?",
+    "ctaDescription": "Desenvolvemos soluções personalizadas para necessidades específicas. Entre em contato para discutir seu projeto.",
+    "customQuote": "Solicitar Orçamento Personalizado",
+    "whatsappConsult": "Consultar no WhatsApp",
+    "whatsappCustom": "Olá! Preciso de uma solução personalizada.",
+    "featured": "Destaque",
+    "viewDetails": "Ver Detalhes",
+    "front-end-packages": {
+      "name": "Front-End Packages (FEP)",
+      "description": "Elaboração de pacotes de premissas e concepção de projetos industriais.",
+      "fullDescription": "Elaboração de pacotes de premissas e concepção de projetos industriais, incluindo análise EVA, estruturação organizacional, especificações de produto e controle de qualidade.",
+      "benefits": [
+        "Análise EVA e Estruturas Organizacionais",
+        "Especificações de Produto e Controle de Qualidade",
+        "Análise de Constructability",
+        "PFDs e EFDs",
+        "HAZOP e P&D"
+      ]
+    },
+    "financiamento-captacao-recursos": {
+      "name": "Financiamento e Captação de Recursos",
+      "description": "Projetos de viabilidade econômica e consultoria para financiamentos.",
+      "fullDescription": "Elaboração de projetos de viabilidade econômica e consultoria junto a instituições financeiras e entidades públicas para captação de recursos.",
+      "benefits": [
+        "Projetos de Viabilidade Econômica",
+        "Consultoria junto a Instituições Financeiras",
+        "Elaboração de Estudos para Financiamentos",
+        "Acesso a linhas de crédito específicas"
+      ]
+    },
+    "projetos-industriais": {
+      "name": "Projetos Industriais",
+      "description": "Projetos completos de engenharia industrial.",
+      "fullDescription": "Desenvolvimento de projetos completos de engenharia industrial nas áreas civil, elétrica, mecânica e de processos, utilizando metodologia PMBoK/CPM e tecnologia BIM.",
+      "benefits": [
+        "Projetos em Modelagem BIM",
+        "Projetos Ambientais (RAS, EVA, EIA, RIMA)",
+        "Licenciamento Ambiental (LP, LI, LO)",
+        "Projetos Civis, Elétricos e Mecânicos",
+        "SPDA, Aterramento e NR10, NR12, NR13, NR18"
+      ]
+    },
+    "suprimentos-aquisicoes": {
+      "name": "Suprimentos e Aquisições",
+      "description": "Gestão de compras e suprimentos para projetos industriais.",
+      "fullDescription": "Gestão completa de suprimentos e aquisições, desde a elaboração de especificações técnicas até o acompanhamento de entregas e qualidade.",
+      "benefits": [
+        "Homologação de Fornecedores",
+        "Editais de Concorrência e Licitação Técnica",
+        "Análise e Equalização de Propostas",
+        "Assessoria na Contratação"
+      ]
+    },
+    "obras-instalacoes": {
+      "name": "Obras e Instalações",
+      "description": "Execução de obras civis, elétricas, mecânicas e de segurança.",
+      "fullDescription": "Execução de obras e instalações industriais completas incluindo civil, elétrica, mecânica e segurança. Adequação de equipamentos às normas NR10, NR12 e NR13.",
+      "benefits": [
+        "Obras Civis (Fundações, Infraestrutura, Superestrutura)",
+        "Instalações Elétricas (Baixa e Média Tensão)",
+        "Instalações Mecânicas (Pipe Rack, Tubulações)",
+        "Segurança (Combate a Incêndio, SPDA, Linhas de Vida)",
+        "Mão de Obra Especializada"
+      ]
+    },
+    "manutencoes": {
+      "name": "Manutenções",
+      "description": "Serviços de manutenção industrial.",
+      "fullDescription": "Serviços de manutenção preventiva, corretiva e preditiva para equipamentos e instalações industriais, garantindo continuidade operacional.",
+      "benefits": [
+        "Manutenção Preventiva, Preditiva e Corretiva",
+        "Sistemas de Ar-condicionado e PMOC",
+        "Equipes Técnicas Especializadas com KPIs",
+        "Suporte de Engenharia Especializada"
+      ]
+    },
+    "coordenacao-fiscalizacao": {
+      "name": "Coordenação e Fiscalização",
+      "description": "Coordenação e fiscalização de obras e projetos.",
+      "fullDescription": "Coordenação completa de obras e projetos, fiscalizando execução, qualidade, prazos e custos, assegurando conformidade com especificações.",
+      "benefits": [
+        "Controle de Qualidade de Engenharia & Construção",
+        "Supervisão HSSE (Saúde, Meio Ambiente e Segurança)",
+        "Supervisão e Controle da Evolução Físico-Financeira",
+        "Emissão de Relatórios e Indicadores"
+      ]
+    }
+  },
+  "methodology": {
+    "title": "Metodologia de Trabalho",
+    "heroTitle": "Como Fazemos",
+    "heroDescription": "A Mako® aplica as mais modernas ferramentas de gestão e utiliza as melhores práticas de gerenciamento, buscadas através da Filosofia de Qualidade Total. Essas práticas são aplicadas de forma criteriosa, respeitando o nível de maturidade dos clientes em gerenciamento, assim como seus desejos e necessidades.",
+    "ctaTitle": "Pronto para transformar sua indústria?",
+    "ctaDescription": "Entre em contato conosco e descubra como a Mako® pode ajudar sua empresa a alcançar novos patamares.",
+    "description": "A Mako® aplica as mais modernas ferramentas de gestão e utiliza as melhores práticas de gerenciamento, buscadas através da Filosofia de Qualidade Total. Essas práticas são aplicadas de forma criteriosa, respeitando o nível de maturidade dos clientes em gerenciamento, assim como seus desejos e necessidades.",
+    "tools": {
+      "cpm": {
+        "title": "Capital Project Management",
+        "description": "Gestão integrada de projetos de capital com foco em eficiência e controle de custos."
+      },
+      "pmbok": {
+        "title": "Project Management Body Knowledge",
+        "description": "Metodologia PMI para gerenciamento de projetos com as melhores práticas internacionais."
+      },
+      "cdio": {
+        "title": "Conceive-Design-Implement-Operate",
+        "description": "Ciclo de vida completo: concepção, design, implementação e operação."
+      }
+    },
+    "phases": {
+      "title": "Ciclo de Vida do Projeto",
+      "conception": { "title": "Concepção", "description": "Definição de objetivos e escopo" },
+      "planning": { "title": "Planejamento", "description": "Cronograma e recursos" },
+      "execution": { "title": "Execução", "description": "Implementação e monitoramento" },
+      "control": { "title": "Controle", "description": "Acompanhamento e ajustes" },
+      "closure": { "title": "Encerramento", "description": "Validação e entrega" }
+    },
+    "areas": {
+      "title": "Áreas de Gerenciamento",
+      "description": "Baseado no PMBOK®, a Mako® atua em todas as áreas de conhecimento para garantir excelência na entrega dos projetos.",
+      "scope": "Escopo",
+      "cost": "Custo",
+      "schedule": "Cronograma",
+      "quality": "Qualidade",
+      "hr": "Recursos Humanos",
+      "communications": "Comunicações",
+      "integration": "Integração",
+      "risks": "Riscos",
+      "procurement": "Aquisições"
+    }
+  },
+  "certifications": {
+    "title": "Nossas Certificações",
+    "subtitle": "Reconhecimento e qualificação que garantem a excelência dos nossos serviços",
+    "isoTitle": "ISO 9001:2015 — Sistema de Gestão da Qualidade",
+    "isoDescription": "A Mako® possui a certificação ISO 9001:2015 emitida pela ABNT (Associação Brasileira de Normas Técnicas), que atesta o Sistema de Gestão da Qualidade para Elaboração de Projetos Industriais.",
+    "certifiedBy": "Certificado ABNT NBR ISO 9001:2015",
+    "validUntil": "Válido de 25/11/2022 a 25/11/2025",
+    "whyCertifiedTitle": "Por que escolher uma empresa certificada?",
+    "qualityTitle": "Qualidade Garantida",
+    "qualityDesc": "Processos auditados e validados por órgãos competentes",
+    "excellenceTitle": "Excelência Operacional",
+    "excellenceDesc": "Compromisso com os mais altos padrões de qualidade e segurança",
+    "complianceTitle": "Conformidade Legal",
+    "complianceDesc": "Atendimento a todas as normas e regulamentações vigentes"
+  },
+  "team": {
+    "member1": {
+      "role": "Sócio-Presidente | Fundador",
+      "bio": "Engenheiro Civil, empresário e escritor, é fundador e Sócio-Presidente da empresa. Possui sólida atuação nas áreas de gerenciamento, qualidade total e projetos industriais, acumulando mais de 30 anos de experiência. Sua liderança é marcada por visão estratégica, base técnica consistente e forte orientação para resultados. Ao longo de sua trajetória, desenvolveu equipes de alta performance, consolidando uma cultura organizacional pautada pela competência técnica, ética e valorização de pessoas."
+    },
+    "member2": {
+      "role": "Sócio-Presidente | Especialista em Marketing e Negócios Internacionais",
+      "bio": "Empresário, graduado em Marketing e especialista em Negócios Internacionais. Atua nacional e internacionalmente no desenvolvimento de estratégias que fortalecem marcas, ampliam presença institucional e geram oportunidades de negócios de alto valor. Sua atuação integra posicionamento estratégico, branding, relacionamento institucional e desenvolvimento de mercados, contribuindo para que a empresa se destaque de forma consistente e competitiva nos ambientes em que opera."
+    },
+    "member3": {
+      "role": "Sócio | Diretor | Engenheiro Civil e de Segurança do Trabalho | MBA Gerenciamento de Projetos",
+      "bio": "Engenheiro Civil e de Segurança do Trabalho, com MBA em Gerenciamento de Projetos. Possui ampla experiência em gestão, concepção e desenvolvimento de projetos industriais. Sua trajetória é marcada por rigor técnico, planejamento estruturado e forte compromisso com segurança, qualidade e conformidade regulatória. Atua de forma estratégica na garantia da confiabilidade, eficiência operacional e excelência das soluções entregues pela empresa."
+    },
+    "member4": {
+      "role": "Gerente Financeira | Administradora | MBA em Gestão de Empresas",
+      "bio": "Profissional com atuação estratégica nas áreas administrativa e financeira, sendo responsável pela gestão, controle e eficiência das atividades corporativas. Possui sólida formação e experiência em Administração de Empresas, com visão sistêmica e capacidade de integrar processos para maximizar desempenho e sustentabilidade organizacional."
+    }
+  },
+  "history": {
+    "2001": {
+      "title": "Fundação",
+      "description": "Em Fortaleza, Ceará, em um cenário onde o setor industrial local carecia de empresas especializadas e parcerias estratégicas."
+    },
+    "2012": {
+      "title": "Consolidação e Credibilidade",
+      "description": "Mais de 200 projetos industriais, com valores somados superiores a R$ 1,5 bilhão de reais."
+    },
+    "2016": {
+      "title": "Premiações e Destaques",
+      "description": "Reconhecimentos concedidos por líder do setor energético industrial, como Melhor Fornecedor de Serviços, evidenciando qualidade, governança e alto desempenho operacional."
+    },
+    "2022": {
+      "title": "Certificação ISO 9001",
+      "description": "Marco técnico crucial. Entre as melhores do Brasil no que tange à gestão de qualidade e processos padronizados."
+    },
+    "2023": {
+      "title": "Consultoria de Engenharia Integrada — Soluções em BIM",
+      "description": "Com BIM, integramos informação, estratégia e engenharia para garantir projetos mais eficientes, sustentáveis e alinhados às melhores práticas de gestão."
+    },
+    "current": {
+      "title": "Atualmente",
+      "description": "Consolida sua atuação no desenvolvimento de soluções de engenharia que integram excelência técnica, responsabilidade ambiental, valorização humana e eficiência financeira."
+    }
+  },
+  "contact": {
+    "title": "Fale Conosco",
+    "heroTitle": "Fale Conosco",
+    "heroDescription": "Estamos prontos para transformar sua indústria com soluções completas de engenharia industrial.",
+    "contactInfo": "Informações de Contato",
+    "address": "Endereço",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "workingHours": "Horário de Atendimento",
+    "location": "Localização",
+    "sendMessage": "Envie sua Mensagem",
+    "viewOnMaps": "Ver no Google Maps",
+    "ctaTitle": "Pronto para iniciar seu projeto?",
+    "ctaDescription": "Entre em contato conosco e vamos transformar sua indústria juntos."
+  },
+  "form": {
+    "name": "Nome Completo",
+    "namePlaceholder": "Digite seu nome completo",
+    "nameRequired": "Nome deve ter pelo menos 3 caracteres",
+    "company": "Empresa",
+    "companyPlaceholder": "Nome da sua empresa",
+    "email": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "emailInvalid": "E-mail inválido",
+    "phone": "Telefone",
+    "phonePlaceholder": "(00) 00000-0000",
+    "phoneInvalid": "Telefone inválido",
+    "subject": "Assunto",
+    "subjectPlaceholder": "Sobre o que você quer conversar?",
+    "subjectRequired": "Assunto deve ter pelo menos 5 caracteres",
+    "message": "Mensagem",
+    "messagePlaceholder": "Descreva sua necessidade em detalhes...",
+    "messageRequired": "Mensagem deve ter pelo menos 10 caracteres",
+    "submitEmail": "Enviar por E-mail",
+    "submitting": "Enviando...",
+    "successTitle": "Mensagem Enviada!",
+    "successMessage": "Obrigado pelo contato! Retornaremos o mais breve possível.",
+    "newMessage": "Enviar Nova Mensagem",
+    "error": "Ocorreu um erro ao enviar o formulário. Tente novamente."
+  },
+  "workingHours": {
+    "weekdays": "Segunda a Sexta: 8h às 18h",
+    "saturday": "Sábado: 8h às 12h",
+    "sunday": "Domingo: Fechado",
+    "full": "Segunda a Sexta: 8h às 18h | Sábado: 8h às 12h"
+  },
+  "footer": {
+    "tagline": "Soluções Industriais",
+    "followUs": "Siga-nos:",
+    "services": {
+      "fep": "Front-End Packages (FEP)",
+      "projetos": "Projetos Industriais",
+      "obras": "Obras e Instalações",
+      "manutencoes": "Manutenções"
+    },
+    "copyright": "Todos os direitos reservados.",
+    "developer": "Conheça o desenvolvedor",
+    "whatsappMessage": "Olá! Gostaria de mais informações sobre seus serviços.",
+    "whatsappTooltip": "Fale conosco"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "back": "Voltar",
+    "seeMore": "Ver mais",
+    "learnMore": "Saiba mais"
+  },
+  "header": {
+    "requestQuote": "Solicitar Orçamento",
+    "whatsappContact": "Contato via WhatsApp"
+  }
+}
