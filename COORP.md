@@ -134,6 +134,13 @@ Elaboração de pacotes de premissas e concepção de projetos industriais:
 
 ## ⚙️ Metodologia de Trabalho
 
+A Mako® aplica as mais modernas ferramentas de gestão e utiliza as melhores práticas de gerenciamento, buscadas através da Filosofia de Qualidade Total. Essas práticas são aplicadas de forma criteriosa, respeitando o nível de maturidade dos clientes em gerenciamento, assim como seus desejos e necessidades.
+
+**Ferramentas aplicadas:**
+- **Capital Project Management (CPM)**
+- **Project Management Body Knowledge (PMBOK)**
+- **Conceive-Design-Implement-Operate (CDIO)**
+
 ### Gerenciamento de Projetos
 Referência: **PMBoK (Project Management Body of Knowledge — PMI)** e **CPM (Capital Project Management)**
 

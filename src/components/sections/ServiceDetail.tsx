@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Card, Button } from '@/components/ui'
 import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
 import Image from 'next/image'
+import { useLanguage } from '@/context/LanguageContext'
 import type { Service } from '@/types'
 
 interface ServiceDetailProps {
@@ -11,11 +12,38 @@ interface ServiceDetailProps {
 }
 
 export default function ServiceDetail({ services }: ServiceDetailProps) {
+  const { t } = useLanguage()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState<'left' | 'right'>('right')
   const [isPaused, setIsPaused] = useState(false)
 
-  const currentService = services[currentIndex]
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' ? result : key
+  }
+
+  const translateArray = (key: string): string[] => {
+    const result = t(key)
+    return Array.isArray(result) ? result as string[] : []
+  }
+
+  const getTranslatedService = (service: Service) => {
+    const slug = service.slug
+    const translatedName = translate(`services.${slug}.name`)
+    const translatedDescription = translate(`services.${slug}.description`)
+    const translatedFullDescription = translate(`services.${slug}.fullDescription`)
+    const translatedBenefits = translateArray(`services.${slug}.benefits`)
+    
+    return {
+      ...service,
+      name: translatedName !== `services.${slug}.name` ? translatedName : service.name,
+      description: translatedDescription !== `services.${slug}.description` ? translatedDescription : service.description,
+      fullDescription: translatedFullDescription !== `services.${slug}.fullDescription` ? translatedFullDescription : service.fullDescription,
+      benefits: translatedBenefits.length > 0 ? translatedBenefits : service.benefits,
+    }
+  }
+
+  const currentService = getTranslatedService(services[currentIndex])
 
   const goToNext = () => {
     setDirection('right')
@@ -63,14 +91,14 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
                 <button
                   onClick={goToPrev}
                   className="w-10 h-10 bg-gray-100 hover:bg-gray-200 shadow-md rounded-full flex items-center justify-center transition-colors"
-                  aria-label="Serviço anterior"
+                  aria-label={translate('services.previousService')}
                 >
                   <ChevronLeft className="w-5 h-5 text-gray-700" />
                 </button>
                 <button
                   onClick={() => setIsPaused(!isPaused)}
                   className="w-10 h-10 bg-gray-100 hover:bg-gray-200 shadow-md rounded-full flex items-center justify-center transition-colors"
-                  aria-label={isPaused ? "Retomar" : "Pausar"}
+                  aria-label={isPaused ? translate('services.resume') : translate('services.pause')}
                 >
                   {isPaused ? (
                     <Play className="w-5 h-5 text-gray-700" />
@@ -81,7 +109,7 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
                 <button
                   onClick={goToNext}
                   className="w-10 h-10 bg-gray-100 hover:bg-gray-200 shadow-md rounded-full flex items-center justify-center transition-colors"
-                  aria-label="Próximo serviço"
+                  aria-label={translate('services.nextService')}
                 >
                   <ChevronRight className="w-5 h-5 text-gray-700" />
                 </button>
@@ -103,7 +131,7 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
                 </h2>
                 {currentService.price && (
                   <p className="text-lg text-primary-600 font-medium">
-                    A partir de {currentService.price}
+                    {translate('services.startingFrom')} {currentService.price}
                   </p>
                 )}
               </div>
@@ -116,7 +144,7 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
             {/* Key Benefits */}
             <div className="mb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Principais Benefícios
+                {translate('services.benefits')}
               </h3>
               <div className="grid grid-cols-1 gap-2">
                 {currentService.benefits.map((benefit, index) => (
@@ -138,17 +166,17 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
                 href="/contato"
                 className="justify-center"
               >
-                Solicitar Orçamento
+                {translate('services.requestQuote')}
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
               <Button
                 variant="outline"
-                href={`https://wa.me/5585987654321?text=${encodeURIComponent(`Olá! Gostaria de saber mais sobre o serviço: ${currentService.name}`)}`}
+                href={`https://wa.me/5585987654321?text=${encodeURIComponent(translate('services.whatsappMessage') || `Olá! Gostaria de saber mais sobre o serviço: ${currentService.name}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="justify-center"
               >
-                Falar com Especialista
+                {translate('services.talkToSpecialist')}
               </Button>
             </div>
             </div>
@@ -164,7 +192,7 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
               className={`w-3 h-3 rounded-full transition-colors ${
                 index === currentIndex ? 'bg-primary-600' : 'bg-gray-300'
               }`}
-              aria-label={`Ir para serviço ${index + 1}`}
+              aria-label={`${translate('services.goToService')} ${index + 1}`}
             />
           ))}
         </div>

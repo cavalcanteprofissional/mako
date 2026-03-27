@@ -1,128 +1,156 @@
 'use client'
 
-import { Card, Button } from '@/components/ui'
-import { Shield, TrendingUp, Award, CheckCircle } from 'lucide-react'
-
-interface CompanyValuesSectionProps {
-  className?: string
-}
+import { Shield, Lightbulb, Users, Target, CheckCircle, ArrowRight, Heart, Eye, Star } from 'lucide-react'
+import { useLanguage } from '@/context/LanguageContext'
 
 export default function CompanyValuesSection({ className = '' }: CompanyValuesSectionProps) {
+  const { t } = useLanguage()
+
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' ? result : key
+  }
+
+  const values = [
+    {
+      icon: Shield,
+      title: translate('values.focusOnClient'),
+      description: translate('values.focusOnClientDesc'),
+      gradient: 'from-primary-500 to-primary-700',
+    },
+    {
+      icon: Lightbulb,
+      title: translate('values.innovation'),
+      description: translate('values.innovationDesc'),
+      gradient: 'from-primary-600 to-primary-800',
+    },
+    {
+      icon: Users,
+      title: translate('values.teamwork'),
+      description: translate('values.teamworkDesc'),
+      gradient: 'from-primary-500 to-primary-700',
+    },
+    {
+      icon: Target,
+      title: translate('values.proactivity'),
+      description: translate('values.proactivityDesc'),
+      gradient: 'from-primary-600 to-primary-800',
+    },
+  ]
+
+  const benefits = [
+    translate('values.expertise'),
+    translate('values.customized'),
+    translate('values.support'),
+    translate('values.certification'),
+  ]
+
   return (
-    <section className={`py-16 bg-primary-50 ${className}`}>
+    <section className={`py-12 md:py-20 bg-gradient-to-b from-white to-primary-50 ${className}`}>
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Nossos <span className="text-gradient">Valores</span> e Propósito
+        <div className="text-center mb-10 md:mb-16 px-4">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
+            {translate('values.title')}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Os princípios que guiam nossas ações e decisões em todos os projetos
+          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto">
+            {translate('values.subtitle')}
           </p>
         </div>
 
-        {/* Company Values */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <Card padding="lg" className="text-center group hover:shadow-medium transition-all duration-300">
-            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-              <Shield className="w-8 h-8 text-primary-600" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
-              Excelência
-            </h3>
-            <p className="text-gray-600">
-              Buscamos a melhor qualidade em tudo o que fazemos, superando expectativas e garantindo resultados excepcionais
-            </p>
-          </Card>
-
-          <Card padding="lg" className="text-center group hover:shadow-medium transition-all duration-300">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-              <TrendingUp className="w-8 h-8 text-green-600" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">
-              Inovação
-            </h3>
-            <p className="text-gray-600">
-              Estamos sempre em busca de novas tecnologias e soluções criativas para transformar desafios em oportunidades
-            </p>
-          </Card>
-
-          <Card padding="lg" className="text-center group hover:shadow-medium transition-all duration-300">
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-              <Award className="w-8 h-8 text-purple-600" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
-              Colaboração
-            </h3>
-            <p className="text-gray-600">
-              Acreditamos no poder do trabalho em equipe e na sinergia entre clientes, fornecedores e colaboradores
-            </p>
-          </Card>
-        </div>
-
-        {/* Mission Statement */}
-        <div className="bg-white rounded-lg p-8 mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-            Nossa <span className="text-primary-600">Missão</span>
-          </h3>
-          <p className="text-lg text-gray-600 leading-relaxed text-center max-w-4xl mx-auto">
-            Transformar desafios industriais em oportunidades através de automação inteligente, 
-            soluções personalizadas e parcerias de longo prazo, impulsionando a 
-            competitividade e sustentabilidade dos nossos clientes.
-          </p>
-        </div>
-
-        {/* Value Proposition */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card padding="lg" className="border-l-4 border-primary-600">
-            <h4 className="text-xl font-bold text-gray-900 mb-4 text-primary-600">Por que escolher a Mako®?</h4>
-            <ul className="space-y-3 text-gray-600">
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0 mt-1" />
-                <div>
-                  <h5 className="font-semibold mb-1">Expertise Comprovada</h5>
-                  <p className="text-sm">Mais de 8 anos de experiência especializada em automação industrial</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0 mt-1" />
-                <div>
-                  <h5 className="font-semibold mb-1">Soluções Personalizadas</h5>
-                  <p className="text-sm">Projetos desenvolvidos sob medida para suas necessidades específicas</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0 mt-1" />
-                <div>
-                  <h5 className="font-semibold mb-1">Suporte Dedicado</h5>
-                  <p className="text-sm">Atendimento prioritário para todas as suas necessidades</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0 mt-1" />
-                <div>
-                  <h5 className="font-semibold mb-1">Qualidade Garantida</h5>
-                  <p className="text-sm">Certificações ISO 9001 e garantia estendida em todos os serviços</p>
-                </div>
-              </li>
-            </ul>
-          </Card>
-
-          <Card padding="lg">
-            <h4 className="text-xl font-bold text-gray-900 mb-4 text-center">Comece sua jornada</h4>
-            <div className="text-center">
-              <p className="text-gray-600 mb-6">
-                Descubra como podemos transformar sua indústria com soluções de automação inteligentes
-              </p>
-              <Button
-                href="/contato"
-                className="justify-center"
+        {/* Company Values - Grid com gradiente */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-10 md:mb-16">
+          {values.map((value, index) => {
+            const IconComponent = value.icon
+            return (
+              <div
+                key={index}
+                className="group bg-white rounded-2xl shadow-soft hover:shadow-xl border border-gray-100 p-4 md:p-8 transition-all duration-300 hover:-translate-y-1"
               >
-                Solicitar Consultoria Gratuita
-              </Button>
+                <div className={`w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br ${value.gradient} rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-5 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                  <IconComponent className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                </div>
+                <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2 md:mb-3 text-center group-hover:text-primary-600 transition-colors">
+                  {value.title}
+                </h3>
+                <p className="text-gray-500 text-xs md:text-sm text-center leading-relaxed">
+                  {value.description}
+                </p>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Missão, Visão e Valores */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-16">
+          <div className="bg-gradient-to-br from-primary-900 to-primary-700 rounded-2xl p-6 md:p-8 text-center shadow-xl">
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-5">
+              <Heart className="w-6 h-6 md:w-7 md:h-7 text-white" />
             </div>
-          </Card>
+            <h3 className="text-lg md:text-xl font-bold text-white mb-3 md:mb-4">{translate('values.mission')}</h3>
+            <p className="text-primary-100 text-xs md:text-sm leading-relaxed">
+              {translate('values.missionText')}
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-primary-700 to-primary-500 rounded-2xl p-6 md:p-8 text-center shadow-xl">
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-5">
+              <Eye className="w-6 h-6 md:w-7 md:h-7 text-white" />
+            </div>
+            <h3 className="text-lg md:text-xl font-bold text-white mb-3 md:mb-4">{translate('values.vision')}</h3>
+            <p className="text-primary-100 text-xs md:text-sm leading-relaxed">
+              {translate('values.visionText')}
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl p-6 md:p-8 text-center shadow-xl">
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-5">
+              <Star className="w-6 h-6 md:w-7 md:h-7 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-4">{translate('values.values')}</h3>
+            <p className="text-primary-100 text-sm leading-relaxed">
+              {translate('values.valuesText')}
+            </p>
+          </div>
+        </div>
+
+        {/* Por que escolher a Mako */}
+        <div className="bg-white rounded-2xl shadow-soft border border-gray-100 p-8 md:p-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                {translate('values.whyChoose')}
+              </h3>
+              <div className="space-y-4">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <CheckCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <span className="text-gray-700 font-medium">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="text-center lg:text-right">
+              <p className="text-gray-600 mb-6 text-lg">
+                {translate('cta.description')}
+              </p>
+              <a
+                href="/contato"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-800 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-primary-500/25 transition-all duration-300 hover:-translate-y-1"
+              >
+                {translate('cta.requestQuote')}
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   )
+}
+
+interface CompanyValuesSectionProps {
+  className?: string
 }

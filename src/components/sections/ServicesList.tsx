@@ -4,19 +4,54 @@ import { useState, useRef, useEffect } from 'react'
 import { Button } from '@/components/ui'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import type { Service } from '@/types'
+import { useLanguage } from '@/context/LanguageContext'
 
 interface ServicesListProps {
   services: Service[]
 }
 
 export default function ServicesList({ services }: ServicesListProps) {
-  const [expandedService, setExpandedService] = useState<string | null>(null)
+  const { t } = useLanguage()
+  const [hoveredService, setHoveredService] = useState<string | null>(null)
+  const [lockedService, setLockedService] = useState<string | null>(null)
   const contentRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
   const [heights, setHeights] = useState<{ [key: string]: number }>({})
 
-  const toggleService = (serviceId: string) => {
-    setExpandedService(expandedService === serviceId ? null : serviceId)
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' ? result : key
   }
+
+  const translateArray = (key: string): string[] => {
+    const result = t(key)
+    return Array.isArray(result) ? result as string[] : []
+  }
+
+  const getTranslatedService = (service: Service) => {
+    const slug = service.slug
+    const translatedName = translate(`services.${slug}.name`)
+    const translatedDescription = translate(`services.${slug}.description`)
+    const translatedFullDescription = translate(`services.${slug}.fullDescription`)
+    const translatedBenefits = translateArray(`services.${slug}.benefits`)
+    
+    return {
+      ...service,
+      name: translatedName !== `services.${slug}.name` ? translatedName : service.name,
+      description: translatedDescription !== `services.${slug}.description` ? translatedDescription : service.description,
+      fullDescription: translatedFullDescription !== `services.${slug}.fullDescription` ? translatedFullDescription : service.fullDescription,
+      benefits: translatedBenefits.length > 0 ? translatedBenefits : service.benefits,
+    }
+  }
+
+  const handleClick = (serviceId: string) => {
+    if (lockedService === serviceId) {
+      setLockedService(null)
+    } else {
+      setLockedService(serviceId)
+    }
+  }
+
+  const isExpanded = (serviceId: string) => hoveredService === serviceId || lockedService === serviceId
 
   useEffect(() => {
     const newHeights: { [key: string]: number } = {}
@@ -34,53 +69,55 @@ export default function ServicesList({ services }: ServicesListProps) {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Nossos <span className="text-gradient">Serviços</span>
+            {translate('heroOverlay.services')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Soluções completas em automação industrial para otimizar seus processos e aumentar a produtividade
+            {translate('services.listDescription')}
           </p>
         </div>
 
         {/* Services Accordion */}
         <div className="max-w-4xl mx-auto space-y-4">
           {services.map((service) => {
-            const isExpanded = expandedService === service.id
+            const translatedService = getTranslatedService(service)
+            const isServiceExpanded = isExpanded(service.id)
+            const isLocked = lockedService === service.id
             
             return (
               <div 
                 key={service.id}
-                className="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-300"
+                className="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-500 cursor-pointer"
+                onMouseEnter={() => setHoveredService(service.id)}
+                onMouseLeave={() => !isLocked && setHoveredService(null)}
+                onClick={() => handleClick(service.id)}
               >
                 {/* Card Header - Always Visible */}
-                <button
-                  onClick={() => toggleService(service.id)}
-                  className="w-full p-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
-                >
+                <div className="w-full p-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
                   <div className="flex items-center gap-4">
                     <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-7 h-7 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconPath(service.icon)} />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconPath(translatedService.icon)} />
                       </svg>
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        {service.name}
+                        {translatedService.name}
                       </h3>
                       <p className="text-gray-600 text-sm mt-1">
-                        {service.description}
+                        {translatedService.description}
                       </p>
                     </div>
                   </div>
-                  <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} />
-                </button>
+                  <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform duration-500 ${isServiceExpanded ? 'rotate-180' : ''}`} />
+                </div>
 
                 {/* Expanded Content */}
                 <div 
                   ref={(el) => { contentRefs.current[service.id] = el }}
                   className="overflow-hidden transition-all ease-out"
                   style={{ 
-                    maxHeight: isExpanded ? `${heights[service.id] || 500}px` : '0px',
-                    transitionDuration: '400ms'
+                    maxHeight: isServiceExpanded ? `${heights[service.id] || 500}px` : '0px',
+                    transitionDuration: '500ms'
                   }}
                 >
                   <div className="px-6 pb-6 pt-2">
@@ -90,16 +127,16 @@ export default function ServicesList({ services }: ServicesListProps) {
                     {/* Service Info */}
                     <div className="flex flex-col justify-center">
                       <p className="text-gray-600 leading-relaxed mb-6">
-                        {service.fullDescription}
+                        {translatedService.fullDescription}
                       </p>
 
                       {/* Key Benefits */}
                       <div className="mb-6">
                         <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                          Principais Benefícios
+                          {translate('services.benefits')}
                         </h4>
                         <div className="grid grid-cols-1 gap-2">
-                          {service.benefits.map((benefit, idx) => (
+                          {translatedService.benefits.map((benefit, idx) => (
                             <div key={idx} className="flex items-center p-2 bg-green-50 rounded-lg">
                               <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mr-2 flex-shrink-0">
                                 <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -118,17 +155,17 @@ export default function ServicesList({ services }: ServicesListProps) {
                           href="/contato"
                           className="justify-center"
                         >
-                          Solicitar Orçamento
+                          {translate('services.requestQuote')}
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
                         <Button
                           variant="outline"
-                          href={`https://wa.me/5585987654321?text=${encodeURIComponent(`Olá! Gostaria de saber mais sobre o serviço: ${service.name}`)}`}
+                          href={`https://wa.me/5585987654321?text=${encodeURIComponent(`${translate('services.whatsappMessage')} ${translatedService.name}`)}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="justify-center"
                         >
-                          Falar com Especialista
+                          {translate('services.talkToSpecialist')}
                         </Button>
                       </div>
                     </div>
@@ -142,27 +179,26 @@ export default function ServicesList({ services }: ServicesListProps) {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Não encontrou o que <span className="text-gradient">procura</span>?
+            {translate('services.ctaTitle')}
           </h3>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Desenvolvemos soluções personalizadas para necessidades específicas. 
-            Entre em contato para discutir seu projeto.
+            {translate('services.ctaDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               href="/contato"
               className="justify-center"
             >
-              Solicitar Orçamento Personalizado
+              {translate('services.customQuote')}
             </Button>
             <Button
               variant="outline"
-              href="https://wa.me/5585987654321?text=Olá! Preciso de uma solução personalizada."
+              href={`https://wa.me/5585987654321?text=${encodeURIComponent(translate('services.whatsappCustom'))}`}
               target="_blank"
               rel="noopener noreferrer"
               className="justify-center"
             >
-              Consultar no WhatsApp
+              {translate('services.whatsappConsult')}
             </Button>
           </div>
         </div>

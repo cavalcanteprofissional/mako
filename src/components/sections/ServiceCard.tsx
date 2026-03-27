@@ -4,41 +4,70 @@ import Image from 'next/image'
 import { Card, Button, Badge } from '@/components/ui'
 import { Clock, ArrowRight, CheckCircle } from 'lucide-react'
 import type { Service } from '@/types'
+import { useLanguage } from '@/context/LanguageContext'
 
 interface ServiceCardProps {
   service: Service
 }
 
 export default function ServiceCard({ service }: ServiceCardProps) {
+  const { t } = useLanguage()
+
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' ? result : key
+  }
+
+  const translateArray = (key: string): string[] => {
+    const result = t(key)
+    return Array.isArray(result) ? result as string[] : []
+  }
+
+  const getTranslatedService = (s: Service) => {
+    const slug = s.slug
+    const translatedName = translate(`services.${slug}.name`)
+    const translatedDescription = translate(`services.${slug}.description`)
+    const translatedBenefits = translateArray(`services.${slug}.benefits`)
+    
+    return {
+      ...s,
+      name: translatedName !== `services.${slug}.name` ? translatedName : s.name,
+      description: translatedDescription !== `services.${slug}.description` ? translatedDescription : s.description,
+      benefits: translatedBenefits.length > 0 ? translatedBenefits : s.benefits,
+    }
+  }
+
+  const translatedService = getTranslatedService(service)
+
   return (
     <Card padding="lg" hover className="h-full group">
       {/* Service Header */}
       <div className="flex items-start justify-between mb-6">
         <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center">
           <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconPath(service.icon)} />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconPath(translatedService.icon)} />
           </svg>
         </div>
         
         {service.featured && (
           <Badge variant="warning" size="sm">
-            Destaque
+            {translate('services.featured')}
           </Badge>
         )}
       </div>
 
       {/* Service Content */}
       <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
-        {service.name}
+        {translatedService.name}
       </h3>
       
       <p className="text-gray-600 mb-6">
-        {service.description}
+        {translatedService.description}
       </p>
 
       {/* Key Benefits */}
       <div className="space-y-2 mb-6">
-        {service.benefits.slice(0, 3).map((benefit, index) => (
+        {translatedService.benefits.slice(0, 3).map((benefit, index) => (
           <div key={index} className="flex items-center text-sm text-gray-600">
             <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
             {benefit}
@@ -58,7 +87,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
           size="sm"
           className="group-hover:bg-primary-600 group-hover:text-white transition-all duration-200"
         >
-          Ver Detalhes
+          {translate('services.viewDetails')}
           <ArrowRight className="w-4 h-4 ml-1" />
         </Button>
       </div>

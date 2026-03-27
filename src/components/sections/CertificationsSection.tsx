@@ -2,17 +2,25 @@
 
 import Image from 'next/image'
 import { CheckCircle } from 'lucide-react'
+import { useLanguage } from '@/context/LanguageContext'
 
 export default function CertificationsSection() {
+  const { t } = useLanguage()
+
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' && result !== key ? result : key
+  }
+
   return (
     <section className="py-20 bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Nossas <span className="text-gradient">Certificações</span>
+            {translate('certifications.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Reconhecimento e qualificação que garantem a excelência dos nossos serviços
+            {translate('certifications.subtitle')}
           </p>
         </div>
 
@@ -55,19 +63,19 @@ export default function CertificationsSection() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  ISO 9001:2015 — Sistema de Gestão da Qualidade
+                  {translate('certifications.isoTitle')}
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  A Mako® possui a certificação ISO 9001:2015 emitida pela ABNT (Associação Brasileira de Normas Técnicas), que atesta o Sistema de Gestão da Qualidade para Elaboração de Projetos Industriais.
+                  {translate('certifications.isoDescription')}
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm text-gray-500">
                   <span className="flex items-center gap-1">
                     <CheckCircle className="w-4 h-4 text-primary-600" />
-                    Certificado ABNT NBR ISO 9001:2015
+                    {translate('certifications.certifiedBy')}
                   </span>
                   <span className="flex items-center gap-1">
                     <CheckCircle className="w-4 h-4 text-primary-600" />
-                    Válido de 25/11/2022 a 25/11/2025
+                    {translate('certifications.validUntil')}
                   </span>
                 </div>
               </div>
@@ -79,7 +87,7 @@ export default function CertificationsSection() {
         <div className="mt-16 bg-primary-50 rounded-lg p-8">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Por que escolher uma empresa <span className="text-gradient">certificada</span>?
+              {translate('certifications.whyCertifiedTitle')}
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -89,9 +97,9 @@ export default function CertificationsSection() {
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Qualidade Garantida</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">{translate('certifications.qualityTitle')}</h4>
                 <p className="text-gray-600 text-sm">
-                  Processos auditados e validados por órgãos competentes
+                  {translate('certifications.qualityDesc')}
                 </p>
               </div>
 
@@ -101,9 +109,9 @@ export default function CertificationsSection() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Excelência Operacional</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">{translate('certifications.excellenceTitle')}</h4>
                 <p className="text-gray-600 text-sm">
-                  Compromisso com os mais altos padrões de qualidade e segurança
+                  {translate('certifications.excellenceDesc')}
                 </p>
               </div>
 
@@ -113,9 +121,9 @@ export default function CertificationsSection() {
                     <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Conformidade Legal</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">{translate('certifications.complianceTitle')}</h4>
                 <p className="text-gray-600 text-sm">
-                  Atendimento a todas as normas e regulamentações vigentes
+                  {translate('certifications.complianceDesc')}
                 </p>
               </div>
             </div>

@@ -1,21 +1,37 @@
 'use client'
 
 import type { CompanyHistory } from '@/types'
+import { useLanguage } from '@/context/LanguageContext'
 
 interface HistorySectionProps {
   history: CompanyHistory[]
 }
 
 export default function HistorySection({ history }: HistorySectionProps) {
+  const { t } = useLanguage()
+
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' ? result : key
+  }
+
+  const getHistoryTranslations = (year: string) => {
+    const yearKey = year === String(new Date().getFullYear()) ? 'current' : year
+    return {
+      title: translate(`history.${yearKey}.title`),
+      description: translate(`history.${yearKey}.description`),
+    }
+  }
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="w-full px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
-            Nossa <span className="text-gradient">História</span>
+            {translate('about.history')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto text-center">
-            Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação. A Mako® não só compreende essa definição, como adotou como missão em tudo que fazemos.
+            {translate('about.historyDescription')}
           </p>
         </div>
 
@@ -27,6 +43,9 @@ export default function HistorySection({ history }: HistorySectionProps) {
           <div className="space-y-0">
             {history.map((milestone, index) => {
               const isLeft = index % 2 === 0
+              const translations = getHistoryTranslations(milestone.year)
+              const translatedTitle = translations.title !== `history.${milestone.year === String(new Date().getFullYear()) ? 'current' : milestone.year}.title` ? translations.title : milestone.title
+              const translatedDescription = translations.description !== `history.${milestone.year === String(new Date().getFullYear()) ? 'current' : milestone.year}.description` ? translations.description : milestone.description
               
               return (
                 <div 
@@ -40,10 +59,10 @@ export default function HistorySection({ history }: HistorySectionProps) {
                         {milestone.year}
                       </div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                        {milestone.title}
+                        {translatedTitle}
                       </h3>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        {milestone.description}
+                        {translatedDescription}
                       </p>
                     </div>
                   </div>
@@ -62,16 +81,16 @@ export default function HistorySection({ history }: HistorySectionProps) {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Faça parte da nossa história
+            {translate('about.ctaHistoryTitle')}
           </h3>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Junte-se a times de empresas que confiam na nossa experiência para transformar seus processos industriais
+            {translate('about.ctaHistoryDescription')}
           </p>
           <a
             href="/contato"
             className="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200"
           >
-            Entre em Contato
+            {translate('about.ctaHistoryButton')}
           </a>
         </div>
       </div>

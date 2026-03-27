@@ -4,14 +4,29 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { ChevronDown } from 'lucide-react'
 import type { TeamMember } from '@/types'
+import { useLanguage } from '@/context/LanguageContext'
 
 interface TeamSectionProps {
   teamMembers: TeamMember[]
 }
 
 export default function TeamSection({ teamMembers }: TeamSectionProps) {
+  const { t } = useLanguage()
   const [hoveredMember, setHoveredMember] = useState<string | null>(null)
   const [lockedMember, setLockedMember] = useState<string | null>(null)
+
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' ? result : key
+  }
+
+  const getMemberTranslations = (memberId: string) => {
+    const memberKey = `team.member${memberId}`
+    return {
+      role: translate(`${memberKey}.role`),
+      bio: translate(`${memberKey}.bio`),
+    }
+  }
 
   const sortedMembers = [...teamMembers].sort((a, b) => a.order - b.order)
 
@@ -30,10 +45,10 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
-            Nossa <span className="text-gradient">Equipe</span>
+            {translate('about.team')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto text-center">
-            Engenheiros, técnicos, operários, profissionais das mais diferentes especialidades, todos disponíveis para suprir as necessidades de nossos clientes.
+            {translate('about.teamDescription')}
           </p>
         </div>
 
@@ -41,6 +56,9 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
           {sortedMembers.map((member) => {
             const isMemberExpanded = isExpanded(member.id)
             const isLocked = lockedMember === member.id
+            const translations = getMemberTranslations(member.id)
+            const translatedRole = translations.role !== `team.member${member.id}.role` ? translations.role : member.role
+            const translatedBio = translations.bio !== `team.member${member.id}.bio` ? translations.bio : member.bio
 
             return (
               <div 
@@ -72,7 +90,7 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
                               {member.name}
                             </h3>
                             <p className="text-primary-600 font-medium">
-                              {member.role}
+                              {translatedRole}
                             </p>
                           </div>
                           <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform duration-500 ${isMemberExpanded ? 'rotate-180' : ''}`} />
@@ -83,7 +101,7 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
                             {member.name}
                           </h3>
                           <p className="text-primary-600 font-medium">
-                            {member.role}
+                            {translatedRole}
                           </p>
                           <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform duration-500 mt-2 ${isMemberExpanded ? 'rotate-180' : ''}`} />
                         </div>
@@ -95,7 +113,7 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
                       >
                         <div className="border-t border-gray-100 pt-4">
                           <p className="text-gray-600 leading-relaxed text-left">
-                            {member.bio}
+                            {translatedBio}
                           </p>
                         </div>
                       </div>

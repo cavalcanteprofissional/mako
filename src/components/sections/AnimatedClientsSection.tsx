@@ -1,6 +1,8 @@
 'use client'
 
 import Image from 'next/image'
+import { useLanguage } from '@/context/LanguageContext'
+import { useMemo } from 'react'
 
 interface Client {
   id: string
@@ -8,31 +10,46 @@ interface Client {
   image: string
 }
 
-const clients: Client[] = Array.from({ length: 39 }, (_, i) => ({
-  id: String(i + 1),
-  name: `Cliente ${i + 1}`,
-  image: `/images/clients/Prancheta ${i + 1}.png`,
-}))
-
 export default function AnimatedClientsSection() {
-  const clientsForScroll = [...clients, ...clients, ...clients]
+  const { t, locale } = useLanguage()
+
+  const clients = useMemo(() => 
+    Array.from({ length: 39 }, (_, i) => ({
+      id: String(i + 1),
+      name: `Cliente ${i + 1}`,
+      image: `/images/clients/Prancheta ${i + 1}.png`,
+    })), []
+  )
+
+  const clientsForScroll = useMemo(() => 
+    [...clients, ...clients, ...clients], 
+    [clients]
+  )
+
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' && result !== key ? result : key
+  }
+
+  const clientsTitle = translate('clients.title')
+  const clientsSubtitle = translate('clients.subtitle')
 
   return (
-    <section className="py-16 bg-white overflow-hidden w-full">
+    <section className="py-10 md:py-16 bg-white overflow-hidden w-full" key={locale}>
       <div className="w-full">
-        <div className="text-center max-w-3xl mx-auto mb-12 px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Empresas que <span className="text-gradient">Inspiram</span>
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-12 px-4">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
+            {clientsTitle}
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            Trabalhamos com as melhores empresas do mercado industrial
+          <p className="text-base md:text-xl text-gray-600 leading-relaxed">
+            {clientsSubtitle}
           </p>
         </div>
 
         <div className="relative w-full">
-          <div className="relative overflow-hidden mb-8">
+          <div className="relative overflow-hidden mb-6 md:mb-8">
             <div
-              className="flex space-x-12 animate-scroll-slow"
+              className="flex space-x-8 md:space-x-12 animate-scroll-slow"
               style={{
                 animation: 'scroll-left 25s linear infinite',
               }}
@@ -40,30 +57,25 @@ export default function AnimatedClientsSection() {
               {clientsForScroll.map((client, index) => (
                 <div
                   key={`${client.id}-row1-${index}`}
-                  className="flex-shrink-0 relative w-24 h-24 group"
+                  className="flex-shrink-0 relative w-16 h-16 md:w-24 md:h-24 group"
                 >
-                  <div className="w-full h-full flex items-center justify-center p-3 group-hover:scale-105 transition-all duration-300">
+                  <div className="w-full h-full flex items-center justify-center p-2 md:p-3 group-hover:scale-105 transition-all duration-300">
                     <Image
                       src={client.image}
                       alt={client.name}
                       fill
                       className="object-contain filter grayscale hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100"
-                      sizes="96px"
+                      sizes="64px md:96px"
                     />
-                  </div>
-                  <div className="absolute inset-x-0 -bottom-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-xs text-gray-600 font-medium truncate px-2">
-                      {client.name}
-                    </p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="relative overflow-hidden mb-8">
+          <div className="relative overflow-hidden mb-6 md:mb-8">
             <div
-              className="flex space-x-12 animate-scroll-slow"
+              className="flex space-x-8 md:space-x-12 animate-scroll-slow"
               style={{
                 animation: 'scroll-right 30s linear infinite',
               }}
@@ -71,21 +83,16 @@ export default function AnimatedClientsSection() {
               {clientsForScroll.slice().reverse().map((client, index) => (
                 <div
                   key={`${client.id}-row2-${index}`}
-                  className="flex-shrink-0 relative w-24 h-24 group"
+                  className="flex-shrink-0 relative w-16 h-16 md:w-24 md:h-24 group"
                 >
-                  <div className="w-full h-full flex items-center justify-center p-3 group-hover:scale-105 transition-all duration-300">
+                  <div className="w-full h-full flex items-center justify-center p-2 md:p-3 group-hover:scale-105 transition-all duration-300">
                     <Image
                       src={client.image}
                       alt={client.name}
                       fill
                       className="object-contain filter grayscale hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100"
-                      sizes="96px"
+                      sizes="64px md:96px"
                     />
-                  </div>
-                  <div className="absolute inset-x-0 -bottom-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-xs text-primary-600 font-medium truncate px-2">
-                      {client.name}
-                    </p>
                   </div>
                 </div>
               ))}

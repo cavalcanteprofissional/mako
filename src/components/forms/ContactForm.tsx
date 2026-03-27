@@ -4,22 +4,21 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, AlertCircle } from 'lucide-react'
-import { companyInfo, contactFormFields } from '@/lib/constants'
-import { validateEmail, formatWhatsApp } from '@/lib/utils'
+import { Send, CheckCircle, AlertCircle } from 'lucide-react'
+import { companyInfo } from '@/lib/constants'
 import { Button } from '@/components/ui'
-import type { ContactFormData } from '@/types'
+import { useLanguage } from '@/context/LanguageContext'
 
-const contactFormSchema = z.object({
-  name: z.string().min(3, 'Nome deve ter pelo menos 3 caracteres'),
+const createSchema = (translations: { nameRequired: string; emailInvalid: string; phoneInvalid: string; subjectRequired: string; messageRequired: string }) => z.object({
+  name: z.string().min(3, translations.nameRequired),
   company: z.string().optional(),
-  email: z.string().email('E-mail inválido'),
-  phone: z.string().min(10, 'Telefone inválido'),
-  subject: z.string().min(5, 'Assunto deve ter pelo menos 5 caracteres'),
-  message: z.string().min(10, 'Mensagem deve ter pelo menos 10 caracteres'),
+  email: z.string().email(translations.emailInvalid),
+  phone: z.string().min(10, translations.phoneInvalid),
+  subject: z.string().min(5, translations.subjectRequired),
+  message: z.string().min(10, translations.messageRequired),
 })
 
-type ContactFormDataSchema = z.infer<typeof contactFormSchema>
+type ContactFormDataSchema = z.infer<ReturnType<typeof createSchema>>
 
 interface ContactFormProps {
   onSubmit?: (data: ContactFormDataSchema) => void
@@ -27,6 +26,21 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ onSubmit, className = '' }: ContactFormProps) {
+  const { t } = useLanguage()
+  
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' ? result : key
+  }
+
+  const schema = createSchema({
+    nameRequired: translate('form.nameRequired'),
+    emailInvalid: translate('form.emailInvalid'),
+    phoneInvalid: translate('form.phoneInvalid'),
+    subjectRequired: translate('form.subjectRequired'),
+    messageRequired: translate('form.messageRequired'),
+  })
+
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -37,7 +51,7 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
     formState: { errors },
     reset,
   } = useForm<ContactFormDataSchema>({
-    resolver: zodResolver(contactFormSchema),
+    resolver: zodResolver(schema),
   })
 
   const handleFormSubmit = async (data: ContactFormDataSchema) => {
@@ -54,7 +68,7 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
       setIsSubmitted(true)
       reset()
     } catch (err) {
-      setError('Ocorreu um erro ao enviar o formulário. Tente novamente.')
+      setError(translate('form.error'))
     } finally {
       setIsSubmitting(false)
     }
@@ -83,13 +97,13 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
           <CheckCircle className="w-8 h-8 text-green-600" />
         </div>
         <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-          Mensagem Enviada!
+          {translate('form.successTitle')}
         </h3>
         <p className="text-gray-600 mb-6">
-          Obrigado pelo contato! Retornaremos o mais breve possível.
+          {translate('form.successMessage')}
         </p>
         <Button onClick={() => setIsSubmitted(false)}>
-          Enviar Nova Mensagem
+          {translate('form.newMessage')}
         </Button>
       </div>
     )
@@ -101,14 +115,14 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
         {/* Nome */}
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-            {contactFormFields.name.label} <span className="text-red-500">*</span>
+            {translate('form.name')} <span className="text-red-500">*</span>
           </label>
           <input
             {...register('name')}
             type="text"
             id="name"
             className="input-field"
-            placeholder={contactFormFields.name.placeholder}
+            placeholder={translate('form.namePlaceholder')}
             disabled={isSubmitting}
           />
           {errors.name && (
@@ -122,14 +136,14 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
         {/* Empresa */}
         <div>
           <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-            {contactFormFields.company.label}
+            {translate('form.company')}
           </label>
           <input
             {...register('company')}
             type="text"
             id="company"
             className="input-field"
-            placeholder={contactFormFields.company.placeholder}
+            placeholder={translate('form.companyPlaceholder')}
             disabled={isSubmitting}
           />
         </div>
@@ -138,14 +152,14 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-              {contactFormFields.email.label} <span className="text-red-500">*</span>
+              {translate('form.email')} <span className="text-red-500">*</span>
             </label>
             <input
               {...register('email')}
               type="email"
               id="email"
               className="input-field"
-              placeholder={contactFormFields.email.placeholder}
+              placeholder={translate('form.emailPlaceholder')}
               disabled={isSubmitting}
             />
             {errors.email && (
@@ -158,14 +172,14 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
 
           <div>
             <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-              {contactFormFields.phone.label} <span className="text-red-500">*</span>
+              {translate('form.phone')} <span className="text-red-500">*</span>
             </label>
             <input
               {...register('phone')}
               type="tel"
               id="phone"
               className="input-field"
-              placeholder={contactFormFields.phone.placeholder}
+              placeholder={translate('form.phonePlaceholder')}
               disabled={isSubmitting}
             />
             {errors.phone && (
@@ -180,14 +194,14 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
         {/* Assunto */}
         <div>
           <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-            {contactFormFields.subject.label} <span className="text-red-500">*</span>
+            {translate('form.subject')} <span className="text-red-500">*</span>
           </label>
           <input
             {...register('subject')}
             type="text"
             id="subject"
             className="input-field"
-            placeholder={contactFormFields.subject.placeholder}
+            placeholder={translate('form.subjectPlaceholder')}
             disabled={isSubmitting}
           />
           {errors.subject && (
@@ -201,14 +215,14 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
         {/* Mensagem */}
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-            {contactFormFields.message.label} <span className="text-red-500">*</span>
+            {translate('form.message')} <span className="text-red-500">*</span>
           </label>
           <textarea
             {...register('message')}
             id="message"
-            rows={contactFormFields.message.rows}
+            rows={4}
             className="input-field resize-none"
-            placeholder={contactFormFields.message.placeholder}
+            placeholder={translate('form.messagePlaceholder')}
             disabled={isSubmitting}
           />
           {errors.message && (
@@ -241,12 +255,12 @@ export default function ContactForm({ onSubmit, className = '' }: ContactFormPro
             {isSubmitting ? (
               <>
                 <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                Enviando...
+                {translate('form.submitting')}
               </>
             ) : (
               <>
                 <Send className="w-4 h-4 mr-2" />
-                Enviar por E-mail
+                {translate('form.submitEmail')}
               </>
             )}
           </Button>

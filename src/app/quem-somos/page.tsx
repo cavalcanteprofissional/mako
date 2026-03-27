@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import { mockTeamMembers, mockCompanyHistory } from '@/lib/mockData'
 import TeamSection from '@/components/sections/TeamSection'
+import CompanyValuesSection from '@/components/sections/CompanyValuesSection'
 import HistorySection from '@/components/sections/HistorySection'
+import AboutHero from './AboutHero'
 
 export const metadata: Metadata = {
   title: 'Quem Somos - Mako® Soluções Industriais',
@@ -17,21 +19,13 @@ export default function QuemSomosPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-500 via-primary-700 to-primary-900 text-white py-20">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Quem Somos
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-              A Mako® foi fundada em 2001, a partir da necessidade identificada no setor industrial local por uma empresa sólida, ética e comprometida, que valorizasse a parceria estratégica entre fornecedores e clientes nas áreas de Projetos, Engenharia e Construção. Desde sua criação, a empresa atua com foco em excelência técnica, governança corporativa e geração sustentável de valor.
-            </p>
-          </div>
-        </div>
-      </section>
+      <AboutHero />
 
       {/* Team Section */}
       <TeamSection teamMembers={mockTeamMembers} />
+
+      {/* Values Section */}
+      <CompanyValuesSection />
 
       {/* History Section */}
       <HistorySection history={mockCompanyHistory} />

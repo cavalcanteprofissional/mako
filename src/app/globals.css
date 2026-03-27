@@ -1,5 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+
+/* Fix Leaflet z-index on mobile */
+.leaflet-container {
+  z-index: 1 !important;
+}
+
+.leaflet-pane {
+  z-index: 1 !important;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -3,8 +3,8 @@ import { Roboto, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { seo } from "@/lib/constants";
 import Header from "@/components/layout/Header";
-
 import Footer from "@/components/layout/Footer";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -61,11 +61,13 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${openSans.variable} font-sans antialiased bg-white text-gray-900`}
       >
-        <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -1,13 +1,18 @@
-import type { Metadata } from 'next'
+'use client'
+
 import ClientsGridSection from '@/components/sections/ClientsGridSection'
 import BrazilMapSection from '@/components/sections/BrazilMapSection'
-
-export const metadata: Metadata = {
-  title: 'Clientes - Mako® Soluções Industriais',
-  description: 'Conheça os clientes que confiam na Mako® Soluções Industriais. Empresas referência em seus setores.',
-}
+import CTASection from '@/components/sections/CTASection'
+import { useLanguage } from '@/context/LanguageContext'
 
 export default function ClientesPage() {
+  const { t } = useLanguage()
+
+  const translate = (key: string): string => {
+    const result = t(key)
+    return typeof result === 'string' ? result : key
+  }
+
   return (
     <>
       {/* Hero Section */}
@@ -15,10 +20,10 @@ export default function ClientesPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Clientes
+              {translate('clients.heroTitle')}
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-              A Mako® atua como uma extensão especializada dos departamentos de engenharia e projetos de seus clientes. Nossa expertise é projetada para empresas que buscam transformar planos industriais complexos em realidade operacional, com eficiência, segurança e conformidade total.
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto text-justify">
+              {translate('clients.heroDescription')}
             </p>
           </div>
         </div>
@@ -29,6 +34,12 @@ export default function ClientesPage() {
 
       {/* Clients Grid Section */}
       <ClientsGridSection />
+
+      {/* CTA Section */}
+      <CTASection 
+        title={translate('clients.ctaTitle')}
+        description={translate('clients.ctaDescription')}
+      />
     </>
   )
 }

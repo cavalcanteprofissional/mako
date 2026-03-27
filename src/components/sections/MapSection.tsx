@@ -24,7 +24,7 @@ export default function MapSection({ address, lat, lng, companyName }: MapSectio
     const initMap = async () => {
       const L = (await import('leaflet')).default
 
-      const map = L.map(mapRef.current, {
+      const map = L.map(mapRef.current as HTMLDivElement, {
         center: [lat, lng],
         zoom: 15,
         scrollWheelZoom: false,
@@ -92,7 +92,7 @@ export default function MapSection({ address, lat, lng, companyName }: MapSectio
   }
 
   return (
-    <div className="relative h-96 w-full rounded-lg overflow-hidden">
+    <div className="relative h-96 w-full rounded-lg overflow-hidden z-0">
       <div ref={mapRef} className="absolute inset-0" />
     </div>
   )
