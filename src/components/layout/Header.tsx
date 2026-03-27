@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { companyInfo, navigation } from '@/lib/constants'
 import { cn } from '@/lib/utils'
@@ -10,6 +11,14 @@ import { cn } from '@/lib/utils'
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (pathname === href) {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,6 +82,7 @@ export default function Header() {
                 <div key={item.name} className="relative">
                   <Link
                     href={item.href}
+                    onClick={(e) => handleNavClick(e, item.href)}
                     className="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200"
                   >
                     {item.name}
@@ -118,8 +128,8 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
+                onClick={(e) => { handleNavClick(e, item.href); setIsMobileMenuOpen(false) }}
                 className="block py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}
               </Link>
