@@ -5,15 +5,15 @@ import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function CarreirasClient() {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
 
   const translate = (key: string): string => {
     const result = t(key)
-    return typeof result === 'string' ? result : key
+    return typeof result === 'string' && result !== key ? result : key
   }
 
   return (
-    <div className="min-h-screen">
+    <div key={locale} className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-500 via-primary-700 to-primary-900 text-white py-20">
         <div className="container-custom">
