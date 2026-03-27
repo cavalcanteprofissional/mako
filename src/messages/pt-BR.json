@@ -401,5 +401,27 @@
   "header": {
     "requestQuote": "Solicitar Orçamento",
     "whatsappContact": "Contato via WhatsApp"
+  },
+  "careers": {
+    "heroTitle": "Trabalhe Conosco",
+    "heroSubtitle": "Venha fazer parte do nosso time.",
+    "applyTitle": "Como Candidatar-se",
+    "applySubtitle": "Escolha a melhor forma para enviar sua candidatura",
+    "jobSite": "Site de Vagas",
+    "jobSiteDesc": "Faça sua candidatura através do nosso site de vagas",
+    "applyNow": "Candidatar-se",
+    "byEmail": "Por E-mail",
+    "emailDesc": "Envie seu currículo com título da vaga e pretensão salarial",
+    "sendResume": "Enviar Currículo",
+    "cultureTitle": "Nossa Cultura",
+    "cultureSubtitle": "Valores que guiam nossas decisões e relacionamentos",
+    "excellence": "Excelência",
+    "excellenceDesc": "Buscamos sempre a melhor qualidade em tudo o que fazemos",
+    "innovation": "Inovação",
+    "innovationDesc": "Estamos sempre em busca de novas soluções e melhorias",
+    "collaboration": "Colaboração",
+    "collaborationDesc": "Acreditamos no poder do trabalho em equipe e sinergia",
+    "integrity": "Integridade",
+    "integrityDesc": "Agimos com ética, transparência e responsabilidade"
   }
 }

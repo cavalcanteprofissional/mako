@@ -401,5 +401,27 @@
   "header": {
     "requestQuote": "Request a Quote",
     "whatsappContact": "Contact via WhatsApp"
+  },
+  "careers": {
+    "heroTitle": "Work With Us",
+    "heroSubtitle": "Come be part of our team.",
+    "applyTitle": "How to Apply",
+    "applySubtitle": "Choose the best way to send your application",
+    "jobSite": "Job Portal",
+    "jobSiteDesc": "Apply through our job portal",
+    "applyNow": "Apply Now",
+    "byEmail": "By E-mail",
+    "emailDesc": "Send your resume with job title and salary expectations",
+    "sendResume": "Send Resume",
+    "cultureTitle": "Our Culture",
+    "cultureSubtitle": "Values that guide our decisions and relationships",
+    "excellence": "Excellence",
+    "excellenceDesc": "We always seek the best quality in everything we do",
+    "innovation": "Innovation",
+    "innovationDesc": "We are always looking for new solutions and improvements",
+    "collaboration": "Collaboration",
+    "collaborationDesc": "We believe in the power of teamwork and synergy",
+    "integrity": "Integrity",
+    "integrityDesc": "We act with ethics, transparency and responsibility"
   }
 }
