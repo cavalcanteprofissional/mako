@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mako® Soluções Industriais
 
-## Getting Started
+Website institucional da Mako® Soluções Industriais, empresa especializada em soluções de engenharia industrial com foco em automação, projetos e manutenção.
 
-First, run the development server:
+## 🛠️ Tecnologias
+
+- **Next.js 16** - Framework React para produção
+- **React 19** - Biblioteca de interface
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **Framer Motion** - Animações
+- **React Hook Form + Zod** - Validação de formulários
+- **React Brazil Heatmap** - Mapa do Brasil
+
+## 🚀 Começando
 
 ```bash
+# Instalar dependências
+npm install
+
+# Executar desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build de produção
+npm run build
+
+# Iniciar produção
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Idiomas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O projeto suporta:
+- Português Brasileiro (pt-BR) - Padrão
+- English (en)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para adicionar novas traduções, edite os arquivos:
+- `src/messages/pt-BR.json`
+- `src/messages/en.json`
 
-## Learn More
+## 📁 Estrutura
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                  # Páginas Next.js
+│   ├── carreiras/       # Trabalhe Conosco
+│   ├── certificacoes/   # Certificações
+│   ├── clientes/        # Clientes
+│   ├── como-fazemos/    # Metodologia
+│   ├── contato/         # Contato
+│   ├── home/            # Home
+│   ├── o-que-fazemos/   # Serviços
+│   ├── quem-somos/      # Quem Somos
+│   └── politica-*/      # Políticas
+├── components/          # Componentes React
+│   ├── layout/         # Header, Footer
+│   ├── sections/       # Seções da página
+│   ├── forms/          # Formulários
+│   └── ui/             # Componentes UI
+├── context/            # React Context
+├── lib/               # Utilitários e dados
+├── messages/          # Arquivos de tradução
+└── types/             # Tipos TypeScript
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Padrões de Código
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Componentes de página usam Client Component (`'use client'`)
+- Separação: `page.tsx` (metadata) + `*Client.tsx` (conteúdo)
+- Use `key={locale}` para forçar re-render ao trocar idioma
+- Função translate padrão:
+```tsx
+const translate = (key: string): string => {
+  const result = t(key)
+  return typeof result === 'string' && result !== key ? result : key
+}
+```
 
-## Deploy on Vercel
+## 📝 Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Copyright © Mako® Soluções Industriais. Todos os direitos reservados.
