@@ -423,5 +423,41 @@
     "collaborationDesc": "We believe in the power of teamwork and synergy",
     "integrity": "Integrity",
     "integrityDesc": "We act with ethics, transparency and responsibility"
+  },
+  "securityPolicy": {
+    "heroTitle": "Our Security Policy",
+    "heroSubtitle": "Health, Safety and Environment",
+    "intro": "Mako®, through its SMS (Health, Safety and Environment) Policy, aims to ensure the commitment that its activities have a high level of protection for the health and safety of its employees, clients, suppliers and community, as well as for the Environment.",
+    "programTitle": "Mako® SMS Program",
+    "programDesc": "Through the Mako® SMS Program, with its 5 premises and 22 principles, in addition to their respective tools, Mako® will promote healthy work conditions, clarify and train its employees in safe work practices, in addition to promoting information for risk control in the workplace and Environmental protection.",
+    "responsibilitiesTitle": "Responsibilities",
+    "responsibilitiesDesc": "All employees, from senior management to operations, are responsible for the safety of their colleagues and subordinates, and for environmental protection in activities under their control.",
+    "commitmentsTitle": "Our Commitments",
+    "commitment1": "Operate with all documentation and records required by current legislation",
+    "commitment2": "Carry out the necessary reviews and disseminate the information contained in the documents",
+    "commitment3": "Always seek high SMS excellence standards through continuous improvement",
+    "commitment4": "Promote people development, application of best practices at all levels",
+    "contactTitle": "Questions about Security?",
+    "contactDesc": "For additional information about our security policy, contact us:",
+    "email": "E-mail",
+    "phone": "Phone"
+  },
+  "qualityPolicy": {
+    "heroTitle": "Our Quality Policy",
+    "heroSubtitle": "Total satisfaction in every project",
+    "intro": "Mako® aims to value the quality of its services with regard to the total satisfaction of its clients, employees, partners, suppliers, environment and shareholder partners.",
+    "commitmentTitle": "Our Commitment",
+    "commitmentDesc": "Mako® is committed to supporting this quality policy through training actions for employees and partners, and through continuous improvement of its standards.",
+    "systemTitle": "Mako® Quality System",
+    "systemDesc": "The principles and procedures of the Mako® Quality System will be the basis for the necessary controls to achieve a world-class quality standard in products and services.",
+    "responsibilitiesTitle": "Responsibilities",
+    "responsibility1": "All employees are responsible for complying with applicable requirements",
+    "responsibility2": "Comply with the premises, procedures and best practices of the policy",
+    "responsibility3": "Maintain world-class quality standards in all projects",
+    "responsibility4": "Always seek total satisfaction of clients, employees and partners",
+    "contactTitle": "Questions about Quality?",
+    "contactDesc": "For additional information about our quality policy, contact us:",
+    "email": "E-mail",
+    "phone": "Phone"
   }
 }
