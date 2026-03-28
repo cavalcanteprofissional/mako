@@ -69,6 +69,13 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
   return (
     <section className="py-20">
       <div className="container-custom">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            {translate('heroOverlay.services')}
+          </h2>
+        </div>
+
         {/* Service Card */}
         <div className="relative overflow-hidden">
           <div 

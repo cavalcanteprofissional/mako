@@ -42,6 +42,12 @@
 
 ## 🔄 Em Andamento
 
+### Hero Section - Overlay de Serviços
+- [x] Overlay de serviços ocultado temporariamente
+  - Local: `src/components/sections/HeroSection.tsx`
+  - Como reverter: Descomentar linhas 141-149
+  - Data: 28/03/2026
+
 ### Certificações
 - [ ] Substituir placeholders por imagens reais dos certificados
   - Local: `public/images/certifications/`

@@ -138,7 +138,7 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* Service Overlay - Centralizado */}
+      {/* Service Overlay - Temporariamente ocultado
       <div className="absolute inset-0 flex items-center justify-center z-30 p-4">
         <HeroServiceOverlay 
           services={mockServices} 
@@ -146,6 +146,7 @@ export default function HeroSection() {
           onSlideChange={goToSlide}
         />
       </div>
+      */}
     </section>
   )
 }
