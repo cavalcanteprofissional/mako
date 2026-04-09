@@ -32,7 +32,7 @@ export default function CertificationsSection() {
             <a href="/pdf/certifications/certificado.pdf" target="_blank" rel="noopener noreferrer" className="block bg-gray-50 rounded-xl p-8 border-2 border-gray-200 hover:border-primary-400 transition-colors cursor-pointer">
               <div className="aspect-[4/3] relative flex items-center justify-center">
                 <Image
-                  src="/images/certifications/ISO.svg"
+                  src="/images/certifications/iso.svg"
                   alt="Certificado ISO 9001:2015"
                   fill
                   className="object-contain"

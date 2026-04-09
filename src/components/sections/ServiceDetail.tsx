@@ -147,7 +147,7 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
               {currentService.slug === 'projetos-industriais' && (
                 <div className="flex-shrink-0 bg-white p-2 rounded-lg shadow-md border-2 border-primary-500">
                   <Image
-                    src="/images/certifications/ISO.svg"
+                    src="/images/certifications/iso.svg"
                     alt="ISO 9001"
                     width={70}
                     height={70}
