@@ -9,11 +9,14 @@ interface Client {
   image: string
 }
 
-const clients: Client[] = Array.from({ length: 39 }, (_, i) => ({
-  id: String(i + 1),
-  name: `Cliente ${i + 1}`,
-  image: `/images/clients/Prancheta ${i + 1}.png`,
-}))
+const clients: Client[] = Array.from({ length: 41 }, (_, i) => {
+  const ext = [12, 13, 18, 23, 37, 39].includes(i) ? 'png' : 'svg'
+  return {
+    id: String(i),
+    name: `Cliente ${i}`,
+    image: `/images/clients/Prancheta ${i}.${ext}`,
+  }
+})
 
 export default function ClientsGridSection() {
   const { t } = useLanguage()
@@ -23,14 +26,19 @@ export default function ClientsGridSection() {
     return typeof result === 'string' ? result : key
   }
 
-  const distributions = [6, 7, 6, 7, 6, 7]
-  const rows: Client[][] = []
-  let currentIndex = 0
+  const hexWidth = 160
+  const hexHeight = 140
+  const overlapX = -14
+  const overlapY = -28
 
-  for (const count of distributions) {
-    rows.push(clients.slice(currentIndex, currentIndex + count))
-    currentIndex += count
-  }
+  const rows = [
+    clients.slice(0, 7),
+    clients.slice(7, 13),
+    clients.slice(13, 20),
+    clients.slice(20, 26),
+    clients.slice(26, 33),
+    clients.slice(33, 41),
+  ]
 
   return (
     <section className="py-20 bg-white overflow-hidden w-full">
@@ -44,34 +52,43 @@ export default function ClientsGridSection() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center px-4">
-          {rows.map((row, rowIndex) => (
-            <div
-              key={rowIndex}
-              className="flex flex-wrap justify-center gap-6"
-              style={{
-                width: rowIndex % 2 === 1 ? 'calc(100% - 40px)' : '100%',
-                maxWidth: rowIndex % 2 === 1 ? 'calc(100% - 40px)' : '100%'
-              }}
-            >
-              {row.map((client) => (
-                <div
-                  key={client.id}
-                  className="relative w-28 h-28 md:w-32 md:h-32 group"
-                >
-                  <div className="w-full h-full flex items-center justify-center group-hover:scale-110 transition-all duration-300">
-                    <Image
-                      src={client.image}
-                      alt={client.name}
-                      fill
-                      className="object-contain filter grayscale hover:grayscale-0 transition-all duration-500 opacity-70 group-hover:opacity-100"
-                      sizes="128px"
-                    />
+        {/* Honeycomb Grid - Favo de Mel */}
+        <div className="flex flex-col items-center px-4 overflow-x-auto">
+          <div className="flex flex-col items-center" style={{ minWidth: 'fit-content' }}>
+            {rows.map((row, rowIndex) => (
+              <div
+                key={rowIndex}
+                className="flex justify-center"
+                style={{
+                  marginTop: rowIndex > 0 ? `${overlapY}px` : '0',
+                  marginLeft: rowIndex % 2 === 1 && rowIndex !== rows.length - 1 ? `${(hexWidth + overlapX) / 2}px` : '0',
+                }}
+              >
+                {row.map((client, colIndex) => (
+                  <div
+                    key={client.id}
+                    className="relative group flex-shrink-0"
+                    style={{
+                      width: `${hexWidth}px`,
+                      height: `${hexHeight}px`,
+                      marginLeft: colIndex > 0 ? `${overlapX}px` : '0',
+                    }}
+                  >
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Image
+                        src={client.image}
+                        alt={client.name}
+                        width={110}
+                        height={85}
+                        className="object-contain opacity-90 group-hover:opacity-100"
+                        sizes="110px"
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          ))}
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

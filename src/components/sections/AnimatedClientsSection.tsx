@@ -14,11 +14,14 @@ export default function AnimatedClientsSection() {
   const { t, locale } = useLanguage()
 
   const clients = useMemo(() => 
-    Array.from({ length: 39 }, (_, i) => ({
-      id: String(i + 1),
-      name: `Cliente ${i + 1}`,
-      image: `/images/clients/Prancheta ${i + 1}.png`,
-    })), []
+    Array.from({ length: 41 }, (_, i) => {
+      const ext = [12, 13, 18, 23, 37, 39].includes(i) ? 'png' : 'svg'
+      return {
+        id: String(i),
+        name: `Cliente ${i}`,
+        image: `/images/clients/Prancheta ${i}.${ext}`,
+      }
+    }), []
   )
 
   const clientsForScroll = useMemo(() => 
@@ -64,7 +67,7 @@ export default function AnimatedClientsSection() {
                       src={client.image}
                       alt={client.name}
                       fill
-                      className="object-contain filter grayscale hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100"
+                      className="object-contain opacity-80 group-hover:opacity-100 transition-all duration-300"
                       sizes="64px md:96px"
                     />
                   </div>
@@ -90,7 +93,7 @@ export default function AnimatedClientsSection() {
                       src={client.image}
                       alt={client.name}
                       fill
-                      className="object-contain filter grayscale hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100"
+                      className="object-contain opacity-80 group-hover:opacity-100 transition-all duration-300"
                       sizes="64px md:96px"
                     />
                   </div>
@@ -98,7 +101,6 @@ export default function AnimatedClientsSection() {
               ))}
             </div>
           </div>
-
         </div>
       </div>
 

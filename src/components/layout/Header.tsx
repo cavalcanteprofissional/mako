@@ -57,12 +57,12 @@ export default function Header() {
           isScrolled && "shadow-medium"
         )}
       >
-        <div className="container-custom">
-          <nav className="flex items-center justify-between h-16 lg:h-20">
+        <div className="w-full px-8 lg:px-16">
+          <nav className="flex items-center justify-between h-16 lg:h-20 max-w-[1920px] mx-auto">
             {/* Logo */}
             <Link 
               href="/" 
-              className="flex items-center group"
+              className="flex items-center gap-3 group"
               aria-label="Mako Soluções Industriais"
             >
               <div className="relative w-20 h-20 lg:w-24 lg:h-24">
@@ -74,32 +74,42 @@ export default function Header() {
                   priority
                 />
               </div>
+              <div className="relative w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12">
+                <Image
+                  src="/images/certifications/ISO.svg"
+                  alt="ISO 9001"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
-              {navigation.main.map((item) => {
-                const navKeyMap: Record<string, string> = {
-                  'Home': 'home',
-                  'Quem Somos': 'about',
-                  'O Que Fazemos': 'whatWeDo',
-                  'Como Fazemos': 'howWeDo',
-                  'Clientes': 'clients',
-                  'Contato': 'contact',
-                }
-                const translateKey = navKeyMap[item.name] || 'home'
-                return (
-                  <div key={item.name} className="relative">
-                    <Link
-                      href={item.href}
-                      onClick={(e) => handleNavClick(e, item.href)}
-                      className="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200"
-                    >
-                      {translate(`navigation.${translateKey}`)}
-                    </Link>
-                  </div>
-                )
-              })}
+            <div className="hidden lg:flex items-center justify-center flex-1 px-8">
+              <div className="flex items-center space-x-10">
+                {navigation.main.map((item) => {
+                  const navKeyMap: Record<string, string> = {
+                    'Home': 'home',
+                    'Quem Somos': 'about',
+                    'O Que Fazemos': 'whatWeDo',
+                    'Como Fazemos': 'howWeDo',
+                    'Clientes': 'clients',
+                    'Contato': 'contact',
+                  }
+                  const translateKey = navKeyMap[item.name] || 'home'
+                  return (
+                    <div key={item.name} className="relative">
+                      <Link
+                        href={item.href}
+                        onClick={(e) => handleNavClick(e, item.href)}
+                        className="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 whitespace-nowrap"
+                      >
+                        {translate(`navigation.${translateKey}`)}
+                      </Link>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
 
             {/* CTA Buttons */}
