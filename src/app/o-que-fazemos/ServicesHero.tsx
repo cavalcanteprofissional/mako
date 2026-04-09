@@ -20,37 +20,6 @@ export default function ServicesHero() {
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto text-justify">
             {translate('services.heroDescription')}
           </p>
-
-          {/* Service Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                +23
-              </div>
-              <p className="text-white/80">{translate('services.statsYears')}</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                +200
-              </div>
-              <p className="text-white/80">{translate('services.statsProjects')}</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                ISO 9001
-              </div>
-              <p className="text-white/80">{translate('services.statsCertification')}</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                PMBoK
-              </div>
-              <p className="text-white/80">{translate('services.statsMethodology')}</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

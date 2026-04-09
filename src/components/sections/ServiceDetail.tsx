@@ -126,22 +126,35 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
           {/* Service Info */}
           <div className="flex flex-col justify-center">
             {/* Title with Icon */}
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-16 h-16 lg:w-20 lg:h-20 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg className="w-10 h-10 lg:w-12 lg:h-12 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconPath(currentService.icon)} />
-                </svg>
+            <div className="flex items-start justify-between gap-4 mb-4">
+              <div className="flex items-center gap-4">
+                <div className="w-16 h-16 lg:w-20 lg:h-20 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-10 h-10 lg:w-12 lg:h-12 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconPath(currentService.icon)} />
+                  </svg>
+                </div>
+                <div>
+                  <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
+                    {currentService.name}
+                  </h2>
+                  {currentService.price && (
+                    <p className="text-lg text-primary-600 font-medium">
+                      {translate('services.startingFrom')} {currentService.price}
+                    </p>
+                  )}
+                </div>
               </div>
-              <div>
-                <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
-                  {currentService.name}
-                </h2>
-                {currentService.price && (
-                  <p className="text-lg text-primary-600 font-medium">
-                    {translate('services.startingFrom')} {currentService.price}
-                  </p>
-                )}
-              </div>
+              {currentService.slug === 'projetos-industriais' && (
+                <div className="flex-shrink-0 bg-white p-2 rounded-lg shadow-md border-2 border-primary-500">
+                  <Image
+                    src="/images/certifications/ISO.svg"
+                    alt="ISO 9001"
+                    width={70}
+                    height={70}
+                    className="object-contain"
+                  />
+                </div>
+              )}
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-6">
@@ -175,15 +188,6 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
               >
                 {translate('services.requestQuote')}
                 <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-              <Button
-                variant="outline"
-                href={`https://wa.me/5585987654321?text=${encodeURIComponent(translate('services.whatsappMessage') || `Olá! Gostaria de saber mais sobre o serviço: ${currentService.name}`)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="justify-center"
-              >
-                {translate('services.talkToSpecialist')}
               </Button>
             </div>
             </div>

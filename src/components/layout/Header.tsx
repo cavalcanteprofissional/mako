@@ -63,12 +63,12 @@ export default function Header() {
             <Link 
               href="/" 
               className="flex items-center group"
-              aria-label="Mako® Soluções Industriais"
+              aria-label="Mako Soluções Industriais"
             >
-              <div className="relative w-14 h-14 lg:w-16 lg:h-16">
+              <div className="relative w-20 h-20 lg:w-24 lg:h-24">
                 <Image
                   src="/images/logo.svg"
-                  alt="Mako® Logo"
+                  alt="Mako Logo"
                   fill
                   className="object-contain transition-transform duration-300 group-hover:scale-110"
                   priority

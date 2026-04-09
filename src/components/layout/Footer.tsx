@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, ChevronRight } from 'lucide-react'
+import { Phone, Mail, MapPin, Instagram, Linkedin, ChevronRight } from 'lucide-react'
 import { companyInfo, navigation } from '@/lib/constants'
 import { formatWhatsApp } from '@/lib/utils'
 import { useLanguage } from '@/context/LanguageContext'
@@ -53,13 +53,7 @@ export default function Footer() {
       name: 'Instagram',
       href: companyInfo.social.instagram,
       icon: Instagram,
-      color: 'hover:text-pink-600',
-    },
-    {
-      name: 'Facebook',
-      href: companyInfo.social.facebook,
-      icon: Facebook,
-      color: 'hover:text-primary-600',
+      color: 'hover:text-primary-700',
     },
   ]
 
@@ -75,14 +69,14 @@ export default function Footer() {
                 <div className="relative w-10 h-10">
                   <Image
                     src="/images/logo-white.svg"
-                    alt="Mako® Logo"
+                    alt="Mako Logo"
                     fill
                     className="object-contain"
                   />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">
-                    Mako®
+                    Mako
                   </h3>
                   <p className="text-sm text-gray-400">
                     {translate('footer.tagline')}

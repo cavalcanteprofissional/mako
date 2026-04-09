@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckCircle, Award, TrendingUp, Users } from 'lucide-react'
+import { CheckCircle, Award, TrendingUp } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function CompanyStatsSection({ className = '' }: CompanyStatsSectionProps) {
@@ -14,31 +14,24 @@ export default function CompanyStatsSection({ className = '' }: CompanyStatsSect
   const stats = [
     {
       icon: Award,
-      value: '+23',
+      value: '+24',
       label: translate('stats.years'),
       description: translate('stats.yearsDesc'),
       gradient: 'from-primary-500 to-primary-700',
     },
     {
       icon: TrendingUp,
-      value: '+200',
+      value: '+2000',
       label: translate('stats.projects'),
       description: translate('stats.projectsDesc'),
       gradient: 'from-primary-600 to-primary-800',
     },
     {
       icon: CheckCircle,
-      value: 'R$ 2bi+',
+      value: '+R$ 5bi',
       label: translate('stats.value'),
       description: translate('stats.valueDesc'),
       gradient: 'from-primary-500 to-primary-700',
-    },
-    {
-      icon: Users,
-      value: '+50',
-      label: translate('stats.professionals'),
-      description: translate('stats.professionalsDesc'),
-      gradient: 'from-primary-600 to-primary-800',
     },
   ]
 
@@ -70,7 +63,7 @@ export default function CompanyStatsSection({ className = '' }: CompanyStatsSect
         </div>
 
         {/* Achievement Stats - Cards com gradiente */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mb-10 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 mb-10 md:mb-16 max-w-4xl mx-auto">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon
             return (

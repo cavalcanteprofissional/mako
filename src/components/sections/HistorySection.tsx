@@ -55,9 +55,11 @@ export default function HistorySection({ history }: HistorySectionProps) {
                   {/* Content Card */}
                   <div className="w-5/12">
                     <div className="bg-white rounded-xl shadow-soft hover:shadow-xl transition-all duration-300 p-6">
-                      <div className="bg-primary-600 text-white px-4 py-1 rounded-full font-bold text-sm inline-block mb-3">
-                        {milestone.year}
-                      </div>
+                      {milestone.year !== '2026' && (
+                        <div className="bg-primary-600 text-white px-4 py-1 rounded-full font-bold text-sm inline-block mb-3">
+                          {milestone.year}
+                        </div>
+                      )}
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">
                         {translatedTitle}
                       </h3>
@@ -86,12 +88,6 @@ export default function HistorySection({ history }: HistorySectionProps) {
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             {translate('about.ctaHistoryDescription')}
           </p>
-          <a
-            href="/contato"
-            className="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors duration-200"
-          >
-            {translate('about.ctaHistoryButton')}
-          </a>
         </div>
       </div>
     </section>

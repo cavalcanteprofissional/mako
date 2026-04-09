@@ -1,4 +1,4 @@
-# COORP.md — Mako® Soluções Industriais
+# COORP.md — Mako Soluções Industriais
 
 > **Arquivo de referência para agentes de IA**
 > Versão: 2.0 | Fonte: [mako.ind.br](https://mako.ind.br) | Atualizado em: 2026-03
@@ -9,13 +9,13 @@
 
 | Campo | Valor |
 |---|---|
-| **Nome Completo** | Mako® Soluções Industriais |
+| **Nome Completo** | Mako Soluções Industriais |
 | **Fundação** | 2001 |
 | **Sede** | Fortaleza – CE, Brasil |
 | **Endereço** | Av. Bernardo Manuel, Nº 10271, 1º Andar – Salas A e B, Fortaleza – CE, CEP: 60.761-281 |
-| **Telefone** | +55 85 3493.2877 |
+| **Telefone** | +55 85 99159-4599 |
 | **WhatsApp Comercial** | +55 85 9 9159-4599 |
-| **E-mail** | comercial@mako.ind.br |
+| **E-mail** | possofalar1@mako.ind.br |
 | **Website** | https://mako.ind.br |
 | **LinkedIn** | https://www.linkedin.com/company/makosolucoesindustriais |
 | **Instagram** | @makosolucoesind |
@@ -27,19 +27,38 @@
 ## 🎯 Propósito Institucional
 
 ### Missão
-Fornecer soluções completas em Engenharia Industrial, atuando com foco na parceria fornecedor/cliente, priorizando qualidade, custo e prazo em projetos de Desenvolvimento, Engenharia & Construção.
+Fornecer aos clientes Mako a ferramenta da engenharia como vantagem competitiva aos seus negócios.
 
 ### Visão
-Ser a melhor empresa de soluções em Engenharia Industrial do mercado, consolidando-se como empresa de alto desempenho técnico, ambiental, humano e financeiro, garantindo a satisfação total de clientes, funcionários e acionistas.
+Ser a melhor solução em engenharia industrial do mercado. Consolidar-se como empresa de alto desempenho: Técnico. Ambiental. Humano. Financeiro. Promover a satisfação total de clientes, funcionários e acionistas.
 
-### Valores
+### Valores (12 Competências)
+- Gerencia a estratégia do negócio
+- Melhoria contínua
+- Comunicação
+- Coragem e assumir riscos
 - Foco no cliente e em seus negócios
+- Conhecimento técnico
 - Liderança
 - Trabalho em equipe de alto desempenho
-- Pro-atividade
+- Pró-atividade
+- Decisão e solução de problemas
 - Inovação
-- Velocidade
 - Ética
+
+### Fundamentos Empresariais
+- Respeito
+- Simplicidade
+- Confiança
+- Compromisso
+- Velocidade
+- Austeridade Financeira
+
+### Informações de Contato
+- **Telefone:** +55 85 99159-4599
+- **E-mail:** possofalar1@mako.ind.br
+- **Horário de Trabalho:** Segunda a Sexta: 08:00 às 17:30
+- **Sábado e Domingo:** Fechado
 
 ---
 
@@ -47,9 +66,9 @@ Ser a melhor empresa de soluções em Engenharia Industrial do mercado, consolid
 
 | Indicador | Dado |
 |---|---|
-| Anos de mercado | +23 anos (desde 2001) |
-| Projetos executados | +200 projetos industriais |
-| Valor total gerenciado | Superior a R$ 2 bilhões |
+| Anos de mercado | +24 anos (desde 2001) |
+| Projetos executados | +2000 projetos industriais |
+| Valor total gerenciado | Superior a R$ 5 bilhões |
 | Equipe | +50 profissionais especializados |
 | Clientes | A maioria entre os 10 maiores do mundo em seus setores |
 
@@ -87,7 +106,7 @@ Elaboração de pacotes de premissas e concepção de projetos industriais:
 - Consultoria junto a Instituições Financeiras e Entidades Públicas
 - Elaboração de Estudos e Projetos para fins de Financiamentos
 
-### 3. Elaboração de Projetos Industriais
+### 3. Elaboração de Projetos Industriais - ISO 9001 (Engenharia de Detalhamento, Projetos Ambientais)
 
 #### Projetos Ambientais
 - Relatórios Ambientais: RAS, EVA, ECA, EIA e RIMA
@@ -102,7 +121,7 @@ Elaboração de pacotes de premissas e concepção de projetos industriais:
 - Elétricos: Diagramas, Força e Controle, Iluminação, Subestações, SEP, SEC e CFTV
 - Mecânicos: Plantas de Manufatura, Fluxogramas, Pipe Racks, Plataformas, Tubulações, Linhas de Produção
 - Instrumentação: Fluxogramas P&I, PLC, I/O
-- Segurança: Combate a Incêndio, SPDA, Aterramento, NR10, NR12, NR13, NR18
+- Segurança: Combate a Incêndio, SPDA, Aterramento, NR10, NR12, NR13, NR18, NR35
 
 ### 4. Assessoria em Suprimentos e Aquisições
 - Homologação de Fornecedores de Bens e Serviços
@@ -115,7 +134,7 @@ Elaboração de pacotes de premissas e concepção de projetos industriais:
 - **Elétricas:** Cabeamento, Alimentação, Força e Controle (Baixa e Média Tensão), Subestações, Quadros e Painéis
 - **Mecânicas:** Pipe Rack, Tubulações, Sistemas de Bombas e Motores, Plataformas, Estruturas Mistas
 - **Segurança:** Combate a Incêndio, SPDA, Aterramentos, Linhas de Vida
-- Adequação de Equipamentos às normas NR10, NR12 e NR13
+- Adequação de Equipamentos às normas NR10, NR12, NR13 e NR35
 - Fornecimento de Mão de Obra Especializada de Campo
 
 ### 6. Manutenções
@@ -125,8 +144,9 @@ Elaboração de pacotes de premissas e concepção de projetos industriais:
 - Suporte de Engenharia Especializada em Manutenções Industriais
 
 ### 7. Coordenação e Fiscalização de Obras e Serviços
+- Equipe de coordenação e fiscalização de campo dedicada
 - Controle de Qualidade de Engenharia & Construção
-- Supervisão de Saúde, Meio Ambiente e Segurança (HSSE)
+- Supervisão de Saúde, Meio Ambiente e Segurança (SMS)
 - Supervisão e Controle da Evolução Físico-Financeira
 - Emissão de Relatórios e Indicadores para o cliente
 
@@ -134,12 +154,13 @@ Elaboração de pacotes de premissas e concepção de projetos industriais:
 
 ## ⚙️ Metodologia de Trabalho
 
-A Mako® aplica as mais modernas ferramentas de gestão e utiliza as melhores práticas de gerenciamento, buscadas através da Filosofia de Qualidade Total. Essas práticas são aplicadas de forma criteriosa, respeitando o nível de maturidade dos clientes em gerenciamento, assim como seus desejos e necessidades.
+A Mako aplica as mais modernas ferramentas de gestão e utiliza as melhores práticas de gerenciamento, buscadas através da Filosofia de Qualidade Total. Essas práticas são aplicadas de forma criteriosa, respeitando o nível de maturidade dos clientes em gerenciamento, assim como seus desejos e necessidades.
 
 **Ferramentas aplicadas:**
 - **Capital Project Management (CPM)**
 - **Project Management Body Knowledge (PMBOK)**
 - **Conceive-Design-Implement-Operate (CDIO)**
+- **Building Information Modeling (BIM)**
 
 ### Gerenciamento de Projetos
 Referência: **PMBoK (Project Management Body of Knowledge — PMI)** e **CPM (Capital Project Management)**
@@ -155,7 +176,7 @@ Referência: **PMBoK (Project Management Body of Knowledge — PMI)** e **CPM (C
 - Gerenciamento dos Riscos
 - Gerenciamento das Aquisições
 
-A Mako® atua em todas as fases do ciclo de vida de um projeto: concepção → planejamento → execução → controle → encerramento.
+A Mako atua em todas as fases do ciclo de vida de um projeto: concepção → planejamento → execução → controle → encerramento.
 
 ### Planejamento Estratégico de Investimentos
 Ferramentas aplicadas:
@@ -168,7 +189,7 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 - Descentralização da cadeia de comando
 - Maior autonomia para tomada de decisões
-- Plano de Desenvolvimento de Pessoas — Mako® (treinamento, capacitação, parcerias com instituições de ensino técnico e superior)
+- Plano de Desenvolvimento de Pessoas — Mako (treinamento, capacitação, parcerias com instituições de ensino técnico e superior)
 
 ---
 
@@ -185,11 +206,11 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 ## 🔐 Política de Segurança
 
-A Mako®, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde e segurança de seus empregados, clientes, fornecedores e comunidade, assim como para o Meio Ambiente.
+A Mako, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde e segurança de seus empregados, clientes, fornecedores e comunidade, assim como para o Meio Ambiente.
 
-### Programa Mako® de SMS
+### Programa Mako de SMS
 
-Através do Programa Mako® de SMS, com suas **5 premissas e 22 princípios**, além de suas respectivas ferramentas, a Mako® promoverá:
+Através do Programa Mako de SMS, com suas **5 premissas e 22 princípios**, além de suas respectivas ferramentas, a Mako promoverá:
 
 - Condições saudáveis de trabalho
 - Treinamento em práticas seguras
@@ -214,21 +235,21 @@ Todos os funcionários, da alta direção à operação, são responsáveis pela
 
 ## 🏆 Política de Qualidade
 
-A Mako® tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à satisfação total de seus clientes, funcionários, parceiros, fornecedores, meio ambiente e sócios cotistas.
+A Mako tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à satisfação total de seus clientes, funcionários, parceiros, fornecedores, meio ambiente e sócios cotistas.
 
 ### Compromisso
 
-A Mako® se compromete em suportar essa política de qualidade através de:
+A Mako se compromete em suportar essa política de qualidade através de:
 - Ações de treinamento aos funcionários e parceiros
 - Melhoria contínua de seus padrões
 
 ### Sistema de Qualidade
 
-Os princípios e procedimentos do Sistema de Qualidade Mako® serão as bases dos controles necessários para atingir um padrão mundial de qualidade nos produtos e serviços.
+Os princípios e procedimentos do Sistema de Qualidade Mako serão as bases dos controles necessários para atingir um padrão mundial de qualidade nos produtos e serviços.
 
 ### Responsabilidades
 
-Todos os funcionários da Mako® são responsáveis por cumprir os requisitos aplicáveis, as premissas, procedimentos e melhores práticas escritas e não escritas dessa política.
+Todos os funcionários da Mako são responsáveis por cumprir os requisitos aplicáveis, as premissas, procedimentos e melhores práticas escritas e não escritas dessa política.
 
 ---
 
@@ -237,7 +258,7 @@ Todos os funcionários da Mako® são responsáveis por cumprir os requisitos ap
 ### Candidature-se
 
 Faça sua candidatura através do site:
-- **[Vagas Mako®](https://makosolucoes.vagas.solides.com.br)**
+- **[Vagas Mako](https://makosolucoes.vagas.solides.com.br)**
 
 ### Envie seu Currículo
 
@@ -324,7 +345,7 @@ Para candidatar-se por e-mail, envie seu currículo com:
 - ServiceProcess (processo de trabalho)
 - ServicesList (lista de todos os serviços)
 
-*Esta página exibe todos os 7 serviços principais da Mako®.*
+*Esta página exibe todos os 7 serviços principais da Mako.*
 
 ---
 
@@ -354,14 +375,14 @@ Para candidatar-se por e-mail, envie seu currículo com:
 ## 🎨 Padrões de Design
 
 ### Marca
-Em todas as menções à marca, utilizar **Mako®** (com símbolo de registro). Isso inclui:
+Em todas as menções à marca, utilizar **Mako** (sem símbolo de registro). Isso inclui:
 - Textos institucionais
 - Títulos e subtítulos
 - Descrições
 - Metadados (SEO)
 - Componentes de UI
 
-Exceções: URLs de domínio, e-mails e联系方式 técnicas (ex: @mako.ind.br).
+Exceções: URLs de domínio, e-mails e informações de contato técnicas (ex: @mako.ind.br).
 
 ### Paleta de Cores
 O projeto deve utilizar o gradiente de **#46ae4d** para **#113c21** como padrão principal em todo o projeto:
@@ -383,12 +404,12 @@ Este gradiente deve ser aplicado em:
 ### Tom e Postura
 - Utilizar linguagem técnica, profissional e objetiva
 - Demonstrar expertise em engenharia industrial e gestão de projetos
-- Reforçar sempre os diferenciais: experiência, certificação ISO 9001, metodologia PMBoK/CPM e portfólio de +200 projetos
-- Ser preciso quanto a normas técnicas (NR10, NR12, NR13, NR18, licenças ambientais, etc.)
+- Reforçar sempre os diferenciais: experiência, certificação ISO 9001, metodologia PMBOK, CPM, CDIO, BIM e portfólio de +2000 projetos
+- Ser preciso quanto a normas técnicas (NR10, NR12, NR13, NR18, NR35, licenças ambientais, etc.)
 
 ### Escopo de Respostas
 - O agente deve responder perguntas sobre os 7 serviços principais listados acima
-- Para orçamentos e propostas, direcionar o contato para: +55 85 3493.2877 ou e-mail contato@mako.ind.br
+- Para orçamentos e propostas, direcionar o contato para: +55 85 99159-4599 ou e-mail contato@mako.ind.br
 - Para dúvidas sobre vagas, direcionar para: https://mako.ind.br/trabalhe-conosco/
 - Não especular sobre valores de contratos ou cronogramas sem envolver a equipe comercial
 
@@ -403,7 +424,7 @@ Este gradiente deve ser aplicado em:
 
 | Certificação | Descrição | Emissor | Ano de Obtenção | Validade |
 |-------------|-----------|----------|-----------------|----------|
-| **ISO 9001:2015** | Sistema de Gestão da Qualidade para Elaboração de Projetos Industriais | ABNT | 2022 | 25/11/2025 |
+| **ISO 9001:2015** | Sistema de Gestão da Qualidade para Elaboração de Projetos Industriais | ABNT | 2025 | 25/11/2028 |
 
 ### Links Oficiais
 

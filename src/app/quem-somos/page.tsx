@@ -6,11 +6,11 @@ import HistorySection from '@/components/sections/HistorySection'
 import AboutHero from './AboutHero'
 
 export const metadata: Metadata = {
-  title: 'Quem Somos - Mako® Soluções Industriais',
-  description: 'Conheça a história, equipe e certificações da Mako® Soluções Industriais. Especialistas em engenharia industrial com mais de 23 anos de experiência e certificação ISO 9001.',
+  title: 'Quem Somos - Mako Soluções Industriais',
+  description: 'Conheça a história, equipe e certificações da Mako Soluções Industriais. Especialistas em engenharia industrial com mais de 23 anos de experiência e certificação ISO 9001.',
   openGraph: {
-    title: 'Quem Somos - Mako® Soluções Industriais',
-    description: 'Descubra nossa trajetória de sucesso, metodologia PMBoK/CPM e a equipe por trás das melhores soluções em engenharia industrial.',
+    title: 'Quem Somos - Mako Soluções Industriais',
+    description: 'Descubra nossa trajetória de sucesso, metodologia PMBOK, CPM, CDIO, BIM e a equipe por trás das melhores soluções em engenharia industrial.',
     url: '/quem-somos',
   },
 }

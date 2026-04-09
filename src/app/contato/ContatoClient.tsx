@@ -95,7 +95,7 @@ export default function ContatoClient() {
                   address={companyInfo.address.fullAddress}
                   lat={companyInfo.location.lat}
                   lng={companyInfo.location.lng}
-                  companyName="Mako® Soluções Industriais"
+                  companyName="Mako Soluções Industriais"
                 />
               </div>
               <div className="mt-3 text-center">
@@ -115,12 +115,6 @@ export default function ContatoClient() {
           </div>
         </div>
       </Section>
-
-      {/* CTA Section */}
-      <CTASection 
-        title={translate('contact.ctaTitle')}
-        description={translate('contact.ctaDescription')}
-      />
     </div>
   )
 }

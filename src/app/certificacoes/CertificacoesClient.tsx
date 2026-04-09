@@ -290,7 +290,7 @@ export default function CertificacoesClient() {
               {translate('certifications.requestQuote')}
             </a>
             <a 
-              href={`https://wa.me/${locale === 'pt-BR' ? '5585987654321' : '5585987654321'}?text=${locale === 'pt-BR' ? 'Olá! Gostaria de saber mais sobre as certificações da Mako®.' : 'Hello! I would like to know more about Mako® certifications.'}`}
+              href={`https://wa.me/${locale === 'pt-BR' ? '5585987654321' : '5585987654321'}?text=${locale === 'pt-BR' ? 'Olá! Gostaria de saber mais sobre as certificações da Mako.' : 'Hello! I would like to know more about Mako certifications.'}`}
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-medium transition-colors duration-200"

@@ -12,7 +12,8 @@ import {
   MessageSquare,
   Layers,
   Shield,
-  ShoppingCart
+  ShoppingCart,
+  Box
 } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 
@@ -39,6 +40,11 @@ export default function MethodologySection() {
       title: translate('methodology.tools.cdio.title'),
       description: translate('methodology.tools.cdio.description'),
       icon: RefreshCw,
+    },
+    {
+      title: translate('methodology.tools.bim.title'),
+      description: translate('methodology.tools.bim.description'),
+      icon: Box,
     },
   ]
 

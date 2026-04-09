@@ -1,6 +1,6 @@
-# Mako® Soluções Industriais
+# Mako Soluções Industriais
 
-Website institucional da Mako® Soluções Industriais, empresa especializada em soluções de engenharia industrial com foco em automação, projetos e manutenção.
+Website institucional da Mako Soluções Industriais, empresa especializada em soluções de engenharia industrial com foco em automação, projetos e manutenção.
 
 ## 🛠️ Tecnologias
 
@@ -78,4 +78,4 @@ const translate = (key: string): string => {
 
 ## 📝 Licença
 
-Copyright © Mako® Soluções Industriais. Todos os direitos reservados.
+Copyright © Mako Soluções Industriais. Todos os direitos reservados.

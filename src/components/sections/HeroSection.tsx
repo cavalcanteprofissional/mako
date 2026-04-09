@@ -13,7 +13,7 @@ export default function HeroSection() {
       id: 1,
       title: 'Engenharia Industrial de Excelência',
       subtitle: 'Qualidade, custo e prazo em projetos de Desenvolvimento, Engenharia & Construção',
-      description: 'Soluções completas em projetos industriais com metodologia PMBoK/CPM e certificação ISO 9001',
+      description: 'Soluções completas em projetos industriais com metodologia PMBOK, CPM, CDIO, BIM e certificação ISO 9001',
       image: '/images/hero/hero-1.jpeg',
       primaryCta: {
         text: 'Solicitar Orçamento',
@@ -28,7 +28,7 @@ export default function HeroSection() {
       id: 2,
       title: 'Obras e Instalações Industriais',
       subtitle: 'Execução com excelência e segurança',
-      description: 'Projetos civis, elétricos, mecânicos e de segurança com conformidade NR10, NR12, NR13, NR18',
+      description: 'Projetos civis, elétricos, mecânicos e de segurança com conformidade NR10, NR12, NR13, NR18, NR35',
       image: '/images/hero/hero-2.png',
       primaryCta: {
         text: 'Serviços',
@@ -147,6 +147,21 @@ export default function HeroSection() {
         />
       </div>
       */}
+      {/* Navigation Dots */}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex items-center gap-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+              index === currentSlide
+                ? 'bg-white w-8'
+                : 'bg-white/50 hover:bg-white/80'
+            }`}
+            aria-label={`Ir para slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </section>
   )
 }

@@ -116,7 +116,7 @@ export default function PoliticaSegurancaClient() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <a
-                href="mailto:seguranca@mako.ind.br"
+                href="mailto:possofalar1@mako.ind.br"
                 className="flex items-center p-4 bg-white rounded-lg border border-gray-200 hover:border-primary-400 hover:shadow-md transition-all duration-200 group"
               >
                 <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -125,13 +125,13 @@ export default function PoliticaSegurancaClient() {
                 <div>
                   <p className="text-sm text-gray-500">{translate('securityPolicy.email')}</p>
                   <p className="text-gray-900 font-medium group-hover:text-primary-600 transition-colors">
-                    seguranca@mako.ind.br
+                    possofalar1@mako.ind.br
                   </p>
                 </div>
               </a>
 
               <a
-                href="tel:558534932877"
+                href="tel:558591594599"
                 className="flex items-center p-4 bg-white rounded-lg border border-gray-200 hover:border-primary-400 hover:shadow-md transition-all duration-200 group"
               >
                 <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -140,7 +140,7 @@ export default function PoliticaSegurancaClient() {
                 <div>
                   <p className="text-sm text-gray-500">{translate('securityPolicy.phone')}</p>
                   <p className="text-gray-900 font-medium group-hover:text-primary-600 transition-colors">
-                    +55 85 3493.2877
+                    +55 85 99159-4599
                   </p>
                 </div>
               </a>

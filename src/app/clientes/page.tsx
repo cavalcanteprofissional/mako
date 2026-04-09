@@ -34,12 +34,6 @@ export default function ClientesPage() {
 
       {/* Clients Grid Section */}
       <ClientsGridSection />
-
-      {/* CTA Section */}
-      <CTASection 
-        title={translate('clients.ctaTitle')}
-        description={translate('clients.ctaDescription')}
-      />
     </>
   )
 }

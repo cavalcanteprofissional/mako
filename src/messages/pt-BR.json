@@ -20,7 +20,7 @@
     "slide2": {
       "title": "Obras e Instalações Industriais",
       "subtitle": "Execução com excelência e segurança",
-      "description": "Projetos civis, elétricos, mecânicos e de segurança com conformidade NR10, NR12, NR13, NR18"
+      "description": "Projetos civis, elétricos, mecânicos e de segurança com conformidade NR10, NR12, NR13, NR18, NR35"
     },
     "slide3": {
       "title": "Projetos Industriais em BIM",
@@ -49,7 +49,7 @@
   },
   "stats": {
     "title": "Nossa Trajetória e Conquistas",
-    "subtitle": "Construímos uma história de sucesso, crescimento e inovação em engenharia industrial",
+    "subtitle": "Desde 2001, desenvolvendo soluções industriais!",
     "years": "Anos de Mercado",
     "yearsDesc": "Desde 2001 no mercado industrial",
     "projects": "Projetos Industriais",
@@ -58,16 +58,16 @@
     "valueDesc": "Superior a R$ 2 bilhões em projetos",
     "professionals": "Profissionais",
     "professionalsDesc": "Equipe especializada",
-    "trustTitle": "Por que Empresas Confiam na Mako®?",
+    "trustTitle": "Por que Empresas Confiam na Mako?",
     "quality": "Qualidade Certificada",
     "qualityDesc": "ISO 9001:2015 garantindo excelência em processos",
     "methodology": "Metodologia Própria",
-    "methodologyDesc": "PMBoK, CPM e BIM para gestão integrada",
+    "methodologyDesc": "PMBOK, CPM, CDIO e BIM para gestão integrada",
     "reach": "Atuação Nacional",
     "reachDesc": "Presente em 11 estados brasileiros"
   },
   "values": {
-    "title": "Nossos Valores",
+    "title": "Nossos Fundamentos Empresariais",
     "subtitle": "Princípios que guiam nossa atuação",
     "focusOnClient": "Foco no Cliente",
     "focusOnClientDesc": "Colocamos as necessidades dos clientes em primeiro lugar, buscando sempre superar expectativas.",
@@ -82,41 +82,43 @@
     "support": "Suporte Dedicado",
     "certification": "Certificação ISO 9001",
     "mission": "Missão",
-    "missionText": "Proporcionar soluções de engenharia que integrem excelência técnica, responsabilidade ambiental, valorização humana e eficiência financeira.",
+    "missionText": "Fornecer aos clientes Mako a ferramenta da engenharia como vantagem competitiva aos seus negócios.",
     "vision": "Visão",
-    "visionText": "Ser referência nacional em soluções de engenharia industrial, superando expectativas através da qualidade e inovação.",
+    "visionText": "Ser a melhor solução em engenharia industrial do mercado. Consolidar-se como empresa de alto desempenho: Técnico. Ambiental. Humano. Financeiro. Promover a satisfação total de clientes, funcionários e acionistas.",
     "values": "Valores",
-    "valuesText": "Ética, transparência, compromisso com resultados e sustentabilidade em todas as nossas ações.",
+    "valuesText": "Gerencia a estratégia do negócio, Melhoria contínua, Comunicação, Coragem e assumir riscos, Foco no cliente e em seus negócios, Conhecimento técnico, Liderança, Trabalho em equipe de alto desempenho, Pró-atividade, Decisão e solução de problemas, Inovação, Ética.",
+    "foundations": "Fundamentos Empresariais",
+    "foundationsText": "Respeito, Simplicidade, Confiança, Compromisso, Velocidade, Austeridade Financeira",
     "whyChoose": "Por que escolher a Mako?"
   },
   "cta": {
     "title": "Vamos trabalhar juntos?",
-    "description": "Entre em contato para discutir seu projeto e descobrir como a Mako® pode ajudar sua empresa.",
+    "description": "Entre em contato para discutir seu projeto e descobrir como a Mako pode ajudar sua empresa.",
     "requestQuote": "Solicitar Orçamento",
     "ourServices": "Nossos Serviços"
   },
   "clients": {
     "title": "Nossos Clientes",
     "heroTitle": "Clientes",
-    "heroDescription": "Trabalhamos com as melhores empresas do mercado industrial brasileiro e internacional.",
+    "heroDescription": "A grande maioria dos nossos clientes são da indústria, em diversas atividades como: alimentícia, automobilística, química, cervejarias, refrigerantes, destilados, laticínios, defensivos agrícolas, geração de energia, distribuição e armazenamento de GLP, produtos médicos, produtos da construção civil, fabricação de papelão, têxtil, distribuição de energia etc. E em sua grande maioria, estão entre os 10 melhores do país em suas respectivas áreas de atuação.",
     "subtitle": "Parcerias de sucesso que impulsionam resultados",
     "ctaTitle": "Seja nosso próximo cliente de sucesso",
-    "ctaDescription": "Junte-se às maiores empresas do mercado que confiam na Mako® para seus projetos industriais."
+    "ctaDescription": "Junte-se às maiores empresas do mercado que confiam na Mako para seus projetos industriais."
   },
   "nationalPresence": {
     "title": "Presença Nacional",
     "subtitle": "Atuamos em todo o território brasileiro com expertise e qualidade",
-    "statesTitle": "Estados com atuação da Mako®:",
+    "statesTitle": "Estados com atuação da Mako:",
     "headquarters": "Sede:"
   },
   "about": {
     "title": "Quem Somos",
     "heroTitle": "Quem Somos",
-    "heroDescription": "A Mako® foi fundada em 2001, a partir da necessidade identificada no setor industrial local por uma empresa sólida, ética e comprometida, que valorizasse a parceria estratégica entre fornecedores e clientes nas áreas de Projetos, Engenharia e Construção. Desde sua criação, a empresa atua com foco em excelência técnica, governança corporativa e geração sustentável de valor.",
+    "heroDescription": "A Mako foi fundada em 2001, a partir da necessidade identificada no setor industrial local por uma empresa sólida, ética e comprometida, que valorizasse a parceria estratégica entre fornecedores e clientes nas áreas de Projetos, Engenharia e Construção. Desde sua criação, a empresa atua com foco em excelência técnica, governança corporativa e geração sustentável de valor.",
     "history": "Nossa História",
     "team": "Nossa Equipe",
     "teamDescription": "Engenheiros, técnicos, operários, profissionais das mais diferentes especialidades, todos disponíveis para suprir as necessidades de nossos clientes.",
-    "historyDescription": "Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação. A Mako® não só compreende essa definição, como adotou como missão em tudo que fazemos.",
+    "historyDescription": "Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação. A Mako não só compreende essa definição, como adotou como missão em tudo que fazemos.",
     "ctaHistoryTitle": "Faça parte da nossa história",
     "ctaHistoryDescription": "Junte-se a times de empresas que confiam na nossa experiência para transformar seus processos industriais",
     "ctaHistoryButton": "Entre em Contato"
@@ -124,7 +126,7 @@
   "services": {
     "title": "O Que Fazemos",
     "heroTitle": "O Que Fazemos",
-    "heroDescription": "Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação. A Mako® não só compreende essa definição, como adotou como missão em tudo que fazemos.",
+    "heroDescription": "Um projeto bem sucedido é aquele que gera valor e sustentabilidade, fundamentais às organizações que buscam liderança em suas áreas de atuação. A Mako não só compreende essa definição, como adotou como missão em tudo que fazemos.",
     "statsYears": "Anos de Mercado",
     "statsProjects": "Projetos Industriais",
     "statsCertification": "Certificação",
@@ -153,11 +155,12 @@
       "description": "Elaboração de pacotes de premissas e concepção de projetos industriais.",
       "fullDescription": "Elaboração de pacotes de premissas e concepção de projetos industriais, incluindo análise EVA, estruturação organizacional, especificações de produto e controle de qualidade.",
       "benefits": [
-        "Análise EVA e Estruturas Organizacionais",
-        "Especificações de Produto e Controle de Qualidade",
         "Análise de Constructability",
-        "PFDs e EFDs",
-        "HAZOP e P&D"
+        "Análise EVA, Estruturas Organizacionais e Headcount",
+        "Especificações de Produto e Controle de Qualidade",
+        "HAZOP e P&D",
+        "Manufatura, Logística, Qualidade, Segurança e Meio Ambiente",
+        "PFDs (Process Flow Diagrams) e EFDs (Engineering Flow Diagrams)"
       ]
     },
     "financiamento-captacao-recursos": {
@@ -165,22 +168,25 @@
       "description": "Projetos de viabilidade econômica e consultoria para financiamentos.",
       "fullDescription": "Elaboração de projetos de viabilidade econômica e consultoria junto a instituições financeiras e entidades públicas para captação de recursos.",
       "benefits": [
-        "Projetos de Viabilidade Econômica",
+        "Acesso a linhas de crédito específicas",
         "Consultoria junto a Instituições Financeiras",
         "Elaboração de Estudos para Financiamentos",
-        "Acesso a linhas de crédito específicas"
+        "Projetos de Viabilidade Econômica"
       ]
     },
     "projetos-industriais": {
-      "name": "Projetos Industriais",
+      "name": "Elaboração de Projetos Industriais - ISO 9001",
       "description": "Projetos completos de engenharia industrial.",
-      "fullDescription": "Desenvolvimento de projetos completos de engenharia industrial nas áreas civil, elétrica, mecânica e de processos, utilizando metodologia PMBoK/CPM e tecnologia BIM.",
+      "fullDescription": "Desenvolvimento de projetos completos de engenharia industrial nas áreas civil, elétrica, mecânica e de processos, utilizando metodologia PMBOK, CPM, CDIO, BIM e certificação ISO 9001. Engenharia de detalhamento e projetos ambientais.",
       "benefits": [
-        "Projetos em Modelagem BIM",
-        "Projetos Ambientais (RAS, EVA, EIA, RIMA)",
+        "Certificação ISO 9001",
+        "Engenharia de Detalhamento",
+        "Equipe de sala técnica Externa e In House",
         "Licenciamento Ambiental (LP, LI, LO)",
+        "Projetos Ambientais (RAS, EVA, EIA, RIMA)",
         "Projetos Civis, Elétricos e Mecânicos",
-        "SPDA, Aterramento e NR10, NR12, NR13, NR18"
+        "Projetos em Modelagem BIM",
+        "SPDA, Aterramento e NR10, NR12, NR13, NR18, NR35"
       ]
     },
     "suprimentos-aquisicoes": {
@@ -188,22 +194,22 @@
       "description": "Gestão de compras e suprimentos para projetos industriais.",
       "fullDescription": "Gestão completa de suprimentos e aquisições, desde a elaboração de especificações técnicas até o acompanhamento de entregas e qualidade.",
       "benefits": [
-        "Homologação de Fornecedores",
-        "Editais de Concorrência e Licitação Técnica",
         "Análise e Equalização de Propostas",
-        "Assessoria na Contratação"
+        "Assessoria na Contratação",
+        "Editais de Concorrência e Licitação Técnica",
+        "Homologação de Fornecedores"
       ]
     },
     "obras-instalacoes": {
       "name": "Obras e Instalações",
       "description": "Execução de obras civis, elétricas, mecânicas e de segurança.",
-      "fullDescription": "Execução de obras e instalações industriais completas incluindo civil, elétrica, mecânica e segurança. Adequação de equipamentos às normas NR10, NR12 e NR13.",
+      "fullDescription": "Execução de obras e instalações industriais completas incluindo civil, elétrica, mecânica e segurança. Adequação de equipamentos às normas NR10, NR12, NR13 e NR35.",
       "benefits": [
-        "Obras Civis (Fundações, Infraestrutura, Superestrutura)",
         "Instalações Elétricas (Baixa e Média Tensão)",
         "Instalações Mecânicas (Pipe Rack, Tubulações)",
-        "Segurança (Combate a Incêndio, SPDA, Linhas de Vida)",
-        "Mão de Obra Especializada"
+        "Mão de Obra Especializada",
+        "Obras Civis (Fundações, Infraestrutura, Superestrutura)",
+        "Segurança (Combate a Incêndio, SPDA, Linhas de Vida)"
       ]
     },
     "manutencoes": {
@@ -211,9 +217,9 @@
       "description": "Serviços de manutenção industrial.",
       "fullDescription": "Serviços de manutenção preventiva, corretiva e preditiva para equipamentos e instalações industriais, garantindo continuidade operacional.",
       "benefits": [
+        "Equipes Técnicas Especializadas com KPIs",
         "Manutenção Preventiva, Preditiva e Corretiva",
         "Sistemas de Ar-condicionado e PMOC",
-        "Equipes Técnicas Especializadas com KPIs",
         "Suporte de Engenharia Especializada"
       ]
     },
@@ -223,19 +229,20 @@
       "fullDescription": "Coordenação completa de obras e projetos, fiscalizando execução, qualidade, prazos e custos, assegurando conformidade com especificações.",
       "benefits": [
         "Controle de Qualidade de Engenharia & Construção",
-        "Supervisão HSSE (Saúde, Meio Ambiente e Segurança)",
+        "Emissão de Relatórios e Indicadores",
+        "Equipe de coordenação e fiscalização de campo dedicada",
         "Supervisão e Controle da Evolução Físico-Financeira",
-        "Emissão de Relatórios e Indicadores"
+        "Supervisão SMS (Saúde, Meio Ambiente e Segurança)"
       ]
     }
   },
   "methodology": {
     "title": "Metodologia de Trabalho",
     "heroTitle": "Como Fazemos",
-    "heroDescription": "A Mako® aplica as mais modernas ferramentas de gestão e utiliza as melhores práticas de gerenciamento, buscadas através da Filosofia de Qualidade Total. Essas práticas são aplicadas de forma criteriosa, respeitando o nível de maturidade dos clientes em gerenciamento, assim como seus desejos e necessidades.",
+    "heroDescription": "A Mako aplica as mais modernas ferramentas de gestão e utiliza as melhores práticas de gerenciamento, buscadas através da Filosofia de Qualidade Total. Essas práticas são aplicadas de forma criteriosa, respeitando o nível de maturidade dos clientes em gerenciamento, assim como seus desejos e necessidades.",
     "ctaTitle": "Pronto para transformar sua indústria?",
-    "ctaDescription": "Entre em contato conosco e descubra como a Mako® pode ajudar sua empresa a alcançar novos patamares.",
-    "description": "A Mako® aplica as mais modernas ferramentas de gestão e utiliza as melhores práticas de gerenciamento, buscadas através da Filosofia de Qualidade Total. Essas práticas são aplicadas de forma criteriosa, respeitando o nível de maturidade dos clientes em gerenciamento, assim como seus desejos e necessidades.",
+    "ctaDescription": "Entre em contato conosco e descubra como a Mako pode ajudar sua empresa a alcançar novos patamares.",
+    "description": "A Mako aplica as mais modernas ferramentas de gestão e utiliza as melhores práticas de gerenciamento, buscadas através da Filosofia de Qualidade Total. Essas práticas são aplicadas de forma criteriosa, respeitando o nível de maturidade dos clientes em gerenciamento, assim como seus desejos e necessidades.",
     "tools": {
       "cpm": {
         "title": "Capital Project Management",
@@ -248,6 +255,10 @@
       "cdio": {
         "title": "Conceive-Design-Implement-Operate",
         "description": "Ciclo de vida completo: concepção, design, implementação e operação."
+      },
+      "bim": {
+        "title": "Building Information Modeling",
+        "description": "Modelagem digital 3D para projetos eficientes, sustentáveis e integrados."
       }
     },
     "phases": {
@@ -260,7 +271,7 @@
     },
     "areas": {
       "title": "Áreas de Gerenciamento",
-      "description": "Baseado no PMBOK®, a Mako® atua em todas as áreas de conhecimento para garantir excelência na entrega dos projetos.",
+      "description": "Baseado no PMBOK®, a Mako atua em todas as áreas de conhecimento para garantir excelência na entrega dos projetos.",
       "scope": "Escopo",
       "cost": "Custo",
       "schedule": "Cronograma",
@@ -276,9 +287,9 @@
     "title": "Nossas Certificações",
     "subtitle": "Reconhecimento e qualificação que garantem a excelência dos nossos serviços",
     "isoTitle": "ISO 9001:2015 — Sistema de Gestão da Qualidade",
-    "isoDescription": "A Mako® possui a certificação ISO 9001:2015 emitida pela ABNT (Associação Brasileira de Normas Técnicas), que atesta o Sistema de Gestão da Qualidade para Elaboração de Projetos Industriais.",
+    "isoDescription": "A Mako possui a certificação ISO 9001:2015 emitida pela ABNT (Associação Brasileira de Normas Técnicas), que atesta o Sistema de Gestão da Qualidade para Elaboração de Projetos Industriais.",
     "certifiedBy": "Certificado ABNT NBR ISO 9001:2015",
-    "validUntil": "Válido de 25/11/2022 a 25/11/2025",
+    "validUntil": "Válido de 25/11/2025 a 25/11/2028",
     "whyCertifiedTitle": "Por que escolher uma empresa certificada?",
     "qualityTitle": "Qualidade Garantida",
     "qualityDesc": "Processos auditados e validados por órgãos competentes",
@@ -372,10 +383,10 @@
     "error": "Ocorreu um erro ao enviar o formulário. Tente novamente."
   },
   "workingHours": {
-    "weekdays": "Segunda a Sexta: 8h às 18h",
-    "saturday": "Sábado: 8h às 12h",
+    "weekdays": "Segunda a Sexta: 08:00 às 17:30",
+    "saturday": "Sábado: Fechado",
     "sunday": "Domingo: Fechado",
-    "full": "Segunda a Sexta: 8h às 18h | Sábado: 8h às 12h"
+    "full": "Segunda a Sexta: 08:00 às 17:30"
   },
   "footer": {
     "tagline": "Soluções Industriais",
@@ -427,9 +438,9 @@
   "securityPolicy": {
     "heroTitle": "Nossa Política de Segurança",
     "heroSubtitle": "Saúde, Segurança e Meio Ambiente",
-    "intro": "A Mako®, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde e segurança de seus empregados, clientes, fornecedores e comunidade, assim como para o Meio Ambiente.",
-    "programTitle": "Programa Mako® de SMS",
-    "programDesc": "Através do Programa Mako® de SMS, com suas 5 premissas e 22 princípios, além de suas respectivas ferramentas, a Mako® promoverá condições saudáveis de trabalho, esclarecerá e treinará seus empregados em práticas seguras de trabalho, além de promover informações para controle de riscos no local de trabalho e proteção ao Meio Ambiente.",
+    "intro": "A Mako, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde e segurança de seus empregados, clientes, fornecedores e comunidade, assim como para o Meio Ambiente.",
+    "programTitle": "Programa Mako de SMS",
+    "programDesc": "Através do Programa Mako de SMS, com suas 5 premissas e 22 princípios, além de suas respectivas ferramentas, a Mako promoverá condições saudáveis de trabalho, esclarecerá e treinará seus empregados em práticas seguras de trabalho, além de promover informações para controle de riscos no local de trabalho e proteção ao Meio Ambiente.",
     "responsibilitiesTitle": "Responsabilidades",
     "responsibilitiesDesc": "Todos os funcionários, da alta direção à operação, são responsáveis pela segurança de seus colegas e subordinados, e pela proteção ao meio ambiente nas atividades sob seu controle.",
     "commitmentsTitle": "Nossos Compromissos",
@@ -445,11 +456,11 @@
   "qualityPolicy": {
     "heroTitle": "Nossa Política de Qualidade",
     "heroSubtitle": "Satisfação total em cada projeto",
-    "intro": "A Mako® tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à satisfação total de seus clientes, funcionários, parceiros, fornecedores, meio ambiente e sócios cotistas.",
+    "intro": "A Mako tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à satisfação total de seus clientes, funcionários, parceiros, fornecedores, meio ambiente e sócios cotistas.",
     "commitmentTitle": "Nosso Compromisso",
-    "commitmentDesc": "A Mako® se compromete em suportar essa política de qualidade através de ações de treinamento aos funcionários e parceiros, e através da melhoria contínua de seus padrões.",
-    "systemTitle": "Sistema de Qualidade Mako®",
-    "systemDesc": "Os princípios e procedimentos do Sistema de Qualidade Mako® serão as bases dos controles necessários para atingir um padrão mundial de qualidade nos produtos e serviços.",
+    "commitmentDesc": "A Mako se compromete em suportar essa política de qualidade através de ações de treinamento aos funcionários e parceiros, e através da melhoria contínua de seus padrões.",
+    "systemTitle": "Sistema de Qualidade Mako",
+    "systemDesc": "Os princípios e procedimentos do Sistema de Qualidade Mako serão as bases dos controles necessários para atingir um padrão mundial de qualidade nos produtos e serviços.",
     "responsibilitiesTitle": "Responsabilidades",
     "responsibility1": "Todos os funcionários são responsáveis por cumprir os requisitos aplicáveis",
     "responsibility2": "Cumprir as premissas, procedimentos e melhores práticas da política",

@@ -1,4 +1,4 @@
-# TODO.md — Projeto Mako® Soluções Industriais
+# TODO.md — Projeto Mako Soluções Industriais
 
 ## 📅 Atualizado em: 27/03/2026
 

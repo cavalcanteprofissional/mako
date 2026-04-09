@@ -1,7 +1,6 @@
 'use client'
 
 import CertificationsSection from '@/components/sections/CertificationsSection'
-import CTASection from '@/components/sections/CTASection'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function ComoFazemosPage() {
@@ -30,12 +29,6 @@ export default function ComoFazemosPage() {
 
       {/* Certifications Section */}
       <CertificationsSection />
-
-      {/* CTA Section */}
-      <CTASection 
-        title={translate('methodology.ctaTitle')}
-        description={translate('methodology.ctaDescription')}
-      />
     </div>
   )
 }

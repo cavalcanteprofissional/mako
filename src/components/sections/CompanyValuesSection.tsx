@@ -80,8 +80,8 @@ export default function CompanyValuesSection({ className = '' }: CompanyValuesSe
           })}
         </div>
 
-        {/* Missão, Visão e Valores */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-16">
+        {/* Missão, Visão, Valores e Fundamentos */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-10 md:mb-16">
           <div className="bg-gradient-to-br from-primary-900 to-primary-700 rounded-2xl p-6 md:p-8 text-center shadow-xl">
             <div className="w-12 h-12 md:w-14 md:h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-5">
               <Heart className="w-6 h-6 md:w-7 md:h-7 text-white" />
@@ -106,9 +106,19 @@ export default function CompanyValuesSection({ className = '' }: CompanyValuesSe
             <div className="w-12 h-12 md:w-14 md:h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-5">
               <Star className="w-6 h-6 md:w-7 md:h-7 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-4">{translate('values.values')}</h3>
-            <p className="text-primary-100 text-sm leading-relaxed">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-3 md:mb-4">{translate('values.values')} (12 Competências)</h3>
+            <p className="text-primary-100 text-xs md:text-sm leading-relaxed">
               {translate('values.valuesText')}
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-primary-800 to-primary-600 rounded-2xl p-6 md:p-8 text-center shadow-xl">
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-5">
+              <Shield className="w-6 h-6 md:w-7 md:h-7 text-white" />
+            </div>
+            <h3 className="text-lg md:text-xl font-bold text-white mb-3 md:mb-4">{translate('values.foundations')}</h3>
+            <p className="text-primary-100 text-xs md:text-sm leading-relaxed">
+              {translate('values.foundationsText')}
             </p>
           </div>
         </div>

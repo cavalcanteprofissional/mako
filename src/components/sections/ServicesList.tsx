@@ -158,15 +158,6 @@ export default function ServicesList({ services }: ServicesListProps) {
                           {translate('services.requestQuote')}
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
-                        <Button
-                          variant="outline"
-                          href={`https://wa.me/5585987654321?text=${encodeURIComponent(`${translate('services.whatsappMessage')} ${translatedService.name}`)}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="justify-center"
-                        >
-                          {translate('services.talkToSpecialist')}
-                        </Button>
                       </div>
                     </div>
                   </div>

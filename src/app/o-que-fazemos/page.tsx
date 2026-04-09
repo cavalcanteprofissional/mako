@@ -6,10 +6,10 @@ import MethodologySection from '@/components/sections/MethodologySection'
 import ServicesHero from './ServicesHero'
 
 export const metadata: Metadata = {
-  title: 'Serviços - Mako® Soluções Industriais',
-  description: 'Conheça nossos serviços de engenharia industrial: Front-End Packages, Projetos Industriais, Obras, Manutenções, Suprimentos e Coordenação de Obras. Referência PMBoK/CPM.',
+  title: 'Serviços - Mako Soluções Industriais',
+  description: 'Conheça nossos serviços de engenharia industrial: Front-End Packages, Projetos Industriais, Obras, Manutenções, Suprimentos e Coordenação de Obras. Referência PMBOK, CPM, CDIO, BIM.',
   openGraph: {
-    title: 'Serviços - Mako® Soluções Industriais',
+    title: 'Serviços - Mako Soluções Industriais',
     description: 'Soluções completas em engenharia industrial: projetos, obras, manutenções e coordenação. Atuação nacional e internacional com certificação ISO 9001.',
     url: '/o-que-fazemos',
   },

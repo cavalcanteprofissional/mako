@@ -9,11 +9,11 @@ export const mockServices: Service[] = [
     icon: 'package',
     image: '/images/services/fep.jpg',
     benefits: [
+      'Análise de Constructability',
       'Análise EVA e Estruturas Organizacionais',
       'Especificações de Produto e Controle de Qualidade',
-      'Análise de Constructability',
-      'PFDs e EFDs',
       'HAZOP e P&D',
+      'PFDs e EFDs',
     ],
     process: [
       {
@@ -58,10 +58,10 @@ export const mockServices: Service[] = [
     icon: 'dollar-sign',
     image: '/images/services/financiamento.jpg',
     benefits: [
-      'Projetos de Viabilidade Econômica',
+      'Acesso a linhas de crédito específicas',
       'Consultoria junto a Instituições Financeiras',
       'Elaboração de Estudos para Financiamentos',
-      'Acesso a linhas de crédito específicas',
+      'Projetos de Viabilidade Econômica',
     ],
     process: [
       {
@@ -106,11 +106,12 @@ export const mockServices: Service[] = [
     icon: 'search',
     image: '/images/services/projetos.jpg',
     benefits: [
-      'Projetos em Modelagem BIM',
-      'Projetos Ambientais (RAS, EVA, EIA, RIMA)',
+      'Equipe de sala técnica Externa e In House',
       'Licenciamento Ambiental (LP, LI, LO)',
+      'Projetos Ambientais (RAS, EVA, EIA, RIMA)',
       'Projetos Civis, Elétricos e Mecânicos',
-      'SPDA, Aterramento e NR10, NR12, NR13, NR18',
+      'Projetos em Modelagem BIM',
+      'SPDA, Aterramento e NR10, NR12, NR13, NR18, NR35',
     ],
     process: [
       {
@@ -155,10 +156,10 @@ export const mockServices: Service[] = [
     icon: 'shopping-cart',
     image: '/images/services/suprimentos.jpg',
     benefits: [
-      'Homologação de Fornecedores',
-      'Editais de Concorrência e Licitação Técnica',
       'Análise e Equalização de Propostas',
       'Assessoria na Contratação',
+      'Editais de Concorrência e Licitação Técnica',
+      'Homologação de Fornecedores',
     ],
     process: [
       {
@@ -199,15 +200,15 @@ export const mockServices: Service[] = [
     slug: 'obras-instalacoes',
     name: 'Obras e Instalações',
     description: 'Execução de obras civis, elétricas, mecânicas e de segurança.',
-    fullDescription: 'Execução de obras e instalações industriais completas incluindo civil, elétrica, mecânica e segurança. Adequação de equipamentos às normas NR10, NR12 e NR13.',
+    fullDescription: 'Execução de obras e instalações industriais completas incluindo civil, elétrica, mecânica e segurança. Adequação de equipamentos às normas NR10, NR12, NR13 e NR35.',
     icon: 'construction',
     image: '/images/services/obras.jpg',
     benefits: [
-      'Obras Civis (Fundações, Infraestrutura, Superestrutura)',
       'Instalações Elétricas (Baixa e Média Tensão)',
       'Instalações Mecânicas (Pipe Rack, Tubulações)',
-      'Segurança (Combate a Incêndio, SPDA, Linhas de Vida)',
       'Mão de Obra Especializada',
+      'Obras Civis (Fundações, Infraestrutura, Superestrutura)',
+      'Segurança (Combate a Incêndio, SPDA, Linhas de Vida)',
     ],
     process: [
       {
@@ -252,9 +253,9 @@ export const mockServices: Service[] = [
     icon: 'tool',
     image: '/images/services/manutencao.jpg',
     benefits: [
+      'Equipes Técnicas Especializadas com KPIs',
       'Manutenção Preventiva, Preditiva e Corretiva',
       'Sistemas de Ar-condicionado e PMOC',
-      'Equipes Técnicas Especializadas com KPIs',
       'Suporte de Engenharia Especializada',
     ],
     process: [
@@ -295,16 +296,17 @@ export const mockServices: Service[] = [
     id: '7',
     slug: 'coordenacao-fiscalizacao',
     name: 'Coordenação e Fiscalização de Obras e Serviços',
-    description: 'Controle de qualidade, HSSE e supervisão físico-financeira.',
-    fullDescription: 'Serviços de coordenação e fiscalização de obras e serviços, incluindo controle de qualidade de engenharia e construção, supervisão de saúde, meio ambiente e segurança (HSSE).',
     icon: 'clipboard',
     image: '/images/services/fiscalizacao.jpg',
-    benefits: [
-      'Controle de Qualidade de Engenharia & Construção',
-      'Supervisão HSSE (Saúde, Meio Ambiente e Segurança)',
-      'Supervisão e Controle da Evolução Físico-Financeira',
-      'Emissão de Relatórios e Indicadores',
-    ],
+    description: 'Controle de qualidade, SMS e supervisão físico-financeira.',
+    fullDescription: 'Serviços de coordenação e fiscalização de obras e serviços, incluindo controle de qualidade de engenharia e construção, supervisão de saúde, meio ambiente e segurança (SMS).',
+      benefits: [
+        'Controle de Qualidade de Engenharia & Construção',
+        'Emissão de Relatórios e Indicadores',
+        'Equipe de coordenação e fiscalização de campo dedicada',
+        'Supervisão e Controle da Evolução Físico-Financeira',
+        'Supervisão SMS (Saúde, Meio Ambiente e Segurança)',
+      ],
     process: [
       {
         id: '1',
@@ -438,7 +440,7 @@ export const mockTestimonials: Testimonial[] = [
     role: 'Gerente de Manutenção',
     company: 'Indústria Alimentícia XYZ',
     image: '/images/testimonials/roberto.jpg',
-    content: 'A Mako® transformou completamente nosso processo produtivo. A automação instalada aumentou nossa produtividade em 40% e reduziu os índices de defeito. Equipe extremamente competente e dedicada.',
+    content: 'A Mako transformou completamente nosso processo produtivo. A automação instalada aumentou nossa produtividade em 40% e reduziu os índices de defeito. Equipe extremamente competente e dedicada.',
     rating: 5,
     featured: true,
   },
@@ -448,7 +450,7 @@ export const mockTestimonials: Testimonial[] = [
     role: 'Diretora Industrial',
     company: 'Metalúrgica ABC',
     image: '/images/testimonials/luciana.jpg',
-    content: 'Contratamos a Mako® para modernizar nossas prensas e o resultado superou todas as expectativas. O atendimento técnico foi excepcional e o projeto foi entregue no prazo.',
+    content: 'Contratamos a Mako para modernizar nossas prensas e o resultado superou todas as expectativas. O atendimento técnico foi excepcional e o projeto foi entregue no prazo.',
     rating: 5,
     featured: true,
   },
@@ -458,7 +460,7 @@ export const mockTestimonials: Testimonial[] = [
     role: 'Engenheiro Chefe',
     company: 'Química Brasil',
     image: '/images/testimonials/pedro.jpg',
-    content: 'Os serviços de manutenção preventiva da Mako® garantiram a estabilidade de nossas operações. Excelente suporte técnico e rápida resposta quando necessário.',
+    content: 'Os serviços de manutenção preventiva da Mako garantiram a estabilidade de nossas operações. Excelente suporte técnico e rápida resposta quando necessário.',
     rating: 4,
     featured: false,
   },
