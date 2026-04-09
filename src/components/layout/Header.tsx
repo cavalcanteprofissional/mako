@@ -64,6 +64,7 @@ export default function Header() {
               href="/" 
               className="flex items-center gap-3 group"
               aria-label="Mako Soluções Industriais"
+              onClick={(e) => handleNavClick(e, '/')}
             >
               <div className="relative w-20 h-20 lg:w-24 lg:h-24">
                 <Image
