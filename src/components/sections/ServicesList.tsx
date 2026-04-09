@@ -175,21 +175,12 @@ export default function ServicesList({ services }: ServicesListProps) {
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             {translate('services.ctaDescription')}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button
               href="/contato"
               className="justify-center"
             >
               {translate('services.customQuote')}
-            </Button>
-            <Button
-              variant="outline"
-              href={`https://wa.me/5585987654321?text=${encodeURIComponent(translate('services.whatsappCustom'))}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="justify-center"
-            >
-              {translate('services.whatsappConsult')}
             </Button>
           </div>
         </div>
