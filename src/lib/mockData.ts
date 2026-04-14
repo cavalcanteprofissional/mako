@@ -514,7 +514,7 @@ export const mockCertifications: Certification[] = [
     id: '1',
     name: 'ISO 9001:2015',
     description: 'Sistema de Gestão da Qualidade para Elaboração de Projetos Industriais. Obtida em 2022.',
-    image: '/images/certifications/iso-9001.jpg',
+    image: '/images/certifications/iso.svg',
     validUntil: '2026-12-31',
     issuer: 'SGS Brasil',
   },
@@ -545,5 +545,12 @@ export const mockCertifications: Certification[] = [
     description: 'Segurança e Saúde na Indústria da Construção.',
     image: '/images/certifications/nr-18.jpg',
     issuer: 'Ministério do Trabalho',
+  },
+  {
+    id: '6',
+    name: 'ABNT NBR 5410',
+    description: 'Instalações Elétricas de Baixa Tensão.',
+    image: '/images/certifications/abnt.svg',
+    issuer: 'ABNT',
   },
 ]
