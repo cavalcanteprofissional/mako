@@ -30,38 +30,11 @@ export default function PoliticaQualidadeClient() {
 
       <Section padding="lg">
         <div className="max-w-4xl mx-auto">
-          {/* Introduction */}
-          <div className="mb-16">
-            <Card padding="lg">
-              <p className="text-gray-700 leading-relaxed">
-                {translate('qualityPolicy.intro')}
-              </p>
-            </Card>
-          </div>
-
-          {/* Commitment */}
-          <div className="mb-16">
-            <Card padding="lg">
-              <p className="text-gray-700 leading-relaxed">
-                {translate('qualityPolicy.commitmentDesc')}
-              </p>
-            </Card>
-          </div>
-
-          {/* Quality System */}
-          <div className="mb-16">
-            <Card padding="lg">
-              <p className="text-gray-700 leading-relaxed">
-                {translate('qualityPolicy.systemDesc')}
-              </p>
-            </Card>
-          </div>
-
-          {/* Responsibilities */}
+          {/* Content */}
           <div className="mb-16">
             <Card padding="lg">
               <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-                {translate('qualityPolicy.responsibilityText')}
+                {translate('qualityPolicy.fullText')}
               </p>
             </Card>
           </div>
