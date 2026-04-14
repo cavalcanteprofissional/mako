@@ -1,7 +1,7 @@
 'use client'
 
 import { Section, Card } from '@/components/ui'
-import { Award, Users, TrendingUp, CheckCircle, Mail, Phone } from 'lucide-react'
+import { Award, Mail, Phone } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function PoliticaQualidadeClient() {
@@ -31,17 +31,18 @@ export default function PoliticaQualidadeClient() {
       <Section padding="lg">
         <div className="max-w-4xl mx-auto">
           {/* Introduction */}
-          <div className="mb-12">
-            <p className="text-gray-600 leading-relaxed">
-              {translate('qualityPolicy.intro')}
-            </p>
+          <div className="mb-16">
+            <Card padding="lg">
+              <p className="text-gray-700 leading-relaxed">
+                {translate('qualityPolicy.intro')}
+              </p>
+            </Card>
           </div>
 
           {/* Commitment */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">{translate('qualityPolicy.commitmentTitle')}</h2>
-            <Card padding="lg" className="bg-primary-50 border-l-4 border-primary-500">
-              <p className="text-gray-700">
+            <Card padding="lg">
+              <p className="text-gray-700 leading-relaxed">
                 {translate('qualityPolicy.commitmentDesc')}
               </p>
             </Card>
@@ -49,26 +50,17 @@ export default function PoliticaQualidadeClient() {
 
           {/* Quality System */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">{translate('qualityPolicy.systemTitle')}</h2>
             <Card padding="lg">
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Award className="w-6 h-6 text-primary-600" />
-                </div>
-                <div>
-                  <p className="text-gray-700">
-                    {translate('qualityPolicy.systemDesc')}
-                  </p>
-                </div>
-              </div>
+              <p className="text-gray-700 leading-relaxed">
+                {translate('qualityPolicy.systemDesc')}
+              </p>
             </Card>
           </div>
 
           {/* Responsibilities */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">{translate('qualityPolicy.responsibilitiesTitle')}</h2>
             <Card padding="lg">
-              <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-line">
+              <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                 {translate('qualityPolicy.responsibilityText')}
               </p>
             </Card>
