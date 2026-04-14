@@ -25,6 +25,7 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
     return {
       role: translate(`${memberKey}.role`),
       bio: translate(`${memberKey}.bio`),
+      quote: translate(`${memberKey}.quote`),
     }
   }
 
@@ -59,6 +60,7 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
             const translations = getMemberTranslations(member.id)
             const translatedRole = translations.role !== `team.member${member.id}.role` ? translations.role : member.role
             const translatedBio = translations.bio !== `team.member${member.id}.bio` ? translations.bio : member.bio
+            const translatedQuote = translations.quote !== `team.member${member.id}.quote` ? translations.quote : member.quote
 
             return (
               <div 
@@ -109,12 +111,17 @@ export default function TeamSection({ teamMembers }: TeamSectionProps) {
 
                       {/* Expanded Content - Bio */}
                       <div 
-                        className={`overflow-hidden transition-all duration-500 ease-out ${isMemberExpanded ? 'max-h-[300px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}
+                        className={`overflow-hidden transition-all duration-500 ease-out ${isMemberExpanded ? 'max-h-[500px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}
                       >
                         <div className="border-t border-gray-100 pt-4">
                           <p className="text-gray-600 leading-relaxed text-left">
                             {translatedBio}
                           </p>
+                          {translatedQuote && (
+                            <blockquote className="mt-4 pl-4 border-l-4 border-primary-500 italic text-gray-700">
+                              "{translatedQuote}"
+                            </blockquote>
+                          )}
                         </div>
                       </div>
                     </div>

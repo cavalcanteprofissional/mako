@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import HeroServiceOverlay from './HeroServiceOverlay'
-import { mockServices } from '@/lib/mockData'
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -109,8 +107,12 @@ export default function HeroSection() {
     return () => clearInterval(interval)
   }, [slides.length])
 
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index)
+  const goToPrevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+  }
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length)
   }
 
   return (
@@ -138,29 +140,26 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* Service Overlay - Temporariamente ocultado
-      <div className="absolute inset-0 flex items-center justify-center z-30 p-4">
-        <HeroServiceOverlay 
-          services={mockServices} 
-          currentSlide={currentSlide}
-          onSlideChange={goToSlide}
-        />
-      </div>
-      */}
-      {/* Navigation Dots */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex items-center gap-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-              index === currentSlide
-                ? 'bg-white w-8'
-                : 'bg-white/50 hover:bg-white/80'
-            }`}
-            aria-label={`Ir para slide ${index + 1}`}
-          />
-        ))}
+      {/* Navigation Arrows */}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex items-center gap-8">
+        <button
+          onClick={goToPrevSlide}
+          className="w-10 h-10 flex items-center justify-center rounded-full bg-primary-500/90 text-white hover:bg-primary-500 transition-all duration-300"
+          aria-label="Slide anterior"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        <button
+          onClick={goToNextSlide}
+          className="w-10 h-10 flex items-center justify-center rounded-full bg-primary-500/90 text-white hover:bg-primary-500 transition-all duration-300"
+          aria-label="Próximo slide"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
       </div>
     </section>
   )

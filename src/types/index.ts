@@ -29,6 +29,7 @@ export interface TeamMember {
   name: string
   role: string
   bio: string
+  quote?: string
   image: string
   email: string
   phone?: string

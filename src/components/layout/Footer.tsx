@@ -6,6 +6,7 @@ import { Phone, Mail, MapPin, Instagram, Linkedin, ChevronRight } from 'lucide-r
 import { companyInfo, navigation } from '@/lib/constants'
 import { formatWhatsApp } from '@/lib/utils'
 import { useLanguage } from '@/context/LanguageContext'
+import { mockServices } from '@/lib/mockData'
 
 export default function Footer() {
   const { t } = useLanguage()
@@ -29,12 +30,16 @@ export default function Footer() {
     },
     {
       title: translate('navigation.services'),
-      links: [
-        { name: translate('footer.services.fep'), href: '/o-que-fazemos#fep' },
-        { name: translate('footer.services.projetos'), href: '/o-que-fazemos#projetos-industriais' },
-        { name: translate('footer.services.obras'), href: '/o-que-fazemos#obras-instalacoes' },
-        { name: translate('footer.services.manutencoes'), href: '/o-que-fazemos#manutencoes' },
-      ],
+      links: mockServices
+        .sort((a, b) => {
+          if (a.slug === 'projetos-industriais') return -1
+          if (b.slug === 'projetos-industriais') return 1
+          return 0
+        })
+        .map((service) => ({
+          name: service.name,
+          href: `/o-que-fazemos/${service.slug}`,
+        })),
     },
     {
       title: translate('navigation.quality'),
@@ -101,7 +106,7 @@ export default function Footer() {
                 <div className="flex items-center space-x-3 text-gray-300">
                   <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
                   <span className="text-sm">
-                    {companyInfo.email}
+                    {companyInfo.emailCommercial}
                   </span>
                 </div>
               </div>
@@ -133,14 +138,13 @@ export default function Footer() {
                 <h3 className="text-lg font-semibold text-white mb-4">
                   {section.title}
                 </h3>
-                <ul className="space-y-2">
+                <ul className="space-y-1.5">
                   {section.links.map((link) => (
                     <li key={link.name}>
                       <Link
                         href={link.href}
-                        className="flex items-center text-gray-300 hover:text-primary-400 transition-colors duration-200 text-sm group"
+                        className="block text-gray-300 hover:text-primary-400 transition-colors duration-200 text-sm"
                       >
-                        <ChevronRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                         {link.name}
                       </Link>
                     </li>

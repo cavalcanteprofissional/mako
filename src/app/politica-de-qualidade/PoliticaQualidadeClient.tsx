@@ -67,43 +67,11 @@ export default function PoliticaQualidadeClient() {
           {/* Responsibilities */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">{translate('qualityPolicy.responsibilitiesTitle')}</h2>
-            <div className="space-y-4">
-              <Card padding="md">
-                <div className="flex items-center">
-                  <Users className="w-5 h-5 mr-3 text-primary-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    {translate('qualityPolicy.responsibility1')}
-                  </span>
-                </div>
-              </Card>
-
-              <Card padding="md">
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3 text-primary-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    {translate('qualityPolicy.responsibility2')}
-                  </span>
-                </div>
-              </Card>
-
-              <Card padding="md">
-                <div className="flex items-center">
-                  <TrendingUp className="w-5 h-5 mr-3 text-primary-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    {translate('qualityPolicy.responsibility3')}
-                  </span>
-                </div>
-              </Card>
-
-              <Card padding="md">
-                <div className="flex items-center">
-                  <Award className="w-5 h-5 mr-3 text-primary-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    {translate('qualityPolicy.responsibility4')}
-                  </span>
-                </div>
-              </Card>
-            </div>
+            <Card padding="lg">
+              <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-line">
+                {translate('qualityPolicy.responsibilityText')}
+              </p>
+            </Card>
           </div>
 
           {/* Contact */}

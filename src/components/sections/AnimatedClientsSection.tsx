@@ -52,7 +52,7 @@ export default function AnimatedClientsSection() {
         <div className="relative w-full">
           <div className="relative overflow-hidden mb-6 md:mb-8">
             <div
-              className="flex space-x-8 md:space-x-12 animate-scroll-slow"
+              className="flex space-x-4 md:space-x-12 animate-scroll-slow"
               style={{
                 animation: 'scroll-left 25s linear infinite',
               }}
@@ -60,15 +60,15 @@ export default function AnimatedClientsSection() {
               {clientsForScroll.map((client, index) => (
                 <div
                   key={`${client.id}-row1-${index}`}
-                  className="flex-shrink-0 relative w-16 h-16 md:w-24 md:h-24 group"
+                  className="flex-shrink-0 relative w-20 h-14 md:w-24 md:h-24 group"
                 >
-                  <div className="w-full h-full flex items-center justify-center p-2 md:p-3 group-hover:scale-105 transition-all duration-300">
+                  <div className="w-full h-full flex items-center justify-center p-1 md:p-3 group-hover:scale-105 transition-all duration-300">
                     <Image
                       src={client.image}
                       alt={client.name}
                       fill
                       className="object-contain opacity-80 group-hover:opacity-100 transition-all duration-300"
-                      sizes="64px md:96px"
+                      sizes="80px md:96px"
                     />
                   </div>
                 </div>
@@ -78,7 +78,7 @@ export default function AnimatedClientsSection() {
 
           <div className="relative overflow-hidden mb-6 md:mb-8">
             <div
-              className="flex space-x-8 md:space-x-12 animate-scroll-slow"
+              className="flex space-x-4 md:space-x-12 animate-scroll-slow"
               style={{
                 animation: 'scroll-right 30s linear infinite',
               }}
@@ -86,15 +86,15 @@ export default function AnimatedClientsSection() {
               {clientsForScroll.slice().reverse().map((client, index) => (
                 <div
                   key={`${client.id}-row2-${index}`}
-                  className="flex-shrink-0 relative w-16 h-16 md:w-24 md:h-24 group"
+                  className="flex-shrink-0 relative w-20 h-14 md:w-24 md:h-24 group"
                 >
-                  <div className="w-full h-full flex items-center justify-center p-2 md:p-3 group-hover:scale-105 transition-all duration-300">
+                  <div className="w-full h-full flex items-center justify-center p-1 md:p-3 group-hover:scale-105 transition-all duration-300">
                     <Image
                       src={client.image}
                       alt={client.name}
                       fill
                       className="object-contain opacity-80 group-hover:opacity-100 transition-all duration-300"
-                      sizes="64px md:96px"
+                      sizes="80px md:96px"
                     />
                   </div>
                 </div>

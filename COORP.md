@@ -283,6 +283,20 @@ Para candidatar-se por e-mail, envie seu currículo com:
 
 ## 👔 Liderança e Equipe Executiva
 
+### Estrutura de Dados dos Membros da Equipe
+
+| Campo | Tipo | Obrigatório | Descrição |
+|-------|------|--------------|------------|
+| `id` | string | Sim | Identificador único do membro |
+| `name` | string | Sim | Nome completo do membro |
+| `role` | string | Sim | Cargo/Função do membro |
+| `bio` | string | Sim | Biografia detalhada do membro |
+| `quote` | string | Não | Epígrafe - citação do membro (exibida no card expandido) |
+| `image` | string | Sim | Caminho da imagem do membro |
+| `email` | string | Sim | E-mail de contato do membro |
+| `linkedin` | string | Não | URL do perfil LinkedIn |
+| `order` | number | Sim | Ordem de exibição na lista |
+
 ### Henrique Daniel de Cavalcante Carvalho
 **Cargo:** Sócio-Presidente | Fundador
 

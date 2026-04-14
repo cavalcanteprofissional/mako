@@ -9,6 +9,7 @@ export const companyInfo = {
   whatsapp: '+55 85 9 9159-4599',
   whatsappFormatted: '558591594599',
   email: 'possofalar1@mako.ind.br',
+  emailCommercial: 'comercial@mako.ind.br',
   emailTechnical: 'possofalar1@mako.ind.br',
   address: {
     street: 'Av. Bernardo Manuel, 10271, 1º Andar – Salas A e B',
