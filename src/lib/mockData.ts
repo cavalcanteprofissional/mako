@@ -546,11 +546,4 @@ export const mockCertifications: Certification[] = [
     image: '/images/certifications/nr-18.jpg',
     issuer: 'Ministério do Trabalho',
   },
-  {
-    id: '6',
-    name: 'ABNT NBR 5410',
-    description: 'Instalações Elétricas de Baixa Tensão.',
-    image: '/images/certifications/abnt.svg',
-    issuer: 'ABNT',
-  },
 ]
