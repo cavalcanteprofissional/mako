@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { usePathname } from 'next/navigation'
 import { Card, Button } from '@/components/ui'
 import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
 import Image from 'next/image'
@@ -14,7 +13,6 @@ interface ServiceDetailProps {
 
 export default function ServiceDetail({ services }: ServiceDetailProps) {
   const { t } = useLanguage()
-  const pathname = usePathname()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState<'left' | 'right'>('right')
   const [isPaused, setIsPaused] = useState(false)
@@ -69,21 +67,44 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
   }, [services.length, isPaused])
 
   useEffect(() => {
-    const hash = window.location.hash.slice(1)
-    if (hash) {
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1)
+      if (!hash) return
+
       const index = services.findIndex(s => s.slug === hash)
-      if (index !== -1) {
-        setCurrentIndex(index)
-        setIsPaused(true)
-        setTimeout(() => {
-          const element = document.getElementById(hash)
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' })
-          }
-        }, 100)
-      }
+      if (index === -1) return
+
+      setCurrentIndex(index)
+      setIsPaused(true)
     }
-  }, [pathname, services])
+
+    handleHashChange()
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [services])
+
+  useEffect(() => {
+    const hash = window.location.hash.slice(1)
+    if (!hash) return
+
+    const element = document.getElementById(hash)
+    if (!element) return
+
+    const start = window.scrollY
+    const target = element.getBoundingClientRect().top + start - window.innerHeight / 2 + element.offsetHeight / 2
+    const duration = 300
+    const startTime = performance.now()
+
+    const animate = (currentTime: number) => {
+      const elapsed = currentTime - startTime
+      const progress = Math.min(elapsed / duration, 1)
+      const ease = 1 - Math.pow(1 - progress, 3)
+      window.scrollTo(0, start + (target - start) * ease)
+      if (progress < 1) requestAnimationFrame(animate)
+    }
+
+    requestAnimationFrame(animate)
+  }, [currentIndex, services])
 
   return (
     <section id="services-carousel" className="py-20">

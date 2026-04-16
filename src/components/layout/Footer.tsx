@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import { Phone, Mail, MapPin, Instagram, Linkedin, ChevronRight } from 'lucide-react'
 import { companyInfo, navigation } from '@/lib/constants'
@@ -10,6 +11,7 @@ import { mockServices } from '@/lib/mockData'
 
 export default function Footer() {
   const { t } = useLanguage()
+  const router = useRouter()
   const currentYear = new Date().getFullYear()
 
   const translate = (key: string): string => {
@@ -39,6 +41,7 @@ export default function Footer() {
         .map((service) => ({
           name: service.name,
           href: `/o-que-fazemos#${service.slug}`,
+          isService: true,
         })),
     },
     {
@@ -46,6 +49,14 @@ export default function Footer() {
       links: navigation.footer,
     },
   ]
+
+  const handleServiceClick = (href: string) => {
+    if (window.location.pathname === '/o-que-fazemos') {
+      window.location.href = href
+    } else {
+      router.push(href)
+    }
+  }
 
   const socialLinks = [
     {
@@ -141,12 +152,21 @@ export default function Footer() {
                 <ul className="space-y-1.5">
                   {section.links.map((link) => (
                     <li key={link.name}>
-                      <Link
-                        href={link.href}
-                        className="block text-gray-300 hover:text-primary-400 transition-colors duration-200 text-sm"
-                      >
-                        {link.name}
-                      </Link>
+                      {'isService' in link && link.isService ? (
+                        <button
+                          onClick={() => handleServiceClick(link.href)}
+                          className="block text-gray-300 hover:text-primary-400 transition-colors duration-200 text-sm text-left"
+                        >
+                          {link.name}
+                        </button>
+                      ) : (
+                        <Link
+                          href={link.href}
+                          className="block text-gray-300 hover:text-primary-400 transition-colors duration-200 text-sm"
+                        >
+                          {link.name}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
