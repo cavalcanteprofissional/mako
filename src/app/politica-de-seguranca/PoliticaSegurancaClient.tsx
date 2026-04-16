@@ -1,7 +1,7 @@
 'use client'
 
 import { Section, Card } from '@/components/ui'
-import { Users, FileCheck, TrendingUp, TreePine, Mail, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function PoliticaSegurancaClient() {
@@ -21,89 +21,19 @@ export default function PoliticaSegurancaClient() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               {translate('securityPolicy.heroTitle')}
             </h1>
-            <p className="text-xl text-white">
-              {translate('securityPolicy.heroSubtitle')}
-            </p>
           </div>
         </div>
       </section>
 
       <Section padding="lg">
         <div className="max-w-4xl mx-auto">
-          {/* Introduction */}
-          <div className="mb-12">
-            <p className="text-gray-600 leading-relaxed">
-              {translate('securityPolicy.intro')}
-            </p>
-          </div>
-
-          {/* SMS Principles */}
+          {/* Content */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">{translate('securityPolicy.programTitle')}</h2>
-            <Card padding="lg" className="bg-primary-50 border-l-4 border-primary-500">
-              <p className="text-gray-700">
-                {translate('securityPolicy.programDesc')}
+            <Card padding="lg">
+              <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                {translate('securityPolicy.fullText')}
               </p>
             </Card>
-          </div>
-
-          {/* Responsibilities */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">{translate('securityPolicy.responsibilitiesTitle')}</h2>
-            <Card padding="lg">
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Users className="w-6 h-6 text-primary-600" />
-                </div>
-                <div>
-                  <p className="text-gray-700">
-                    {translate('securityPolicy.responsibilitiesDesc')}
-                  </p>
-                </div>
-              </div>
-            </Card>
-          </div>
-
-          {/* Commitments */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">{translate('securityPolicy.commitmentsTitle')}</h2>
-            <div className="space-y-4">
-              <Card padding="md">
-                <div className="flex items-center">
-                  <FileCheck className="w-5 h-5 mr-3 text-primary-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    {translate('securityPolicy.commitment1')}
-                  </span>
-                </div>
-              </Card>
-
-              <Card padding="md">
-                <div className="flex items-center">
-                  <FileCheck className="w-5 h-5 mr-3 text-primary-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    {translate('securityPolicy.commitment2')}
-                  </span>
-                </div>
-              </Card>
-
-              <Card padding="md">
-                <div className="flex items-center">
-                  <TrendingUp className="w-5 h-5 mr-3 text-primary-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    {translate('securityPolicy.commitment3')}
-                  </span>
-                </div>
-              </Card>
-
-              <Card padding="md">
-                <div className="flex items-center">
-                  <TreePine className="w-5 h-5 mr-3 text-primary-600 flex-shrink-0" />
-                  <span className="text-gray-700">
-                    {translate('securityPolicy.commitment4')}
-                  </span>
-                </div>
-              </Card>
-            </div>
           </div>
 
           {/* Contact */}

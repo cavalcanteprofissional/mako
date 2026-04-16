@@ -86,6 +86,7 @@ export default function ServicesList({ services }: ServicesListProps) {
             return (
               <div 
                 key={service.id}
+                id={service.slug}
                 className="bg-white rounded-xl shadow-soft overflow-hidden transition-all duration-500 cursor-pointer"
                 onMouseEnter={() => setHoveredService(service.id)}
                 onMouseLeave={() => !isLocked && setHoveredService(null)}

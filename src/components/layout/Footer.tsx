@@ -38,7 +38,7 @@ export default function Footer() {
         })
         .map((service) => ({
           name: service.name,
-          href: `/o-que-fazemos/${service.slug}`,
+          href: `/o-que-fazemos#${service.slug}`,
         })),
     },
     {

@@ -21,9 +21,6 @@ export default function PoliticaQualidadeClient() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               {translate('qualityPolicy.heroTitle')}
             </h1>
-            <p className="text-xl text-white">
-              {translate('qualityPolicy.heroSubtitle')}
-            </p>
           </div>
         </div>
       </section>

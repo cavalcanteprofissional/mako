@@ -13,7 +13,7 @@ export default function CertificationsSection() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section id="certifications" className="py-20 bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">

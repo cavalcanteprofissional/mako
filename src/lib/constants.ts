@@ -52,7 +52,7 @@ export const navigation = {
     { name: 'Política de Qualidade', href: '/politica-de-qualidade' },
     { name: 'Política de Segurança', href: '/politica-de-seguranca' },
     { name: 'Trabalhe Conosco', href: '/carreiras' },
-    { name: 'Certificações', href: '/certificacoes' },
+    { name: 'Certificações', href: '/como-fazemos#certifications' },
   ],
 }
 

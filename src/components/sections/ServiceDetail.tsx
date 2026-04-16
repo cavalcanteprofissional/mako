@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { Card, Button } from '@/components/ui'
 import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
 import Image from 'next/image'
@@ -13,6 +14,7 @@ interface ServiceDetailProps {
 
 export default function ServiceDetail({ services }: ServiceDetailProps) {
   const { t } = useLanguage()
+  const pathname = usePathname()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState<'left' | 'right'>('right')
   const [isPaused, setIsPaused] = useState(false)
@@ -66,8 +68,25 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
     return () => clearInterval(interval)
   }, [services.length, isPaused])
 
+  useEffect(() => {
+    const hash = window.location.hash.slice(1)
+    if (hash) {
+      const index = services.findIndex(s => s.slug === hash)
+      if (index !== -1) {
+        setCurrentIndex(index)
+        setIsPaused(true)
+        setTimeout(() => {
+          const element = document.getElementById(hash)
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          }
+        }, 100)
+      }
+    }
+  }, [pathname, services])
+
   return (
-    <section className="py-20">
+    <section id="services-carousel" className="py-20">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
@@ -80,6 +99,7 @@ export default function ServiceDetail({ services }: ServiceDetailProps) {
         <div className="relative overflow-hidden">
           <div 
             key={currentIndex}
+            id={currentService.slug}
             className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-white rounded-xl shadow-md p-6 lg:p-8"
           >
             {/* Service Image */}

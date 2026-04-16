@@ -87,7 +87,7 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center justify-center flex-1 px-8">
-              <div className="flex items-center space-x-10">
+              <div className="flex items-center space-x-8">
                 {navigation.main.map((item) => {
                   const navKeyMap: Record<string, string> = {
                     'Home': 'home',

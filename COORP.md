@@ -206,30 +206,13 @@ Modelo: **Self Directed Working Teams** (Estrutura Matricial / Multifuncional)
 
 ## 🔐 Política de Segurança
 
-A Mako, através de sua Política de SMS (Saúde, Segurança e Meio Ambiente), tem como objetivo assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde e segurança de seus empregados, clientes, fornecedores e comunidade, assim como para o Meio Ambiente.
+A Mako, através de sua Política de SMS, tem como objetivo assegurar o compromisso de que suas atividades tenham um alto nível de proteção para a saúde e segurança de seus empregados, clientes, fornecedores, e comunidade, assim como para o Meio Ambiente.
 
-### Programa Mako de SMS
+Através do Programa MAKO de SMS, com suas 5 premissas e 22 princípios, além de suas respectivas ferramentas, a Mako promoverá condições saudáveis de trabalho, esclarecerá e treinará seus empregados em práticas seguras de trabalho, além de promover informações para controle de riscos no local de trabalho, e proteção ao Meio Ambiente.
 
-Através do Programa Mako de SMS, com suas **5 premissas e 22 princípios**, além de suas respectivas ferramentas, a Mako promoverá:
+Todos os funcionários, da alta direção à operação, são responsáveis pela segurança de seus colegas e subordinados, e pela proteção ao meio ambiente nas atividades as quais tenham atuação.
 
-- Condições saudáveis de trabalho
-- Treinamento em práticas seguras
-- Informações para controle de riscos
-- Proteção ao Meio Ambiente
-
-### Responsabilidades
-
-Todos os funcionários, da alta direção à operação, são responsáveis pela:
-
-- Segurança de seus colegas e subordinados
-- Proteção ao meio ambiente nas atividades sob seu controle
-
-### Compromissos
-
-- Operar com todas as documentações e registros exigidos pela legislação vigente
-- Efetuar as revisões necessárias e disseminar as informações
-- Buscar sempre o alto padrão de excelência em SMS
-- Promover melhoria contínua, desenvolvimento de pessoas e melhores práticas em todos os níveis da organização
+A Mako garante o compromisso de operar com todas as documentações e registros requisitados pela legislação vigente, assim como effecting as revisões necessárias e disseminar as informações contidas nesses documentos. A MAKO se compromete a buscar sempre o alto padrão de excelência em SMS, através da melhoria contínua, desenvolvimento de pessoas, aplicação de melhores práticas, em todos os níveis da organização.
 
 ---
 
@@ -237,19 +220,13 @@ Todos os funcionários, da alta direção à operação, são responsáveis pela
 
 A Mako tem como objetivo e valor prezar pela qualidade de seus serviços no que diz respeito à satisfação total de seus clientes, funcionários, parceiros, fornecedores, meio ambiente e sócios cotistas.
 
-### Compromisso
-
-A Mako se compromete em suportar essa política de qualidade através de:
-- Ações de treinamento aos funcionários e parceiros
-- Melhoria contínua de seus padrões
-
-### Sistema de Qualidade
+A Mako se compromete em suportar essa política de qualidade através de ações de treinamento aos funcionários e parceiros, e através da melhoria contínua de seus padrões.
 
 Os princípios e procedimentos do Sistema de Qualidade Mako serão as bases dos controles necessários para atingir um padrão mundial de qualidade nos produtos e serviços.
 
-### Responsabilidades
-
 Todos os funcionários da Mako são responsáveis por cumprir os requisitos aplicáveis, as premissas, procedimentos e melhores práticas escritas e não escritas dessa política.
+
+REV 00.
 
 ---
 
@@ -329,7 +306,7 @@ Para candidatar-se por e-mail, envie seu currículo com:
 
 **Bio:** Profissional com atuação estratégica nas áreas administrativa e financeira, sendo responsável pela gestão, controle e eficiência das atividades corporativas. Possui sólida formação e experiência em Administração de Empresas, com visão sistêmica e capacidade de integrar processos para maximizar desempenho e sustentabilidade organizacional.
 
-> *"Sua liderança é pautada por organização, responsabilidade e visão estratégica, assegurando equilíbrio financeiro e suporte estruturado ao crescimento da empresa."*
+> *"Sua liderança é pauta por organização, responsabilidade e visão estratégica, assegurando equilíbrio financeiro e suporte estruturado ao crescimento da empresa."*
 
 ---
 
