@@ -32,6 +32,13 @@
 
   body {
     @apply font-sans bg-white text-gray-900 selection:bg-primary-100 selection:text-primary-900;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Hide scrollbar for all browsers */
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   h1, h2, h3, h4, h5, h6 {

@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/thumbnail.png" alt="Mako Soluções Industriais" width="100%">
+</div>
+
 # Mako Soluções Industriais
 
 Website institucional da **Mako Soluções Industriais**, empresa especializada em soluções de engenharia industrial com mais de 24 anos de experiência, focada em automação, projetos e manutenção industrial.
