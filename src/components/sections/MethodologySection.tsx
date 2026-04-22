@@ -112,26 +112,28 @@ export default function MethodologySection() {
             {translate('methodology.phases.title')}
           </h3>
           
-          <div className="relative">
-            {/* Line */}
+          <div className="relative md:py-2">
+            {/* Line - vertical no mobile, horizontal no desktop */}
             <div className="absolute top-8 left-0 right-0 h-1 bg-primary-200 hidden md:block" />
-            <div className="absolute top-8 left-4 right-4 h-1 bg-primary-200 md:hidden" />
+            <div className="absolute top-8 bottom-8 w-1 bg-primary-200 md:hidden" style={{ left: '1.5rem' }} />
             
-            <div className="flex flex-col md:flex-row justify-between items-start gap-4">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-6 md:gap-4">
               {phases.map((phase, index) => (
                 <div 
                   key={index} 
-                  className="flex flex-col items-center flex-1 relative z-10 group cursor-pointer"
+                  className="flex md:flex-col items-start md:items-center flex-1 relative z-10 group cursor-pointer"
                 >
-                  <div className="w-16 h-16 bg-white border-4 border-primary-500 rounded-full flex items-center justify-center mb-4 shadow-md group-hover:shadow-xl group-hover:scale-110 group-hover:border-primary-600 transition-all duration-300">
-                    <span className="text-xl font-bold text-primary-600 group-hover:text-primary-700 transition-colors duration-300">{index + 1}</span>
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-white border-4 border-primary-500 rounded-full flex items-center justify-center md:mb-4 shadow-md group-hover:shadow-xl group-hover:scale-110 group-hover:border-primary-600 transition-all duration-300 flex-shrink-0">
+                    <span className="text-lg md:text-xl font-bold text-primary-600 group-hover:text-primary-700 transition-colors duration-300">{index + 1}</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900 text-center group-hover:text-primary-600 transition-colors duration-300">
-                    {phase.title}
-                  </h4>
-                  <p className="text-sm text-gray-500 text-center mt-1 max-w-[150px] group-hover:text-gray-700 transition-colors duration-300">
-                    {phase.description}
-                  </p>
+                  <div className="md:text-center ml-4 md:ml-0">
+                    <h4 className="text-base md:text-lg font-semibold text-gray-900 group-hover:text-primary-600 transition-colors duration-300">
+                      {phase.title}
+                    </h4>
+                    <p className="text-sm text-gray-500 mt-0 md:mt-1 md:max-w-[150px] group-hover:text-gray-700 transition-colors duration-300">
+                      {phase.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

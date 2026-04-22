@@ -19,7 +19,7 @@ export default function AnimatedClientsSection() {
       return {
         id: String(i),
         name: `Cliente ${i}`,
-        image: `/images/clients/Prancheta ${i}.${ext}`,
+        image: `/images/clients/client-${i}.${ext}`,
       }
     }), []
   )

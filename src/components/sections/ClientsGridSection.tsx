@@ -14,7 +14,7 @@ const clients: Client[] = Array.from({ length: 41 }, (_, i) => {
   return {
     id: String(i),
     name: `Cliente ${i}`,
-    image: `/images/clients/Prancheta ${i}.${ext}`,
+    image: `/images/clients/client-${i}.${ext}`,
   }
 })
 
